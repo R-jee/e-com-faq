@@ -548,8 +548,75 @@
           "visibility": "ہم صرف یہ دیکھیں گے کہ آیا آپ نے ای میل کھولی ہے، ای میل کھلنے کی کل شرح کے حصے کے طور پر۔"
         },
         "updated_policy": {
-          "status_html": "<b>ای میل اوپن ٹریکنگ کی اطلاع ہے۔<\/b>"
+          "status_html": "<b>ای میل اوپن ٹریکنگ کی اطلاع ہے۔<\/b>",
+          "visibility": "ہم نے اپنی پالیسی کو اپ ڈیٹ کر دیا ہے، اور اب ٹریک ای میلز کھلتے ہیں۔ ای میل کھلے نرخوں کی اطلاع گمنام طور پر دی جائے گی۔ ہم صرف یہ دیکھیں گے کہ آیا آپ نے ای میل کھلنے کی کل شرح کے حصے کے طور پر کوئی ای میل کھولی ہے۔",
+          "opt_out_html": "اگر آپ اس معلومات کو شیئر نہیں کرنا چاہتے تو آپ <a style=\"text-decoration:underline;\" href=\"%{link}\">ان سبسکرائب کر سکتے ہیں۔<\/a>"
         }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "اسٹاک میں",
+          "out_of_stock": "زخیرے سے باہر"
+        }
+      },
+      "boolean": {
+        "true_label": "جی ہاں",
+        "false_label": "نہیں"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "مطابقت",
+        "price_ascending": "قیمت، کم سے زیادہ",
+        "price_descending": "قیمت، زیادہ سے کم"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "خرابی - %{title}",
+      "products": "مصنوعات",
+      "shopping_cart": "آپ کی شاپنگ ٹرالی",
+      "account": "کھاتہ",
+      "create_account": "اکاؤنٹ بنائیں",
+      "reset_account": "اکاؤنٹ ری سیٹ کریں۔",
+      "addresses": "پتے",
+      "order": "آرڈر %{name}",
+      "search": "تلاش کریں۔",
+      "search_results": {
+        "one": "تلاش کریں: \"%{terms}\" کے لیے %{count} نتیجہ ملا",
+        "other": "تلاش کریں: \"%{terms}\" کے لیے %{count} نتائج ملے"
+      },
+      "collections": "مجموعے",
+      "not_found": "404 نہیں ملا",
+      "challenge": "چیلنج",
+      "checkpoint": "چوکی"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} رعایتیں لاگو کر دی گئی ہیں۔"
+    },
+    "challenge": {
+      "message": "جاری رکھنے کے لیے، ہمیں بتائیں کہ آپ روبوٹ نہیں ہیں۔",
+      "error": "آپ کا جواب درست نہیں تھا، براہ کرم دوبارہ کوشش کریں۔",
+      "submit_button_text": "جمع کرائیں"
+    },
+    "checkpoint": {
+      "message": "جاری رکھنے کے لیے کیپچا حل کریں۔",
+      "error": "کیپچا کی توثیق ناکام ہوگئی",
+      "submit_button_text": "جمع کرائیں"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "عام طور پر 1 گھنٹے میں تیار ہوجاتا ہے۔",
+        "two_hours": "عام طور پر 2 گھنٹے میں تیار ہوجاتا ہے۔",
+        "four_hours": "عام طور پر 4 گھنٹے میں تیار ہوجاتا ہے۔",
+        "twenty_four_hours": "عام طور پر 24 گھنٹوں میں تیار ہوجاتا ہے۔",
+        "two_to_four_days": "عام طور پر 2-4 دنوں میں تیار ہوجاتا ہے۔",
+        "five_or_more_days": "عام طور پر 5+ دنوں میں تیار ہوجاتا ہے۔",
+        "zero_to_two_hours": "عام طور پر 2 گھنٹے میں تیار ہوجاتا ہے۔",
+        "two_to_four_hours": "عام طور پر 4 گھنٹے میں تیار ہوجاتا ہے۔",
+        "immediately": "اب پک اپ کے لیے تیار ہیں۔",
+        "next_day": "اگلے دن پک اپ کے لیے تیار"
       }
     }
   },
@@ -977,6 +1044,85 @@
       "save_accessibility_label": "پتہ محفوظ کریں {{address}}",
       "section_title_accessibility_label": "ایڈریس شامل کریں۔",
       "update_success_notification": "پتہ اپ ڈیٹ ہو گیا۔"
+    },
+    "enable_javascript": "اپنا اکاؤنٹ دیکھنے کے لیے، اپنے براؤزر کی ترتیبات میں جاوا اسکرپٹ کو فعال کریں یا دوسرے براؤزر سے لاگ ان کریں۔",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "اکاؤنٹ مینو چھپائیں۔",
+        "label": "کھاتہ",
+        "show_accessibility_label": "اکاؤنٹ مینو دکھائیں۔",
+        "nav_accessibility_label": "اکاؤنٹ نیویگیشن",
+        "open_menu_accessibility_label": "اکاؤنٹ نیویگیشن کھولیں۔",
+        "close_menu_accessibility_label": "اکاؤنٹ نیویگیشن بند کریں۔",
+        "loading_message": "اکاؤنٹ نیویگیشن لوڈ ہو رہا ہے۔"
+      },
+      "action_menu_accessibility_label": "مزید کارروائیاں",
+      "close_menu_accessibility_label": "مین نیویگیشن بند کریں۔",
+      "contact_email_subject": "{{shopName}} آن لائن اسٹور سے رابطہ کریں۔",
+      "contact_link": "ہم سے رابطہ کریں۔",
+      "delete_confirmation": {
+        "cancel": "منسوخ کریں۔",
+        "delete": "حذف کریں۔"
+      },
+      "dismiss_toast": "برطرف کرنا",
+      "document_title": "{{sectionName}} - {{shopName}} - اکاؤنٹ",
+      "go_to_store_link": "اسٹور میں جاؤ",
+      "loading_message": "لوڈ ہو رہا ہے۔",
+      "log_out_link": "لاگ آوٹ",
+      "logout_overlay_label": "آپ کو لاگ آؤٹ کیا جا رہا ہے...",
+      "nav_label_accessibility_label": "مین نیویگیشن",
+      "navigation_accessibility_message": "آپ نے {{sectionName}} پر نیویگیٹ کیا",
+      "open_menu_accessibility_label": "مین نیویگیشن کھولیں۔",
+      "orders_link_label": "احکامات",
+      "shop_logo_accessibility_label": "{{shopName}} لوگو",
+      "subscriptions_link_label": "سبسکرپشنز"
+    },
+    "account_information": {
+      "loading_accessibility_message": "اکاؤنٹ کی معلومات لوڈ ہو رہی ہے۔",
+      "loading_finished_accessibility_message": "اکاؤنٹ کی معلومات لوڈ ہو گئی ہے۔",
+      "profile_card": {
+        "cancel": "منسوخ کریں۔",
+        "cancel_accessibility_label": "پروفائل میں ترمیم کرنا منسوخ کریں۔",
+        "edit": "ترمیم",
+        "edit_accessibility_label": "پروفائل میں ترمیم کریں",
+        "email_help_text": "لاگ ان کے لیے استعمال ہونے والی ای میل کو تبدیل نہیں کیا جا سکتا",
+        "first_name": "پہلا نام",
+        "last_name": "آخری نام",
+        "no_name_provided_accessibility_label": "کوئی نام شامل نہیں کیا گیا۔",
+        "phone_number_help_text": "لاگ ان کے لیے استعمال ہونے والے فون نمبر کو تبدیل نہیں کیا جا سکتا",
+        "save": "محفوظ کریں۔",
+        "save_accessibility_label": "پروفائل محفوظ کریں",
+        "title": "پروفائل"
+      },
+      "profile_update_confirmation_message": "پروفائل اپ ڈیٹ ہو گیا۔",
+      "title": "اکاؤنٹ کی معلومات",
+      "people": {
+        "pagination": {
+          "load_more": "مزید لوڈ کریں",
+          "load_more_accessibility_label": "مزید لوگوں کو لوڈ کریں۔",
+          "loading_accessibility_label": "لوگوں کو لوڈ کیا جا رہا ہے۔"
+        }
+      },
+      "add_button": "شامل کریں۔"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "لے آؤٹ کے اختیارات",
+      "list_title": "احکامات",
+      "order_list": {
+        "column_headers": {
+          "order": "ترتیب",
+          "items": "اشیاء",
+          "total": "کل"
+        },
+        "delivered": "ڈیلیور کیا گیا {{date}}",
+        "empty_state_order_source_description": "یہاں صرف {{email}} کے ذریعے کیے گئے آرڈرز ہی دکھائی دیں گے۔",
+        "empty_state_subtitle": "آرڈر دینے کے لیے اسٹور پر جائیں۔",
+        "empty_state_title": "ابھی تک کوئی آرڈر نہیں ہے۔",
+        "empty_state_title_for_pending_orders": "کوئی زیر التوا آرڈرز نہیں ہیں۔",
+        "estimated_shortform": "تخمینہ {{date}}",
+        "estimated_delivery": "تخمینی ترسیل {{date}}",
+        "one_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}}"
+      }
     }
   },
   "sections": {
