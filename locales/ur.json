@@ -2315,7 +2315,118 @@
         "empty_state_title_for_pending_orders": "کوئی زیر التوا آرڈرز نہیں ہیں۔",
         "estimated_shortform": "تخمینہ {{date}}",
         "estimated_delivery": "تخمینی ترسیل {{date}}",
-        "one_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}}"
+        "one_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}}",
+        "two_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "آرڈر میں {{lineItemName1}} ، {{lineItemName2}} ، اور {{numberOfAdditionalProducts}} مزید پروڈکٹس شامل ہیں",
+        "more_than_four_products_accessibility_label": "آرڈر میں {{lineItemName1}} ، {{lineItemName2}} ، {{lineItemName3}} ، اور {{numberOfAdditionalProducts}} مزید پروڈکٹس شامل ہیں",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} مصنوعات",
+        "carousel": {
+          "one_products_accessibility_label": "آرڈر میں {{lineItemName1}} مقدار {{lineItemQuantity1}} شامل ہے",
+          "two_products_accessibility_label": "آرڈر میں {{lineItemName1}} مقدار {{lineItemQuantity1}} ، {{lineItemName2}} مقدار {{lineItemQuantity2}} شامل ہے",
+          "three_products_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} مقدار {{lineItemQuantity1}} ، {{lineItemName2}} مقدار {{lineItemQuantity2}} ، {{lineItemName3}} مقدار {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "آرڈر میں {{lineItemName1}} مقدار {{lineItemQuantity1}} ، {{lineItemName2}} مقدار {{lineItemQuantity2}} ، {{lineItemName3}} مقدار {{lineItemQuantity3}} ، {{lineItemName4}} {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} مقدار {{lineItemQuantity1}} , {{lineItemName2}} مقدار {{lineItemQuantity2}} , {{lineItemName3}} مقدار {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} مقدار {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} مقدار {{lineItemQuantity1}} , {{lineItemName2}} مقدار {{lineItemQuantity2}} , {{lineItemName3}} مقدار {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} مقدار {{lineItemQuantity5}} , {{lineItemName6}} مقدار {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}} مقدار {{lineItemQuantity1}} , {{lineItemName2}} مقدار {{lineItemQuantity2}} , {{lineItemName3}} مقدار {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} مقدار {{lineItemQuantity5}} ، {{lineItemName6}} مقدار {{lineItemQuantity6}} اور مزید",
+          "view_order_details": "آرڈر کی تفصیلات دیکھیے",
+          "previous": "پچھلا",
+          "next": "اگلے"
+        },
+        "items": {
+          "one": "{{count}} آئٹم",
+          "other": "{{count}} آئٹمز"
+        },
+        "list_view": "فہرست کا منظر دکھائیں۔",
+        "no_filtered_results_description": "اپنے آرڈرز دیکھنے کے لیے فلٹرز کو ہٹائیں یا ایڈجسٹ کریں۔",
+        "no_filtered_results_title": "کوئی فلٹر شدہ نتائج نہیں ہیں۔",
+        "order_link": "آرڈر دیکھیں {{name}}",
+        "order_number": "آرڈر {{name}}",
+        "orders_title": "تصدیق شدہ",
+        "pagination": {
+          "nav_accessibility_label": "نیویگیشن بٹن کا آرڈر دیتے ہیں۔",
+          "next": "اگلے",
+          "next_accessibility_label": "اگلے احکامات",
+          "previous": "پچھلا",
+          "previous_accessibility_label": "پچھلے احکامات",
+          "load_more": "مزید لوڈ کریں",
+          "load_more_accessibility_label": "مزید آرڈرز لوڈ کریں۔"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "تفصیلات کے لیے آرڈر دیکھیں",
+            "estimated_delivery": "تخمینی ترسیل {{date}}",
+            "last_updated": "آخری بار اپ ڈیٹ کیا گیا {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "تخمینہ ترسیل {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "ادائیگی واجب الادا ہے۔",
+            "due": "ادائیگی کی آخری تاریخ {{date}}",
+            "due_today": "ادائیگی آج واجب الادا ہے۔",
+            "due_without_date": "ادائیگی واجب الادا",
+            "due_on_fulfillment": "تکمیل پر واجب الادا ادائیگی",
+            "pay_to_confirm": "تصدیق کے لیے ادائیگی کریں۔",
+            "payment_not_due": "ادائیگی ابھی باقی نہیں ہے۔"
+          },
+          "table_view": {
+            "overdue": "زائد المیعاد",
+            "due": "آخری {{date}}",
+            "due_today": "آج واجب الادا ہے۔",
+            "paid": "ادا کیا",
+            "due_without_date": "واجب الادا",
+            "due_on_fulfillment": "تکمیل پر واجب الادا",
+            "pay_to_confirm": "تصدیق کے لیے ادائیگی کریں۔",
+            "payment_not_due": "ابھی واجب الادا نہیں۔"
+          }
+        },
+        "sort_by": "ترتیب دیں: {{option}}",
+        "sort_hide_options_accessibility_label": "تصدیق شدہ آرڈرز کے لیے ترتیب کے اختیارات چھپائیں۔",
+        "sort_show_options_accessibility_label": "تصدیق شدہ آرڈرز کے لیے ترتیب کے اختیارات دکھائیں۔",
+        "sort_currently_sorted_by_accessibility_label": "فی الحال ترتیب دیا گیا ہے: {{option}}",
+        "sort_title": "ترتیب دیں",
+        "sort": {
+          "date": {
+            "newest": "تازہ ترین سے قدیم ترین",
+            "oldest": "قدیم سے تازہ ترین"
+          },
+          "location": {
+            "ascending": "مقام (AZ)",
+            "descending": "مقام (ZA)"
+          },
+          "order_number": {
+            "ascending": "آرڈر نمبر (کم سے زیادہ)",
+            "descending": "آرڈر نمبر (اعلی سے کم)"
+          },
+          "order_total": {
+            "ascending": "کل آرڈر (کم سے زیادہ)",
+            "descending": "کل آرڈر (زیادہ سے کم)"
+          }
+        },
+        "filter_title": "فلٹر",
+        "filter": {
+          "clear_section": "سیکشن صاف کریں۔",
+          "clear_all": "تمام کو صاف کریں",
+          "apply": "درخواست دیں",
+          "date": {
+            "start_date": "شروع کرنے کی تاریخ",
+            "end_date": "آخری تاریخ",
+            "title": "آرڈر کی تاریخ",
+            "today": "آج",
+            "last_7_days": "آخری 7 دن",
+            "last_30_days": "آخری 30 دن",
+            "last_90_days": "آخری 90 دن",
+            "last_365_days": "پچھلے 12 مہینے",
+            "custom": "اپنی مرضی کے مطابق"
+          }
+        },
+        "table_view": "ٹیبل کا منظر دکھائیں۔",
+        "show_order_actions_accessibility_label": "آرڈر {{name}} کے لیے آرڈر کی کارروائیاں دکھائیں"
       },
       "order_status": {
         "confirmed_description_gift_card_text": "آپ کا آرڈر تیار ہونے پر آپ کو ایک متن موصول ہوگا۔",
@@ -2383,7 +2494,28 @@
         "submitted_description": "آرڈر اور ادائیگی کی تفصیلات کا جائزہ لیں۔",
         "track_shipment": "کھیپ کو ٹریک کریں۔",
         "request_return": "واپسی کی درخواست کریں۔",
-        "view_order_for_details": "تفصیلات کے لیے آرڈر دیکھیں"
+        "view_order_for_details": "تفصیلات کے لیے آرڈر دیکھیں",
+        "attempted_delivery_label": "ترسیل کی کوشش کی۔",
+        "attempted_delivery_description": "ترسیل کی کوشش ناکام رہی۔",
+        "confirmed_description": "ہمیں آپ کا آرڈر مل گیا ہے۔",
+        "on_its_way_description": "یہ کھیپ اپنے راستے پر ہے۔",
+        "out_for_delivery_description": "یہ کھیپ ترسیل کے لیے باہر ہے۔",
+        "preparing_for_shipping_label": "شپنگ کے لیے تیاری کر رہا ہے۔",
+        "preparing_for_shipping_description": "یہ اشیاء شپنگ کے لیے تیار کی جا رہی ہیں۔",
+        "ready_for_pickup_label": "پک اپ کے لیے تیار",
+        "ready_for_pickup_description": "یہ اشیاء لینے کے لیے تیار ہیں۔ جب آپ اپنا آرڈر اٹھائیں تو براہ کرم اپنے آرڈر کی تصدیق لائیں۔",
+        "ready_for_pickup_location": "آپ کا آرڈر مقام پر پک اپ کے لیے تیار ہے۔",
+        "picked_up_label": "اٹھایا",
+        "picked_up_description": "یہ اشیاء اٹھا لی گئی ہیں۔",
+        "canceled_description": "آپ کا آرڈر {{date}} کو منسوخ کر دیا گیا تھا۔",
+        "canceled_label": "منسوخ",
+        "canceled_title": "آپ کا آرڈر منسوخ کر دیا گیا ہے۔",
+        "come_back": "اپنی شپمنٹ کی صورتحال کے بارے میں اپ ڈیٹس کے لیے اس صفحہ پر واپس آئیں۔",
+        "company_tracking_number": "{{company}} ٹریکنگ نمبر:",
+        "confirmed_label": "تصدیق شدہ",
+        "confirmed_title": "آپ کے آرڈر کی تصدیق ہو گئی ہے۔",
+        "confirmed_description_pickup": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "confirmed_description_digital": "آپ کا آرڈر تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔"
       },
       "status_mark_as_delivered": "بطور ڈیلیور نشان زد کریں۔",
       "status_title": "آرڈر کی حیثیت",
