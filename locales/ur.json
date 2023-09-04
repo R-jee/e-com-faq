@@ -519,6 +519,128 @@
               "issue_date": "ایک درست ایشو کی تاریخ درج کریں۔"
             }
           }
+        },
+        "amazon_payments_label": "ایمیزون پے",
+        "amazon_payments_login_hint": "آپ کو ایمیزون کے ساتھ لاگ ان کرنے کو کہا جائے گا۔",
+        "amazon_payments_logout": "ایمیزون پے سے لاگ آؤٹ کریں۔",
+        "amazon_payments_failed_mfa_challenge": "ادائیگی کا منتخب طریقہ استعمال نہیں کیا جا سکا۔ کوئی مختلف طریقہ منتخب کریں یا اپنے بینک یا کارڈ جاری کنندہ سے رابطہ کریں۔",
+        "amazon_payments_abandoned_mfa_challenge": "آپ کی ادائیگی مکمل نہیں ہو سکی۔ ادائیگی کا ایک مختلف طریقہ آزمائیں یا اپنے بینک یا کارڈ جاری کنندہ سے رابطہ کریں۔",
+        "amazon_payments_could_not_enqueue_authorize": "آپ کی ادائیگی پر کارروائی کرنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "title": "ادائیگی",
+        "amount_left_to_pay_label": "واجب الادا ادائیگی:",
+        "discount_button_action_label": "ڈسکاؤنٹ کوڈ کا اطلاق کریں۔",
+        "gift_card_code_label": "گفٹ کارڈ کوڈ",
+        "apply_gift_card_button_label": "درخواست دیں",
+        "gift_card_balance_label": "بقیہ:",
+        "supported_card_brands_more_label": "اور مزید…",
+        "detected_card_brand": "شناخت شدہ کارڈ برانڈ: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "اپنا کریڈٹ کارڈ محفوظ کریں۔",
+        "credit_card_vaulting_sign_in_banner_info": "لاگ ان کریں یا مستقبل کی خریداریوں کے لیے اپنا کریڈٹ کارڈ محفوظ کرنے کے لیے ایک اکاؤنٹ بنائیں۔",
+        "credit_card_vaulting_sign_in_banner_button_label": "لاگ ان کریں",
+        "ftd_vault_credit_card_label": "ایک تیز چیک آؤٹ کے لیے اس کریڈٹ کارڈ کو میرے اکاؤنٹ میں محفوظ کریں۔",
+        "card_number_label": "کارڈ نمبر",
+        "card_number_placeholder": "کارڈ نمبر",
+        "card_pay_with": "اس کے ساتھ ادائیگی کریں:",
+        "card_security_notice": "تمام لین دین محفوظ اور خفیہ ہیں۔",
+        "card_security_vault_notice": "ہمیں مستقبل کی ادائیگیوں کے لیے آپ کی تفصیلات درکار ہیں۔ تمام لین دین محفوظ اور خفیہ ہیں۔",
+        "card_information_notice": "تمام لین دین محفوظ اور خفیہ ہیں۔ کریڈٹ کارڈ کی معلومات کبھی بھی محفوظ نہیں کی جاتی ہیں۔",
+        "name_on_card_label": "کارڈ پہ درج نام",
+        "name_on_card_placeholder": "کارڈ پہ درج نام",
+        "card_expired": "میعاد ختم",
+        "card_expiry_label": "میعاد ختم ہونے کی تاریخ (MM\/YY)",
+        "card_expiry_placeholder": "میعاد ختم ہونے کی تاریخ (MM\/YY)",
+        "credit_card_start_month": "شروع مہینہ",
+        "credit_card_start_year": "سال شروع کریں۔",
+        "delete_customer_mandate_modal_title": "اس ادائیگی کارڈ کو ہٹائیں؟",
+        "delete_customer_mandate_modal_body": "اگر آپ اس کارڈ کو ہٹاتے ہیں، تو آپ کو ادائیگیوں کے لیے اسے استعمال کرنے سے پہلے اسے دوبارہ شامل کرنا ہوگا۔",
+        "delete_customer_mandate_modal_confirm": "کارڈ ہٹا دیں۔",
+        "delete_customer_mandate_modal_cancel": "منسوخ کریں۔",
+        "card_verification_value_label": "سیکیورٹی کوڈ",
+        "card_verification_value_placeholder": "سیکیورٹی کوڈ",
+        "card_verification_confirm": "تصدیقی مقاصد کے لیے، براہ کرم اپنے کارڈ کا سیکیورٹی کوڈ درج کریں۔",
+        "card_expiry_date_explanation": "کارڈ کی میعاد ختم ہونے کی تاریخ فارمیٹ میں: مہینہ، مہینہ، سال، سال",
+        "card_expiration_month_label": "میعاد ختم ہونے کا مہینہ",
+        "card_expiration_year_label": "میعاد ختم ہونے کا سال",
+        "card_verification_value_explanation": "3 ہندسوں کا سیکیورٹی کوڈ عام طور پر آپ کے کارڈ کے پچھلے حصے میں پایا جاتا ہے۔ امریکن ایکسپریس کارڈز کے سامنے 4 ہندسوں کا کوڈ ہوتا ہے۔",
+        "card_verification_value_explanation_amex": "آپ کے کارڈ کے سامنے 4 ہندسوں کا سیکیورٹی کوڈ",
+        "card_verification_value_explanation_other": "آپ کے کارڈ کے پیچھے 3 ہندسوں کا سیکیورٹی کوڈ",
+        "card_start_label": "جاری ہونے کی تاریخ (MM\/YY)",
+        "card_start_placeholder": "جاری ہونے کی تاریخ (MM\/YY)",
+        "card_issue_number_label": "جاری کردہ نمبر",
+        "card_issue_number_placeholder": "جاری کردہ نمبر",
+        "card_change_label": "تبدیلی",
+        "card_update_label": "کارڈ اپ ڈیٹ کریں۔"
+      },
+      "shipping": {
+        "subscription_delivery_description": {
+          "prepaid_initial_order_discounted_with_per_delivery_price": "پہلی ترسیل کی قیمت %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "پہلی شپنگ لاگت %{discounted_shipping_price} %{prepaid_delivery_frequency}، پھر %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "پہلی ترسیل کی قیمت %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})، پھر %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "شامل",
+          "recurring_order_shipping_price": "اس کے بعد %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "پہلا آرڈر شامل ہے، اس کے بعد %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} فی ڈیلیوری)، اس کے بعد %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "پہلا آرڈر مفت",
+            "other": "پہلے %{count} آرڈرز مفت"
+          },
+          "free_for_first_n_order": {
+            "one": "پہلے آرڈر کے لیے",
+            "other": "پہلے %{count} آرڈرز کے لیے"
+          }
+        },
+        "one_time_purchase_shipping": "ایک بار شپنگ",
+        "address2_add_label": "اپارٹمنٹ، سویٹ وغیرہ شامل کریں۔",
+        "duties_and_taxes_title": "ڈیوٹی اور ٹیکس",
+        "shipping_information_required_notice": "شپنگ کی معلومات درکار ہے۔ {{link}}",
+        "shipping_information_redirect_link": "اپنی معلومات یہاں درج کریں۔",
+        "loading_progressive_rates": "مزید ریٹس تلاش کر رہے ہیں…",
+        "no_other_methods_available": "کوئی اور طریقے دستیاب نہیں ہیں۔",
+        "duties_and_taxes_options": {
+          "ddu_title": "ڈیلیوری پر ادائیگی کریں۔",
+          "ddu_caption": "اضافی فیسیں لاگو ہو سکتی ہیں۔",
+          "ddp_title": "اب ادا",
+          "ddp_caption": "ڈیلیوری پر کوئی اضافی فیس نہیں۔"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}، %{secondMethod}",
+          "with_separator": "%{آرام}، %{موجودہ}،",
+          "combination": "%{آرام} اور %{موجودہ}"
+        },
+        "shipping_used_as_billing_notice": "اسے اس آرڈر کے لیے آپ کے بلنگ ایڈریس کے طور پر بھی استعمال کیا جائے گا۔",
+        "address_update": "پتہ اپ ڈیٹ کریں۔",
+        "enter_address_manually_label": "دستی طور پر پتہ درج کریں۔",
+        "shipping_address_title": "کو بھیجیں۔",
+        "add_address": "ایک مختلف پتہ استعمال کریں۔",
+        "add_delivery_instructions": "ترسیل کی ہدایات شامل کریں۔",
+        "edit": "ترمیم",
+        "delete": "حذف کریں۔",
+        "address_more": "اس ایڈریس کے لیے مزید کارروائیاں",
+        "address_edit": "ایڈریس میں ترمیم کریں۔",
+        "address_delete": "پتہ حذف کریں۔",
+        "address_confirm": "کیا آپ واقعی یہ پتہ اپنے اکاؤنٹ سے حذف کرنا چاہتے ہیں؟",
+        "address_form": {
+          "add_address": "ایڈریس شامل کریں۔",
+          "save": "محفوظ کریں۔",
+          "cancel": "منسوخ کریں۔",
+          "generic_error": "آپ کا پتہ محفوظ کرنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں.",
+          "one_time_address_subtitle": "اس آرڈر کے لیے ایک بار کا پتہ استعمال کریں۔"
+        },
+        "different_shipping_method_summary": "دستیاب شپنگ کے طریقے دیکھنے کے لیے ایک مختلف شپنگ ایڈریس درج کریں۔",
+        "invalid_shipping_method_summary": "دستیاب شپنگ طریقوں کو دیکھنے کے لیے ایک درست ترسیل کا پتہ درج کریں۔",
+        "method_summary": {
+          "incomplete_address_entered": "دستیاب شپنگ طریقوں کو دیکھنے کے لیے ایک مکمل شپنگ ایڈریس درج کریں۔",
+          "incomplete_address_selected": "دستیاب شپنگ کے طریقے دیکھنے کے لیے ایک مکمل شپنگ ایڈریس منتخب کریں۔"
+        },
+        "local_pickup": {
+          "search_address": "پتہ تلاش کریں۔",
+          "rollup_title": "پک اپ کا مقام"
+        },
+        "missing_shipping_address": "ترسیل کا پتہ غائب ہے۔"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "اضافی معلومات"
         }
       }
     },
