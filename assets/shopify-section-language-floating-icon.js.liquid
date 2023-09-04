@@ -6,10 +6,11 @@
     var elemTop = $elem.offset().top;
     var elemBottom = elemTop + $elem.height();
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  } {% endcomment %}
-  // isScrolledIntoView("shopify-section-language-floating-icon");
+  } 
+  isScrolledIntoView("shopify-section-language-floating-icon");
+{% endcomment %}
   
-  $(document).scroll(function() {
+  $(document).scroll(function(e) {
     
     var y = $(this).scrollTop();
     var point = "0px", side = "50px";
@@ -31,7 +32,7 @@
     }
   });
   
-  $(document).ready(function () {
+  $(document).ready(function (e) {
     const url = window.location;
     let domain = new URL(url);
     let domainName = domain.origin;
