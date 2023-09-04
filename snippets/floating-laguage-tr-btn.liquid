@@ -1,0 +1,144 @@
+  <div id="shopify-section-language-floating-icon" class="shopify-section">
+<div class="floating-lang" style="opacity: 1; visibility: visible; transform: translateY(0px);">
+  <div style="display:inline-flex;">
+    <div class="lang-switcher-c">
+      <a class="lang-switch-a" href="https://www.nutrifactor.com.pk/ur/products/gencell" data-value="1"><i class="translate-ui fa fa-language" aria-hidden="true"></i><strong style="font-size:20px ">اردو</strong>&nbsp;<span>ميں پڑھيں</span></a>
+    </div>
+  </div>   
+</div>
+    
+<style>
+  .floating-lang {
+    position: fixed;
+    bottom: 35vh;
+    background-image: linear-gradient(#565656, #151618);
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    transition: all 0.4s ease;
+    z-index: 99999999999;
+    right: 15px;
+    text-align:center;
+    padding:5.5px;
+    padding-inline: 15px;
+    padding-left: 0px;
+    padding-block: 8px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-radius:100px;
+    opacity:0;
+    visibility: hidden;
+    -webkit-transform: translateY(-30rem);
+    transform: translateY(-30rem);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+/*  box-shadow: 1px 2px 14px -6px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 1px 2px 14px -6px rgb(0 0 0 / 75%);
+    -moz-box-shadow:  1px 2px 14px -6px rgb(0 0 0 / 75%);
+    height:32px;
+    width:32px;
+    background: #fff; */
+
+  }
+  .floating-lang:hover{
+    padding-left: 15px;
+    background-image: linear-gradient(#565656, #151618);
+    color: rgb(255, 255, 255);
+  }
+  .floating-lang:hover .translate-ui{
+  	visibility: visible;
+  	opacity: 1;
+  	margin-right: 8px;
+  }
+  .translate-ui{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+  @media only screen and (max-width:575px){
+  .floating-lang {
+    left: unset;
+    right: 0;
+/*     bottom: 12%; */
+    padding-left: 15px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    font-size: 14px;
+  }
+  .translate-ui{
+    display: none;
+  }
+}
+  .lang-switcher-c a{
+    color:rgb(255, 255, 255)!important;
+  }
+</style>
+    
+<script>
+  function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    var point = "0px", side = "50px";
+    if (y > 200) {     
+      $('.floating-lang').css({
+        'opacity':1,
+        'visibility':'visible',
+        '-webkit-transform': 'translateY(' + point + ')',
+        'transform': 'translateY(' + point + ')'                    
+      },'2000');
+    }
+    else{
+      $('.floating-lang').css({
+        'opacity':0,
+        'visibility':'hidden',
+        '-webkit-transform': 'translateY(' + side + ')',
+        'transform': 'translateXY(' + side + ')'                    
+      },'2000')
+    }
+  });
+  $(document).ready(function () {
+    const url = window.location;
+    let domain = new URL(url);
+    let domainName = domain.origin;
+    let pathName = domain.pathname;
+    let lang1 = domainName + pathName.replace('/ur', "");;
+    let lang2 = domainName + '/ur' + pathName;
+    let buildURL = "";
+    
+    if(!pathName.includes('/ur')){
+      buildURL = domainName + '/ur' + pathName
+      $(".lang-switcher-c a").data("value", "2");
+      $(".lang-switcher-c a").html('<i class="translate-ui fa fa-language" aria-hidden="true"></i><strong style="font-size:20px ">اردو</strong>&nbsp;<span>ميں پڑھيں</span>');
+      $(".lang-switcher-c a").attr("href", buildURL);
+    }else{
+      buildURL = domainName + pathName.replace('/ur', "");    
+      $(".lang-switcher-c a").data("value", "1");
+      $(".lang-switcher-c a").html('<span>Read in</span>&nbsp;<b>English</b><i class="translate-ui fa fa-language" aria-hidden="true"></i>'); /*changed*/
+      $(".lang-switcher-c a").attr("href", buildURL);
+    }
+//     if ($.cookie("language") === "1") {
+//       buildURL = domainName + '/ur' + pathName 
+//       $(".lang-switcher-c a").data("value", "2");
+//       $(".lang-switcher-c a").text("اردو");
+//       $(".lang-switcher-c a").attr("href", buildURL);
+//     } else {
+//       buildURL = domainName + pathName.replace('/ur', "");
+//       $(".lang-switcher-c a").data("value", "1");
+//       $(".lang-switcher-c a").text("en");
+//       $(".lang-switcher-c a").attr("href", buildURL);
+//     }
+          console.log('this is url', buildURL)
+
+  });
+</script>
+
+</div>
