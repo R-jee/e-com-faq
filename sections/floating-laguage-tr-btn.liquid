@@ -1,3 +1,5 @@
+{% if section.settings.show_shopify_floating_laguage_tr_btn %}
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {{ 'shopify-section-language-floating-icon.css' | asset_url | stylesheet_tag }}
 
@@ -15,6 +17,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="{{ 'shopify-section-language-floating-icon.js' | asset_url }}" type="text/javascript" async defer></script>
+{% endif %}
 
 
 {% schema %}
