@@ -1618,8 +1618,12 @@
     "order_details": {
       "paid_with_shop_pay_installments_card": {
         "desktop_qr_code_content": {
-          "description": "دکان کے ساتھ اپنی قسطوں کی یاد دہانی حاصل کریں۔"
-        }
+          "description": "دکان کے ساتھ اپنی قسطوں کی یاد دہانی حاصل کریں۔",
+          "title": "یاد دہانیوں کے لیے اسکین کریں۔"
+        },
+        "paid_with_shop_pay_installments": "شاپ پے قسطوں کے ساتھ ادا کیا گیا۔",
+        "description": "شاپ ایپ میں یاد دہانیوں کے ساتھ اپنے ادائیگی کے شیڈول میں سرفہرست رہیں۔",
+        "payment_reminders_button": "ادائیگی کی یاد دہانی حاصل کریں۔"
       },
       "refunded_amount": "رقم کی واپسی",
       "request_return_failed": "آپ کی درخواست پر کارروائی کرنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں.",
@@ -1696,7 +1700,57 @@
       "login_to_view_all_order_details": "تمام آرڈر کی تفصیلات دیکھنے کے لیے لاگ ان کریں۔",
       "log_in": "لاگ ان کریں",
       "logged_in_account_no_permission_to_order": "آپ بطور {{email}} لاگ ان ہیں۔ اس اکاؤنٹ کو اس آرڈر کا نظم کرنے کی اجازت نہیں ہے۔",
-      "log_in_to_a_different_account": "ایک مختلف اکاؤنٹ میں لاگ ان کریں۔"
+      "log_in_to_a_different_account": "ایک مختلف اکاؤنٹ میں لاگ ان کریں۔",
+      "shipment_timeline": {
+        "expand_events_label": "تفصیلات دکھائیں",
+        "expand_events_accessibility_label": "آرڈر کی کھیپ کی تفصیلات دکھائیں۔",
+        "hide_events_label": "تفصیلات چھپائیں۔",
+        "hide_events_accessibility_label": "آرڈر کی کھیپ کی تفصیلات چھپائیں۔"
+      },
+      "addresses_section_title": "بلنگ اور شپنگ",
+      "order_details": "آرڈر کی تفصیلات",
+      "order_details_skeleton_accessibility_label": "تمام آرڈر کی تفصیلات دیکھنے کے لیے لاگ ان کریں۔",
+      "billing_address": "بل کا پتہ",
+      "card_ending_with": "{{lastDigits}} کے ساتھ ختم ہونے والا",
+      "contact": "رابطہ کریں۔",
+      "contact_information": "رابطے کی معلومات",
+      "company": "کمپنی",
+      "fully_refunded_label": "رقم کی واپسی",
+      "group_title_label": "کا حصہ: {{groupTitle}}",
+      "discount": "رعایت",
+      "hide_items": "اشیاء چھپائیں۔",
+      "loading": "آرڈر کی تفصیلات لوڈ ہو رہی ہیں۔",
+      "loading_finished_accessibility_message": "آرڈر کی تفصیلات لوڈ کر دی گئی ہیں۔",
+      "location": "مقام",
+      "image_gallery": {
+        "next": "اگلی اشیاء دکھائیں۔",
+        "previous": "پچھلی اشیاء دکھائیں۔"
+      },
+      "mobile_summary_toggle_button": {
+        "open": "آرڈر کا خلاصہ دکھائیں۔",
+        "closed": "آرڈر کا خلاصہ چھپائیں۔"
+      },
+      "no_data": "کوئی نہیں۔",
+      "no_data_provided_accessibility_label": "{{fieldName}} خالی ہے۔",
+      "not_applicable": "N \/ A",
+      "paid_amount": "ادا کیا",
+      "partially_refunded_label": "جزوی طور پر واپس کر دیا گیا۔",
+      "payment": {
+        "status_in_review": "جائزہ لینے کے بعد ادائیگی واجب الادا ہے۔",
+        "status_unpaid": "ادائیگی {{date}} کو واجب الادا",
+        "title": "ادائیگی",
+        "card_payment_details": "{{lastDigits}} کے ساتھ ختم ہونے والا - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "{{lastDigits}} کے ساتھ ختم ہونے والا - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "شاپ پے کے ساتھ قسطوں میں ادائیگی کی جاتی ہے۔",
+          "view_schedule": "شیڈول دیکھیں"
+        },
+        "manual_payment_methods": {
+          "money_order": "منی آرڈر - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "کیش آن ڈیلیوری (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "بینک ڈپازٹ - {{formattedTransactionAmount}}"
+        }
+      }
     },
     "addresses": {
       "add_button": "ایڈریس شامل کریں۔",
@@ -1840,7 +1894,91 @@
         "estimated_shortform": "تخمینہ {{date}}",
         "estimated_delivery": "تخمینی ترسیل {{date}}",
         "one_images_accessibility_label": "آرڈر میں شامل ہے {{lineItemName1}}"
-      }
+      },
+      "order_status": {
+        "confirmed_description_gift_card_text": "آپ کا آرڈر تیار ہونے پر آپ کو ایک متن موصول ہوگا۔",
+        "delivered_description": "یہ کھیپ پہنچا دی گئی ہے۔",
+        "delivered_label": "پہنچایا",
+        "delivered_title": "آپ کی کھیپ پہنچا دی گئی ہے۔",
+        "delivered_description_digital": "آپ کا آرڈر مکمل ہو گیا ہے۔",
+        "delivered_description_gift_card": {
+          "one": "گفٹ کارڈ ای میل کے ذریعے بھیجا گیا تھا۔",
+          "other": "گفٹ کارڈز بذریعہ ای میل بھیجے گئے تھے۔"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "گفٹ کارڈ بذریعہ ٹیکسٹ بھیجا گیا۔",
+          "other": "گفٹ کارڈز بذریعہ ٹیکسٹ بھیجے گئے تھے۔"
+        },
+        "gift_card_label": {
+          "one": "تحفہ والا کارڈ",
+          "other": "گفٹ کارڈز"
+        },
+        "gift_card_resend": {
+          "one": "ای میل دوبارہ بھیجیں",
+          "other": "ای میلز دوبارہ بھیجیں۔"
+        },
+        "gift_card_resend_text": {
+          "one": "متن دوبارہ بھیجیں۔",
+          "other": "متن دوبارہ بھیجیں۔"
+        },
+        "gift_resend_success": {
+          "one": "گفٹ کارڈ دوبارہ بھیجا گیا۔",
+          "other": "گفٹ کارڈز دوبارہ بھیجے گئے۔"
+        },
+        "gift_resend_failure": {
+          "one": "آپ کا گفٹ کارڈ دوبارہ بھیجنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ہم سے رابطہ کریں۔",
+          "other": "آپ کے گفٹ کارڈز کو دوبارہ بھیجنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ہم سے رابطہ کریں۔"
+        },
+        "gift_card_resend_description": {
+          "one": "اگر یہ موصول نہیں ہوا تو ای میل دوبارہ بھیجیں یا",
+          "other": "اگر وہ موصول نہیں ہوئے تو ای میلز دوبارہ بھیجیں یا"
+        },
+        "gift_card_resend_description_text": {
+          "one": "اگر یہ موصول نہیں ہوا تو متن دوبارہ بھیجیں یا",
+          "other": "اگر وہ موصول نہیں ہوئے تو، متن دوبارہ بھیجیں یا"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "گفٹ کارڈ الگ ای میل میں بھیجا جائے گا۔",
+          "other": "ہر گفٹ کارڈ الگ ای میل میں بھیجا جائے گا۔"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "گفٹ کارڈ الگ متن میں بھیجا جائے گا۔",
+          "other": "ہر گفٹ کارڈ کو الگ متن میں بھیجا جائے گا۔"
+        },
+        "estimated_delivery": "تخمینی ترسیل {{date}}",
+        "in_review_description": "اگر ہمیں مزید معلومات کی ضرورت ہو یا آپ کے آرڈر کی تصدیق ہو جائے تو ہم آپ کو بتائیں گے۔",
+        "in_review_label": "نظرثانی میں",
+        "in_review_title": "آپ کے آرڈر کا جائزہ لیا جا رہا ہے۔",
+        "last_updated": "آخری بار اپ ڈیٹ کیا گیا {{date}}",
+        "multiple_shipments_label": "متعدد ترسیل",
+        "no_tracking_number": "اس شپمنٹ کے لیے کوئی ٹریکنگ نمبر نہیں ہے۔",
+        "on_its_way_label": "راستے میں",
+        "on_its_way_title": "آپ کی ترسیل راستے میں ہے۔",
+        "out_for_delivery_label": "کی ترسیل کے لئے باہر",
+        "out_for_delivery_title": "آپ کی کھیپ ترسیل کے لیے باہر ہے۔",
+        "resume_tracking": "ٹریکنگ دوبارہ شروع کریں۔",
+        "submitted_label": "جمع کرایا",
+        "submitted_description": "آرڈر اور ادائیگی کی تفصیلات کا جائزہ لیں۔",
+        "track_shipment": "کھیپ کو ٹریک کریں۔",
+        "request_return": "واپسی کی درخواست کریں۔",
+        "view_order_for_details": "تفصیلات کے لیے آرڈر دیکھیں"
+      },
+      "status_mark_as_delivered": "بطور ڈیلیور نشان زد کریں۔",
+      "status_title": "آرڈر کی حیثیت",
+      "buy_again": "دوبارہ خریدیں۔",
+      "buy_again_accessibility_label": "آرڈر کے لیے دوبارہ خریدیں {{orderId}}",
+      "manage": "انتظام کریں۔",
+      "manage_accessiblity_label": "آرڈر کا نظم کریں {{orderId}}",
+      "group_title_label": "کا حصہ: {{groupTitle}}",
+      "havent_received_your_delivery": "آپ کی ترسیل موصول نہیں ہوئی؟",
+      "didnt_pick_up_order": "آپ کا آرڈر نہیں اٹھایا؟",
+      "if_you_didnt_receive_this": "اگر آپ کو یہ موصول نہیں ہوا،",
+      "if_not_received": {
+        "one": "اگر موصول نہ ہوا تو",
+        "other": "اگر وہ وصول نہ ہوئے تو"
+      },
+      "let_us_know": "ہمیں بتائیں",
+      "contact_us": "ہم سے رابطہ کریں۔"
     },
     "payment_method_brands": {
       "visa": "ویزا",
@@ -2020,8 +2158,81 @@
       },
       "quantity": {
         "label": "مقدار",
-        "input_label": "{{ product }} کے لیے مقدار"
-      }
+        "input_label": "{{ product }} کے لیے مقدار",
+        "increase": "{{ product }} کے لیے مقدار میں اضافہ کریں",
+        "decrease": "{{ product }} کے لیے مقدار کم کریں",
+        "minimum_of": "کم از کم {{ quantity }}",
+        "maximum_of": "زیادہ سے زیادہ {{ quantity }}",
+        "multiples_of": "{{ quantity }} کا اضافہ",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> ٹوکری میں",
+        "note": "مقدار کے قواعد دیکھیں"
+      },
+      "volume_pricing": {
+        "title": "حجم کی قیمتوں کا تعین",
+        "note": "حجم کی قیمت دستیاب ہے۔",
+        "minimum": "{{ quantity }} +",
+        "price_at_each": "{{ price }} \/ea پر"
+      },
+      "pickup_availability": {
+        "view_store_info": "اسٹور کی معلومات دیکھیں",
+        "check_other_stores": "دوسرے اسٹورز پر دستیابی چیک کریں۔",
+        "pick_up_available": "پک اپ دستیاب ہے۔",
+        "pick_up_available_at_html": "پک اپ <span class=\"color-foreground\">{{ location_name }}<\/span> پر دستیاب ہے",
+        "pick_up_unavailable_at_html": "پک اپ فی الحال <span class=\"color-foreground\">{{ location_name }}<\/span> پر دستیاب نہیں ہے",
+        "unavailable": "پک اپ کی دستیابی کو لوڈ نہیں کیا جا سکا",
+        "refresh": "ریفریش کریں۔"
+      },
+      "price": {
+        "from_price_html": "{{ price }} سے",
+        "regular_price": "باقاعدہ قیمت",
+        "sale_price": "قیمت فروخت",
+        "unit_price": "اکائی قیمت"
+      },
+      "share": "اس کی مصنوعات کا اشتراک کریں",
+      "sold_out": "بک گیا",
+      "unavailable": "دستیاب نہیں۔",
+      "vendor": "فروش",
+      "value_unavailable": "{{ option_value }} - دستیاب نہیں ہے۔",
+      "variant_sold_out_or_unavailable": "ویرینٹ فروخت ہو گیا یا دستیاب نہیں ہے۔",
+      "video_exit_message": "{{ title }} ایک ہی ونڈو میں فل سکرین ویڈیو کھولتا ہے۔",
+      "view_full_details": "مکمل تفصیلات دیکھیں",
+      "xr_button": "اپنی جگہ میں دیکھیں",
+      "xr_button_label": "اپنی جگہ میں دیکھیں، اشیاء کو بڑھا ہوا حقیقت ونڈو میں لوڈ کریں۔",
+      "include_taxes": "ٹیکس شامل ہے۔",
+      "shipping_policy_html": "چیک آؤٹ پر <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">شپنگ کا<\/a> حساب لگایا جاتا ہے۔"
+    },
+    "modal": {
+      "label": "میڈیا گیلری"
+    },
+    "facets": {
+      "apply": "درخواست دیں",
+      "clear": "صاف",
+      "clear_all": "سب کو ہٹا دیں",
+      "from": "سے",
+      "filter_and_sort": "فلٹر اور ترتیب دیں۔",
+      "filter_by_label": "فلٹر:",
+      "filter_button": "فلٹر",
+      "filters_selected": {
+        "one": "{{ count }} کو منتخب کیا گیا۔",
+        "other": "{{ count }} کو منتخب کیا گیا۔"
+      },
+      "filter_selected_accessibility": "{{ type }} ( {{ count }} فلٹرز منتخب)",
+      "show_more": "مزید دکھائیں",
+      "show_less": "کم دکھائیں۔",
+      "max_price": "سب سے زیادہ قیمت {{ price }} ہے",
+      "product_count": {
+        "one": "{{ product_count }} از {{ count }} پروڈکٹ",
+        "other": "{{ product_count }} از {{ count }} مصنوعات"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} پروڈکٹ",
+        "other": "{{ count }} مصنوعات"
+      },
+      "reset": "دوبارہ ترتیب دیں۔",
+      "sort_button": "ترتیب دیں",
+      "sort_by_label": "ترتیب دیں:",
+      "to": "کو",
+      "clear_filter": "فلٹر کو ہٹا دیں۔"
     }
   },
   "customer": {
@@ -2045,7 +2256,8 @@
       "cancel": "منسوخ کریں۔",
       "edit": "ترمیم",
       "delete": "حذف کریں۔",
-      "delete_confirm": "کیا آپ واقعی یہ پتہ حذف کرنا چاہتے ہیں؟"
+      "delete_confirm": "کیا آپ واقعی یہ پتہ حذف کرنا چاہتے ہیں؟",
+      "title": "پتے"
     },
     "log_in": "لاگ ان کریں",
     "log_out": "لاگ آوٹ",
@@ -2115,6 +2327,21 @@
       "password": "پاس ورڈ",
       "password_confirm": "پاس ورڈ کی تصدیق کریں۔",
       "submit": "پاس ورڈ ری سیٹ"
+    },
+    "account": {
+      "title": "کھاتہ",
+      "details": "اکاؤنٹ کی تفصیلات",
+      "view_addresses": "پتے دیکھیں",
+      "return": "اکاؤنٹ کی تفصیلات پر واپس جائیں۔"
+    },
+    "account_fallback": "کھاتہ",
+    "activate_account": {
+      "title": "اکاؤنٹ چالو کریں۔",
+      "subtext": "اپنے اکاؤنٹ کو چالو کرنے کے لیے اپنا پاس ورڈ بنائیں۔",
+      "password": "پاس ورڈ",
+      "password_confirm": "پاس ورڈ کی تصدیق کریں۔",
+      "submit": "اکاؤنٹ چالو کریں۔",
+      "cancel": "دعوت مسترد کریں۔"
     }
   },
   "gift_cards": {
@@ -2146,5 +2373,60 @@
       "message": "پیغام",
       "max_characters": "{{ max_chars }} حروف زیادہ سے زیادہ"
     }
+  },
+  "templates": {
+    "search": {
+      "no_results": "\" {{ terms }} کے لیے کوئی نتیجہ نہیں ملا۔ ہجے چیک کریں یا کوئی مختلف لفظ یا جملہ استعمال کریں۔",
+      "page": "صفحہ",
+      "products": "مصنوعات",
+      "results_pages_with_count": {
+        "one": "{{ count }} صفحہ",
+        "other": "{{ count }} صفحات"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} تجویز",
+        "other": "{{ count }} تجاویز"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} پروڈکٹ",
+        "other": "{{ count }} مصنوعات"
+      },
+      "results_with_count": {
+        "one": "{{ count }} نتیجہ",
+        "other": "{{ count }} نتائج"
+      },
+      "results_with_count_and_term": {
+        "one": "\" {{ terms }} \" کے لیے {{ count }} نتیجہ ملا",
+        "other": "\" {{ terms }} کے لیے {{ count }} نتائج ملے"
+      },
+      "title": "تلاش کے نتائج",
+      "search_for": "تلاش کریں \" {{ terms }} \"",
+      "suggestions": "تجاویز",
+      "pages": "صفحات"
+    },
+    "cart": {
+      "cart": "ٹوکری"
+    },
+    "contact": {
+      "form": {
+        "title": "رابطہ فارم",
+        "name": "نام",
+        "email": "ای میل",
+        "phone": "فون نمبر",
+        "comment": "تبصرہ",
+        "send": "بھیجیں",
+        "post_success": "ہم سے رابطہ کرنے کا شکریہ۔ ہم جلد از جلد آپ سے رابطہ کریں گے۔",
+        "error_heading": "براہ کرم درج ذیل کو ایڈجسٹ کریں:"
+      }
+    },
+    "404": {
+      "title": "صفحہ نہیں ملا"
+    }
+  },
+  "localization": {
+    "country_label": "ملک\/علاقہ",
+    "language_label": "زبان",
+    "update_language": "زبان کو اپ ڈیٹ کریں۔",
+    "update_country": "ملک\/علاقہ کو اپ ڈیٹ کریں۔"
   }
 }
