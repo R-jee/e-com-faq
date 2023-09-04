@@ -1,4 +1,4 @@
-function isScrolledIntoView(elem){
+{% comment %} function isScrolledIntoView(elem){
     var $elem = $(elem);
     var $window = $(window);
     var docViewTop = $window.scrollTop();
@@ -6,7 +6,7 @@ function isScrolledIntoView(elem){
     var elemTop = $elem.offset().top;
     var elemBottom = elemTop + $elem.height();
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
+  } {% endcomment %}
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
@@ -28,6 +28,7 @@ function isScrolledIntoView(elem){
       },'2000')
     }
   });
+  
   $(document).ready(function (e) {
     const url = window.location;
     let domain = new URL(url);
