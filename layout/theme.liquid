@@ -283,18 +283,6 @@
       {{ content_for_layout }}
     </main>
 
-    {{ 'shopify-section-language-floating-icon.css' | asset_url | stylesheet_tag }}
-
-    <div id="shopify-section-language-floating-icon" class="shopify-section">
-      <div class="floating-lang">
-        <div style="display:inline-flex;">
-          <div class="lang-switcher-c">
-            <a class="lang-switch-a"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ 'shopify-section-language-floating-icon.js' | asset_url }}
 
     {% sections 'footer-group' %}
 
@@ -361,5 +349,7 @@
     <script type="text/javascript">
       kakaoPixel('227733132068960035').pageView();
     </script>
+
+    {% render 'floating-laguage-tr-btn' %}
   </body>
 </html>
