@@ -1,0 +1,272 @@
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " اور ",
+      "last_word_connector": "، اور "
+    },
+    "checkout": {
+      "general": {
+        "page_title": "اس کو دیکھو",
+        "error_page_title": "خرابی",
+        "skip_to_content": "مواد پر جائیں۔",
+        "breadcrumb": "روٹی crumb",
+        "continue_button_label": "جاری رہے",
+        "complete_purchase_button_label": "مکمل آرڈر",
+        "pay_now_button_label": "اب ادا",
+        "authenticate_purchase_button_label": "ادائیگی کی تصدیق کریں۔",
+        "edit_link_label": "ترمیم",
+        "all_rights_reserved": "جملہ حقوق محفوظ ہیں %{shop_name}",
+        "print_policies_link_label": "پرنٹ کریں",
+        "cart": "ٹوکری",
+        "close_modal_label": "بند کریں",
+        "close_notice_label": "بند کریں",
+        "expand_notice_label": "مزید دیکھیں",
+        "continue_to_shipping_method": "شپنگ جاری رکھیں",
+        "continue_to_payment_method": "ادائیگی جاری رکھیں",
+        "continue_to_review": "آرڈر کا جائزہ لیں۔",
+        "back_to_cart": "کارٹ پر واپس جائیں۔",
+        "back_to_contact_information": "معلومات پر واپس جائیں۔",
+        "back_to_shipping_method": "شپنگ پر واپس جائیں۔",
+        "back_to_payment_method": "ادائیگی پر واپس جائیں۔",
+        "choose_shipping_method": "شپنگ کا طریقہ منتخب کریں۔",
+        "choose_payment_method": "ادائیگی کا طریقہ منتخب کریں۔",
+        "choose_billing_address": "ایک بلنگ پتہ منتخب کریں۔",
+        "contact_us_html": "مزید معلومات کے لیے ہم سے رابطہ کریں۔",
+        "autocomplete_title": "تجاویز",
+        "autocomplete_single_item": "1 آئٹم دستیاب ہے۔",
+        "autocomplete_multi_item": "{{number}} آئٹمز دستیاب ہیں۔",
+        "autocomplete_close": "تجاویز بند کریں۔",
+        "forwarding_indicator": {
+          "new_window": "ایک نئی ونڈو میں کھلتا ہے۔",
+          "external": "بیرونی ویب سائٹ کھولتا ہے۔",
+          "external_and_new_window": "بیرونی ویب سائٹ کو ایک نئی ونڈو میں کھولتا ہے۔"
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - چیک آؤٹ"
+        },
+        "tooltip_accessibility_label": "مزید معلومات",
+        "errors": {
+          "session_identifier_not_unique_error": "آپ کے آرڈر میں کچھ غلط ہو گیا، براہ کرم دوبارہ چیک آؤٹ کرنے کی کوشش کریں۔",
+          "line_item_limit_reached": "لائن آئٹمز کی زیادہ سے زیادہ تعداد تک پہنچ گئی ہے۔"
+        },
+        "full_price": "پوری قیمت:",
+        "title": "چیک آؤٹ - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - چیک آؤٹ",
+        "loading_title": "چیک آؤٹ - {{shopName}}",
+        "google_map_title": "گوگل کا نقشہ",
+        "submit_order_button_label": "آرڈر جمع کرانے",
+        "submit_for_review_button_label": "جائزہ لینے کے لیے جمع کرائیں۔",
+        "submit_for_review_notice_label": "آپ کے آرڈر کا جائزہ لینے تک ادائیگی واجب الادا نہیں ہوگی۔",
+        "continue_to_payment_plans_button_label": "ادائیگی کے منصوبوں کو جاری رکھیں",
+        "back_button_label": "واپسی",
+        "choose_delivery_strategy": "ترسیل کا طریقہ منتخب کریں۔",
+        "autocomplete_zero_item": "کوئی آئٹمز دستیاب نہیں ہیں۔",
+        "autocomplete_powered_by_google": "تقویت یافتہ بذریعہ {{brandName}}",
+        "submit": "جمع کرائیں",
+        "processing": "کارروائی ہو رہی ہے…",
+        "stepper": {
+          "increase": "بڑھائیں {{type}}",
+          "decrease": "{{type}} کو کم کریں",
+          "minimum_reached": "کم از کم {{value}} تک پہنچ گیا۔",
+          "maximum_reached": "{{value}} کی زیادہ سے زیادہ حد تک پہنچ گئی۔"
+        },
+        "remove_item": "ہٹائیں %{label}",
+        "remove_tag": "ٹیگ کو ہٹا دیں۔",
+        "dates": {
+          "weekdays": {
+            "monday": "پیر",
+            "tuesday": "منگل",
+            "wednesday": "بدھ",
+            "thursday": "جمعرات",
+            "friday": "جمعہ",
+            "saturday": "ہفتہ",
+            "sunday": "اتوار"
+          },
+          "weekdays_abbreviation": {
+            "monday": "مو",
+            "tuesday": "ٹو",
+            "wednesday": "ہم",
+            "thursday": "ویں",
+            "saturday": "ص",
+            "sunday": "ایس یو"
+          },
+          "months": {
+            "january": "جنوری",
+            "february": "فروری",
+            "march": "مارچ",
+            "april": "اپریل",
+            "may": "مئی",
+            "june": "جون",
+            "july": "جولائی",
+            "august": "اگست",
+            "september": "ستمبر",
+            "october": "اکتوبر",
+            "november": "نومبر",
+            "december": "دسمبر"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "پچھلا مہینہ دکھائیں، {{month}} {{year}}",
+          "show_next_month": "اگلے مہینے دکھائیں، {{month}} {{year}}",
+          "range_start": "رینج شروع",
+          "in_range": "رینج میں",
+          "range_end": "رینج کا اختتام"
+        }
+      },
+      "contact": {
+        "title": "معلومات",
+        "address_title": "پتہ",
+        "shipping_used_as_billing_notice": "اسے اس آرڈر کے لیے آپ کے بلنگ ایڈریس کے طور پر بھی استعمال کیا جائے گا۔",
+        "delivery_option_title": "ترسیل کا طریقہ",
+        "contact_method_title": "رابطہ کریں۔",
+        "email_label": "ای میل",
+        "email_placeholder": "ای میل",
+        "email_or_phone_label": "ای میل یا موبائل فون نمبر"
+      },
+      "payment": {
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_number": "ایک درست شمارہ نمبر درج کریں۔"
+            },
+            "invalid": {
+              "verification_value": "ایک درست CVV یا سیکیورٹی کوڈ درج کریں۔"
+            }
+          }
+        },
+        "simulated_checkout": "پیش نظارہ جلد آرہا ہے۔",
+        "vaulting_agreement_label": "تیز چیک آؤٹ کے لیے میری ادائیگی کی معلومات کو %{company} کے ساتھ محفوظ کریں۔",
+        "business_customer_vaulting_payment_label": "چیک آؤٹ پر اس کارڈ کو محفوظ کریں اور %{company} کو اس مقام کے لیے مستقبل کی خریداریوں کے لیے اس کارڈ سے چارج کرنے کی اجازت دیں۔ اس مقام پر تفویض کردہ کوئی بھی رابطہ اس کارڈ کو استعمال کرنے کا مجاز ہے۔",
+        "purchase_options_and_vaulting_agreement_label": "آپ کی کارٹ میں ایک یا زیادہ آئٹمز ایک موخر یا بار بار خریداری ہے۔ اپنی ادائیگی جاری رکھ کر، آپ اس بات سے اتفاق کرتے ہیں کہ آپ کا ادائیگی کا طریقہ خود بخود اس صفحہ پر درج قیمت اور فریکوئنسی کے حساب سے وصول کیا جائے گا جب تک کہ یہ ختم نہ ہو جائے یا آپ منسوخ کر دیں۔ تمام منسوخیاں %{cancellation_policy_label} کے تابع ہیں۔",
+        "purchase_options_cancellation_policy_label": "منسوخ کرنے کی حکمت عملی",
+        "use_different_credit_card_label": "ایک مختلف کارڈ استعمال کریں۔",
+        "saved_credit_card": "آپ کا محفوظ کردہ کریڈٹ کارڈ",
+        "saved_credit_card_info": "آخری چار ہندسے",
+        "saved_credit_card_actions": {
+          "edit": "ترمیم",
+          "delete": "حذف کریں۔"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "تمام محفوظ کردہ کارڈز دیکھیں",
+          "done": "ہو گیا",
+          "cancel": "منسوخ کریں۔"
+        },
+        "add_credit_card_modal": {
+          "title": "کارڈ شامل کریں۔",
+          "done": "ہو گیا",
+          "cancel": "منسوخ کریں۔"
+        },
+        "delete_credit_card_modal": {
+          "title": "کارڈ حذف کریں۔",
+          "confirmation": "کیا آپ واقعی {{brandName}} حذف کرنا چاہتے ہیں جس کا اختتام {{lastDigits}} ہے؟",
+          "cancel": "منسوخ کریں۔",
+          "delete": "حذف کریں۔"
+        },
+        "edit_credit_card_modal": {
+          "title": "کارڈ میں ترمیم کریں۔",
+          "done": "ہو گیا",
+          "cancel": "منسوخ کریں۔",
+          "description": "آپ صرف اپنے کارڈ کے بلنگ ایڈریس میں ترمیم کر سکتے ہیں۔",
+          "fields": {
+            "default": "ڈیفالٹ کے طور پر مقرر",
+            "card_number": "کارڈ نمبر",
+            "expiry": "میعاد ختم ہونے کی تاریخ",
+            "security_code": "سیکیورٹی کوڈ",
+            "name": "کارڈ پہ درج نام",
+            "billing": "کا بل"
+          }
+        },
+        "expired_cards_info": {
+          "one": "%{count} ایکسپائرڈ کارڈ ہے، جسے آپ اپنے اکاؤنٹ میں دیکھ اور ترمیم کر سکتے ہیں۔",
+          "other": "%{count} میعاد ختم ہونے والے کارڈز ہیں، جنہیں آپ اپنے اکاؤنٹ میں دیکھ اور ترمیم کر سکتے ہیں۔"
+        },
+        "local_payment_method_receiver_notice": "اپنا آرڈر دینے کے بعد، آپ کو ادائیگی کی تفصیلات موصول ہوں گی۔ {{dueDays}} دنوں کے اندر ATM یا آن لائن ادائیگی کریں۔",
+        "order_edit_banner_title": "{{amount_owed}} کی ادائیگی درکار ہے۔",
+        "order_edit_banner_subtitle": "آپ کا آرڈر {{order_number}} اپ ڈیٹ کر دیا گیا تھا۔ ان تبدیلیوں کا جائزہ لیں، پھر اپنے آرڈر کی تصدیق کے لیے ادائیگی کریں۔",
+        "order_edit_banner_items_added": {
+          "one": "شامل کیا گیا۔",
+          "other": "%{count} شامل کیا گیا۔"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "ہٹا دیا گیا۔",
+          "with_quantities": "{ {{quantity}} {{delta}} } ہٹا دیا گیا۔"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "واپس آ گیا۔",
+          "with_quantities": "{ {{quantity}} میں سے { {{delta}} } واپس آئے"
+        },
+        "order_edit_banner_single_item_added": "شامل کیا گیا۔",
+        "order_edit_banner_multiple_items_added": "{{amount}} شامل کیا گیا۔",
+        "order_edit_banner_single_item_removed": "ہٹا دیا گیا۔",
+        "order_edit_banner_multiple_items_removed": "{{amount}} ہٹا دیا گیا۔",
+        "order_edit_banner_single_item_returned": "واپس آ گیا۔",
+        "order_edit_banner_multiple_items_returned": "{{amount}} واپس کر دیا گیا۔",
+        "gift_card_wrapper": {
+          "heading": "تحفہ والا کارڈ",
+          "apply_gift_card_label": "گفٹ کارڈ لگائیں۔",
+          "payment_tag": "تحفہ والا کارڈ"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "اپنی مرضی کے مطابق آن سائٹ ادائیگی کی تصدیق"
+        },
+        "markets_pro_disclaimer_label": "نیچے کلک کر کے اور اپنا آرڈر مکمل کر کے، آپ گلوبل-e کے %{markets_pro_terms} اور %{privacy_policy} پر، اس ٹرانزیکشن کے لیے مرچنٹ آف ریکارڈ کے طور پر Global-e سے اپنے آئٹمز خریدنے سے اتفاق کرتے ہیں۔ Global-e %{shop_name} کے لیے ایک بین الاقوامی تکمیل سروس فراہم کنندہ ہے۔",
+        "markets_pro_disclaimer_terms_and_conditions": "شرائط و ضوابط",
+        "markets_pro_disclaimer_privacy_policy": "رازداری کی پالیسی",
+        "markets_pro_disclaimer_terms_and_conditions_title": "مرچنٹ آف ریکارڈ کی شرائط و ضوابط",
+        "markets_pro_disclaimer_privacy_policy_title": "مرچنٹ آف ریکارڈ پرائیویسی پالیسی",
+        "purchase_order_number": {
+          "title": "پی او نمبر",
+          "label": "PO نمبر (اختیاری)"
+        },
+        "alternative_payment_currency_total_notice": "نوٹ: آپ سے %{amount_due} وصول کیا جائے گا۔",
+        "waiting_on_taxes_message": "اگر اگلے چند سیکنڈ میں آپ کے ٹیکس کا حساب نہیں ہوتا ہے تو صفحہ کو ریفریش کریں۔",
+        "waiting_on_taxes_notice": "ٹیکسوں کا حساب لگانا",
+        "payment_method": "ادائیگی کا طریقہ",
+        "expired_payment_method": "ادائیگی کا منتخب طریقہ ختم ہو گیا ہے۔"
+      },
+      "billing": {
+        "billing_address_title": "کا بل",
+        "same_as_shipping": "شپنگ ایڈریس جیسا ہی",
+        "add_address": "ایک مختلف پتہ استعمال کریں۔",
+        "edit": "ترمیم",
+        "delete": "حذف کریں۔",
+        "address_more": "اس ایڈریس کے لیے مزید کارروائیاں",
+        "address_edit": "ایڈریس میں ترمیم کریں۔",
+        "address_delete": "پتہ حذف کریں۔",
+        "address_confirm": "کیا آپ واقعی یہ پتہ اپنے اکاؤنٹ سے حذف کرنا چاہتے ہیں؟",
+        "address_form": {
+          "add_address": "ایڈریس شامل کریں۔",
+          "save": "محفوظ کریں۔",
+          "cancel": "منسوخ کریں۔"
+        }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "موجودہ بیلنس %{amount}",
+        "credit_card_expires_on_notice": "%{ماہ}\/%{سال} کو ختم ہو جائے گا",
+        "express_payment_gateway_label": "ایکسپریس",
+        "manual_payment_gateway_label": "دستی",
+        "billing_address_title": "بل کا پتہ",
+        "free_label": "مفت"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "ایک درست فون نمبر درج کریں۔",
+        "handle_email_invalid": "ایک درست ای میل درج کریں۔",
+        "email_invalid": "ایک درست ای میل درج کریں۔",
+        "email_or_phone_blank": "ای میل یا فون نمبر درج کریں۔",
+        "email_or_phone_invalid": "ایک درست ای میل یا موبائل فون نمبر درج کریں۔",
+        "address_first_name_blank": "پہلا نام درج کریں۔",
+        "address_first_name_too_long": "پہلا نام بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_first_name_contains_emojis": "پہلا نام ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_first_name_contains_html_tags": "پہلا نام HTML ٹیگز پر مشتمل نہیں ہو سکتا۔",
+        "address_first_name_contains_url": "پہلا نام URL پر مشتمل نہیں ہو سکتا",
+        "address_last_name_blank": "آخری نام درج کریں۔",
+        "address_last_name_too_long": "آخری نام بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_last_name_contains_emojis": "آخری نام ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_last_name_contains_html_tags": "آخری نام HTML ٹیگز پر مشتمل نہیں ہو سکتا۔",
+        "address_last_name_contains_url": "آخری نام میں یو آر ایل نہیں ہو سکتا",
+        "address_address1_blank": "ایک پتہ درج کریں۔",
+        "address_address1_too_long": "پہلی ایڈریس لائن بہت لمبی ہے (زیادہ سے زیادہ 255 حروف ہیں)"
+      }
+    }
+  }
+}
