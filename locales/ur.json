@@ -394,6 +394,132 @@
             "address2": "اپارٹمنٹ، سویٹ وغیرہ میں داخل ہوں۔"
           }
         }
+      },
+      "payment": {
+        "ends_with_label": "%{last_digits} کے ساتھ ختم ہونے والا",
+        "payment_method_saved": "ادائیگی کا طریقہ محفوظ ہو گیا۔",
+        "card_vaulted_company_location": "اس مقام کے لیے کارڈ محفوظ کر لیا گیا۔",
+        "expiry_long": "(%{ماہ}\/%{سال} کی میعاد ختم)",
+        "expiry_short": "(ختم ہونے والا %{ماہ}\/%{سال})",
+        "saved_by_payment_method": "%{payment_method} کے ذریعے محفوظ کیا گیا",
+        "pay_with_payment_method": "%{payment_method} سے ادائیگی کریں",
+        "different_credit_card_label": "ایک مختلف کریڈٹ کارڈ استعمال کریں۔",
+        "same_billing_address_label": "شپنگ ایڈریس جیسا ہی",
+        "different_billing_address_label": "ایک مختلف بلنگ پتہ استعمال کریں۔",
+        "billing_address_associated_with_mandate": "ادائیگی کے طریقے سے وابستہ پتہ استعمال کریں۔",
+        "billing_address_associated_with_mandate_info": "اگر آپ اپنا بلنگ ایڈریس تبدیل کرنا چاہتے ہیں، تو براہ کرم اپنے کریڈٹ کارڈ کی تفصیلات کو ہٹا کر دوبارہ درج کریں۔",
+        "free_order_notice_html": "آپ کا آرڈر <strong>مفت<\/strong> ہے۔ ادائیگی کی ضرورت نہیں ہے۔",
+        "express_checkout_free_order": "آپ سے مفت آرڈر کا معاوضہ نہیں لیا جائے گا۔",
+        "order_covered_by_gift_cards_notice": {
+          "one": "آپ کے آرڈر کا احاطہ آپ کے گفٹ کارڈ سے ہوتا ہے۔",
+          "other": "آپ کے آرڈر کا احاطہ آپ کے گفٹ کارڈز سے ہوتا ہے۔"
+        },
+        "offsite_gateway_redirect_hint": "\"%{button_label}\" پر کلک کرنے کے بعد، آپ کو اپنی خریداری کو محفوظ طریقے سے مکمل کرنے کے لیے %{gateway_label} پر بھیج دیا جائے گا۔",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} کل %{total_shop_price}",
+        "receiver_payment_experience_hint": "اپنا آرڈر دینے کے بعد، آپ کو ادائیگی کی تفصیلات موصول ہوں گی۔ ملٹی بینکو پر یا آن لائن %{due_days} دنوں کے اندر ادائیگی کریں۔",
+        "billing_address_title": "بل کا پتہ",
+        "billing_address_description": "وہ پتہ منتخب کریں جو آپ کے کارڈ یا ادائیگی کے طریقے سے مماثل ہو۔",
+        "billing_address_description_no_shipping_address": "وہ پتہ درج کریں جو آپ کے کارڈ یا ادائیگی کے طریقے سے مماثل ہو۔",
+        "no_js_credit_card_fields_redirect_hint": "آپ کو اپنی ادائیگی کی معلومات شامل کرنے کے لیے ری ڈائریکٹ کیا جائے گا۔",
+        "card_fields_container_prefix": "فیلڈ کنٹینر کے لیے:",
+        "card_fields_unavailable_html": {
+          "one": "کریڈٹ اور ڈیبٹ کارڈ کی ادائیگیاں ابھی دستیاب نہیں ہیں۔<br> <a href=\"%{current_url}\">اس صفحہ کو ریفریش کریں<\/a> یا بعد میں دوبارہ کوشش کریں۔",
+          "other": "کریڈٹ اور ڈیبٹ کارڈ کی ادائیگیاں ابھی دستیاب نہیں ہیں۔<br> <a href=\"%{current_url}\">اس صفحہ کو ریفریش کریں<\/a> یا ادائیگی کا کوئی دوسرا طریقہ آزمائیں۔"
+        },
+        "card_fields_processing_error": "ادائیگی پر کارروائی کرنے میں ایک مسئلہ تھا۔ اس صفحہ کو ریفریش کرنے کی کوشش کریں یا اپنا انٹرنیٹ کنکشن چیک کریں۔",
+        "technical_error": "تکنیکی مسئلے کی وجہ سے ابھی ادائیگیوں پر کارروائی نہیں کی جا سکتی ہے۔ چند منٹوں میں دوبارہ کوشش کریں۔",
+        "no_method_error": "یہ اسٹور ابھی ادائیگی قبول نہیں کر سکتا۔",
+        "not_configured_error": "یہ اسٹور ابھی ادائیگی قبول نہیں کر سکتا۔",
+        "missing_credit_card_error": "ادائیگی مکمل کرنے کے لیے اپنے کارڈ کی تفصیلات درج کریں۔",
+        "billing_address_not_supported_for_payment_method_error": "ادائیگی کا یہ طریقہ آپ کے بلنگ ایڈریس اور کرنسی کے لیے دستیاب نہیں ہے۔ براہ کرم ادائیگی کا ایک مختلف طریقہ آزمائیں۔",
+        "terms_changed": "آپ کی ادائیگی کا طریقہ مزید دستیاب نہیں ہے۔ براہ کرم ادائیگی کا نیا طریقہ منتخب کریں۔",
+        "generic_incorrect_card_info": "آپ کی ادائیگی کی تفصیلات کی تصدیق نہیں ہو سکی۔ اپنے کارڈ کی تفصیلات چیک کریں اور دوبارہ کوشش کریں۔",
+        "sofort_label": "سوفورٹ بینک ٹرانسفر",
+        "paypal_label": "پے پال",
+        "shop_pay_installments_label": "خریداری کی ادائیگی کی قسطیں۔",
+        "paypal_modal": {
+          "order_contains_subscriptions": "رکنیت",
+          "order_contains_fixed_selling_plans": "کل ٹیکسز، شپنگ، ڈیفرڈ چارجز، اور کچھ رعایتیں شامل نہیں ہو سکتی ہیں۔ آج ہی واجب الادا رقم کے لیے چیک آؤٹ کرنا جاری رکھیں۔"
+        },
+        "klarna_label": "کلارنا",
+        "klarna_pay_later_label": "Klarna کے ساتھ بعد میں ادائیگی کریں۔",
+        "klarna_pay_now_label": "کلارنا کے ساتھ ابھی ادائیگی کریں۔",
+        "bancontact_label": "بینک رابطہ",
+        "giropay_label": "گیروپے",
+        "multibanco_label": "ملٹی بینکو",
+        "klarna_slice_it_label": "کلارنا کے ساتھ مالیات",
+        "ideal_label": "آئیڈیل",
+        "bank_picker_label": "بینک",
+        "purchase_options_card_update_agreement_label_html": "اپنے ادائیگی کے طریقے کو اپ ڈیٹ کر کے، آپ اس اسٹور کی <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">منسوخی کی پالیسی<\/a> کے مطابق کسی بھی اعادی یا موخر خریداری کے لیے ادائیگیوں کی اجازت دیتے ہیں۔",
+        "subscription_card_update_agreement_label": "ادائیگی کا طریقہ تبدیل کرنے سے آپ کی رکنیت اور آئندہ اعادی ادائیگیوں کو اپ ڈیٹ کر دیا جائے گا۔",
+        "subscription_agreement_label": "میں سمجھتا ہوں کہ میں سبسکرپشن سے اتفاق کر رہا ہوں۔ اس کی تجدید درج قیمت اور تعدد پر ہو گی جب تک کہ یہ ختم نہ ہو جائے یا %{منسوخ شدہ} نہ ہو جائے۔",
+        "subscription_agreement_cancelled": "منسوخ",
+        "subscription_heading": "رکنیت کا معاہدہ",
+        "subscription_agreement_label_html": "میں سمجھتا ہوں کہ میں سبسکرپشن سے اتفاق کر رہا ہوں۔ اس کی تجدید درج قیمت اور تعدد پر ہو گی جب تک کہ یہ ختم نہ ہو جائے یا ہو جائے۔\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">منسوخ<\/a>\n",
+        "purchase_options_agreement_label": "میں سمجھتا ہوں کہ میری کارٹ میں ایک یا زیادہ آئٹمز ایک موخر یا اعادی خریداری ہے۔ جاری رکھ کر، میں %{cancellation_policy_label} سے اتفاق کرتا ہوں اور آپ کو اس صفحہ پر درج قیمتوں، فریکوئنسی، اور تاریخوں کے مطابق اپنے ادائیگی کے طریقے سے چارج کرنے کی اجازت دیتا ہوں جب تک کہ میرا آرڈر پورا نہ ہو جائے یا اگر اجازت ہو تو میں منسوخ کر دوں۔",
+        "purchase_options_agreement_label_html": "میں سمجھتا ہوں کہ میری کارٹ میں ایک یا زیادہ آئٹمز ایک موخر یا اعادی خریداری ہے۔ جاری رکھ کر، میں اس سے اتفاق کرتا ہوں۔\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">منسوخ کرنے کی حکمت عملی<\/a>\n اور آپ کو اس صفحہ پر درج قیمتوں، فریکوئنسی اور تاریخوں پر میرے ادائیگی کے طریقے سے چارج کرنے کی اجازت دیتا ہوں\n حکم پورا ہو جائے یا اجازت ہو تو میں منسوخ کر دوں گا۔\n",
+        "change_currency_section_description": "کرنسی کا اختیار منتخب کریں۔",
+        "no_real_orders_dev_store": "یہ اسٹور حقیقی آرڈرز یا حقیقی ادائیگیاں قبول نہیں کر سکتا۔",
+        "waiting_on_payment_methods": "دستیاب ادائیگی کے طریقے حاصل کیے جا رہے ہیں...",
+        "apple_pay_payment_error": "آپ کی ادائیگی مکمل نہیں ہو سکی۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "taxes_not_included": "ٹیکس شامل نہیں ہیں۔",
+        "no_taxes_banner_content": "اس آرڈر پر ٹیکس نہیں لیا جائے گا۔ ایک بار جب آپ ادائیگی جمع کر لیتے ہیں، تو ٹیکس مزید شامل نہیں کیا جا سکتا۔",
+        "paypal": {
+          "connect": "اپنے پے پال اکاؤنٹ کو جوڑنے کے لیے کلک کریں۔"
+        },
+        "apple": {
+          "connect": "اپنے ایپل پے اکاؤنٹ کو جوڑنے کے لیے کلک کریں۔",
+          "not_available": "ایپل پے اس براؤزر میں دستیاب نہیں ہے۔ اپنا Apple Pay اکاؤنٹ منسلک کرنے کے لیے آپ کو ایپل ڈیوائس پر Safari استعمال کرنے کی ضرورت ہوگی۔"
+        },
+        "google": {
+          "connect": "اپنے Google Pay اکاؤنٹ سے منسلک ہونے کے لیے کلک کریں۔",
+          "error_authorizing": "ادائیگی کی اجازت دینے میں خرابی۔"
+        },
+        "account_connected": "اکاؤنٹ منسلک ہے۔",
+        "mor_disclaimer_html": "نیچے کلک کر کے اور اپنا آرڈر مکمل کر کے، آپ ریکارڈ کے مرچنٹ کے طور پر Global-e سے اپنے آئٹمز خریدنے پر اتفاق کرتے ہیں\n اس لین دین کے لیے، Global-e کی <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">شرائط و ضوابط<\/a> پر\n اور <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">رازداری کی پالیسی<\/a> ۔ Global-e ایک بین الاقوامی ہے۔\n %{shop_name} کو تکمیل سروس فراہم کنندہ\n",
+        "pending_payment": {
+          "due_notice": "آپ کی %{amount_due} کی ادائیگی %{due_date} کو واجب الادا ہے۔",
+          "multibanco": {
+            "instruction_html": "ذیل کی تفصیلات کا استعمال کرتے ہوئے Multibanco یا آن لائن پر اپنی ادائیگی کریں۔ سوالات کے لیے یا ادائیگی کی تفصیلات کو اپ ڈیٹ کرنے کے لیے، %{contact_us}۔",
+            "entity": "ہستی",
+            "reference": "حوالہ",
+            "amount": "رقم",
+            "find_nearest_atm": "قریب ترین ATM تلاش کریں۔"
+          }
+        },
+        "update_payment_method": "ادائیگی کا طریقہ اپ ڈیٹ کریں۔",
+        "order_covered_by_store_credit_notice": "آپ کے آرڈر کا احاطہ آپ کے اسٹور کریڈٹ سے ہوتا ہے۔",
+        "order_covered_by_redeemables_notice": "آپ کے آرڈر کا احاطہ کیا گیا ہے۔",
+        "store_credit": {
+          "label": "سٹور کریڈٹ",
+          "apply_label": "اسٹور کریڈٹ اپلائی کریں۔"
+        },
+        "clear": "صاف",
+        "billing_must_match_shipping_notice": "آپ کے ادائیگی کے طریقے کا بلنگ پتہ شپنگ ایڈریس سے مماثل ہونا چاہیے۔",
+        "same_billing_address_checkbox_label": "شپنگ ایڈریس کو بلنگ ایڈریس کے طور پر استعمال کریں۔",
+        "location_billing_address_label": "مقام کا بلنگ پتہ",
+        "fact_billing_address_label": "بل کا پتہ",
+        "location_shipping_address_label": "مقام کی ترسیل کا پتہ",
+        "use_order_billing_address_label": "آرڈر بلنگ ایڈریس استعمال کریں۔",
+        "use_location_billing_address_label": "مقام کا بلنگ پتہ استعمال کریں۔",
+        "use_location_shipping_address_label": "مقام کی ترسیل کا پتہ استعمال کریں۔",
+        "no_working_method_error": "یہ اسٹور ابھی ادائیگی قبول نہیں کر سکتا۔ اس صفحہ کو ریفریش کریں یا بعد میں واپس آئیں۔",
+        "brand_not_available": "یہ اسٹور {{brand}} کو قبول نہیں کرتا ہے۔ ادائیگی کے لیے براہ کرم ایک مختلف کارڈ استعمال کریں۔",
+        "shipping_rate_updated": "دستیاب شپنگ کے طریقوں کو اپ ڈیٹ کر دیا گیا ہے۔ چیک آؤٹ کرنے سے پہلے اپنی پسند کی تصدیق کریں۔",
+        "billing_address_invalid_phone": "جاری رکھنے کے لیے {{label}} {{last_digits}} کے لیے اپنے بلنگ ایڈریس میں فون نمبر اپ ڈیٹ کریں۔",
+        "billing_address_invalid_phone_no_card": "جاری رکھنے کے لیے اپنے بلنگ ایڈریس میں فون نمبر اپ ڈیٹ کریں۔",
+        "preview_not_available": {
+          "title": "پیش نظارہ دستیاب نہیں ہے۔",
+          "content": "پریشان نہ ہوں، یہ ایکسپریس چیک آؤٹ آپ کے صارفین کے لیے کام کرتا ہے۔",
+          "button": "ٹھیک ہے"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "ایک درست ایشو کی تاریخ درج کریں۔"
+            }
+          }
+        }
       }
     },
     "errors": {
