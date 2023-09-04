@@ -351,6 +351,6 @@
       kakaoPixel('227733132068960035').pageView();
     </script>
 
-    {% render 'floating-laguage-tr-btn' -%}<script src="{{ 'shopify-section-language-floating-icon.js' | asset_url }}" type="text/javascript"></script>
+    {% render 'floating-laguage-tr-btn' -%}{{ 'shopify-section-language-floating-icon.js' | asset_url | script_tag  }}
   </body>
 </html>
