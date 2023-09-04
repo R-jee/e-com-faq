@@ -360,7 +360,8 @@
         "estimated_delivery": "موجودہ ترسیل کا تخمینہ: "
       },
       "session_errors": {
-        "session_already_finished": "یہ آرڈر پہلے ہی جمع کرایا جا چکا ہے۔ آپ نیا آرڈر شروع کرنے کے لیے اسٹور پر واپس جا سکتے ہیں۔"
+        "session_already_finished": "یہ آرڈر پہلے ہی جمع کرایا جا چکا ہے۔ آپ نیا آرڈر شروع کرنے کے لیے اسٹور پر واپس جا سکتے ہیں۔",
+        "session_not_unique": "آپ کے آرڈر پر کارروائی کرنے میں ایک مسئلہ تھا۔ اسٹور پر واپس جانے کے لیے اس صفحہ کو ریفریش کریں۔"
       },
       "pickup_point": {
         "location_is_currently_closed": "بند",
@@ -1014,8 +1015,14 @@
             "description_html": "ٹیکسٹ کے ذریعے سائن اپ کرکے، آپ فراہم کردہ فون نمبر پر بار بار آنے والے خودکار مارکیٹنگ پیغامات بشمول کارٹ ریمائنڈرز وصول کرنے سے اتفاق کرتے ہیں۔ رضامندی خریداری کی شرط نہیں ہے۔ ان سبسکرائب کرنے کے لیے STOP کا جواب دیں۔ مدد کے لیے HELP کا جواب دیں۔ پیغام کی تعدد مختلف ہوتی ہے۔ میسج اور ڈیٹا ریٹس لاگو ہو سکتے ہیں۔ ہمارا %{privacy_policy_link} اور %{terms_of_service_link} دیکھیں۔",
             "description_transactional_html": "آپ کو آرڈر کی تصدیق اور شپنگ اپ ڈیٹس سے متعلق ٹیکسٹ پیغامات موصول ہو سکتے ہیں۔ ان سبسکرائب کرنے کے لیے STOP کا جواب دیں۔ مدد کے لیے HELP کا جواب دیں۔ پیغام کی تعدد مختلف ہوتی ہے۔ میسج اور ڈیٹا ریٹس لاگو ہو سکتے ہیں۔ ہمارا %{privacy_policy_modal_link} اور %{terms_of_service_modal_link} دیکھیں۔"
           },
-          "mobile_phone_number": "موبائل فون نمبر"
-        }
+          "mobile_phone_number": "موبائل فون نمبر",
+          "get_offers_by_text": "متن کے ذریعہ پیشکشیں حاصل کریں۔"
+        },
+        "unsubscribe": {
+          "title": "آپ نے رکنیت ختم کر دی ہے۔",
+          "description": "آپ کو ہماری طرف سے مزید کارٹ یاد دہانیاں موصول نہیں ہوں گی۔"
+        },
+        "accept_shop_pay_marketing_checkbox_label": "اس اسٹور سے خبروں اور پیشکشوں کے لیے مجھے سائن اپ کریں۔"
       },
       "shipping_errors": {
         "shipping_method": "آپ کے آرڈر کے لیے شپنگ کے اختیارات بدل گئے ہیں۔ اپنے انتخاب کا جائزہ لیں اور دوبارہ کوشش کریں۔",
@@ -1165,6 +1172,168 @@
           }
         },
         "alternative_payment_currency_total": "%{amount_due} کے طور پر چارج کیا گیا"
+      },
+      "shop_policies": {
+        "refund_policy": "رقم کی واپسی کی پالیسی",
+        "privacy_policy": "رازداری کی پالیسی",
+        "terms_of_service": "سروس کی شرائط",
+        "legal_notice": "قانونی اطلاع",
+        "shipping_policy": "شپنگ پالیسی",
+        "terms_of_sale": "فروخت کی شرائط",
+        "subscription_policy": "رکنیت کی پالیسی",
+        "purchase_options_policy": "خریداری کے اختیارات کی پالیسی",
+        "contact_information": "رابطے کی معلومات",
+        "purchase_options_cancellation_policy": "منسوخ کرنے کی حکمت عملی"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "مرچنٹ آف ریکارڈ کی شرائط و ضوابط",
+        "privacy_policy": "مرچنٹ آف ریکارڈ پرائیویسی پالیسی"
+      },
+      "markets": {
+        "invalid_market_manager_error": "ادائیگی مکمل کرنے سے پہلے اپنی رابطہ کی معلومات کا جائزہ لیں۔"
+      },
+      "notifications": {
+        "title": "اطلاعات"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "آرڈر کی ادائیگی کی رقم %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "شامل کیا گیا۔",
+            "other": "%{count} شامل کیا گیا۔"
+          },
+          "removed": "ہٹا دیا گیا۔",
+          "subtracted": "%{count} ہٹا دیا گیا۔",
+          "returned": "%{count} واپس آئے"
+        },
+        "additional_payment_requested": "%{total_outstanding} کی ادائیگی درکار ہے۔",
+        "checkout_review_and_pay": "آپ کا آرڈر %{order_name} اپ ڈیٹ کر دیا گیا تھا۔ ان تبدیلیوں کا جائزہ لیں، پھر اپنے آرڈر کی تصدیق کے لیے ادائیگی کریں۔",
+        "order_updated_on": "آپ کا آرڈر %{last_edited_at} کو اپ ڈیٹ کیا گیا تھا۔",
+        "order_review_and_pay": "آپ کا آرڈر اپ ڈیٹ کر دیا گیا تھا۔ اپنے آرڈر کی تصدیق کے لیے جائزہ لیں اور ادائیگی کریں۔",
+        "pay_now": "اب ادا"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "آپ کے کریڈٹ کارڈ سے چارج کیا جائے گا %{amount}",
+        "payment_total_label": "کل ادائیگی",
+        "change_currency_link": "%{currency_name} میں تبدیل کریں",
+        "card_provider_fx_charges_warning": "آپ کا کارڈ فراہم کنندہ %{currency_code} ٹرانزیکشنز پر فیس وصول کر سکتا ہے۔",
+        "currency_not_supported_by_shop": "آپ کی منتخب کردہ کرنسی اب دستیاب نہیں ہے۔ تمام قیمتیں اب %{currency_code} میں ہیں۔"
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "آپ کی کارٹ کو آپ کے شپنگ ملک کی بنیاد پر اپ ڈیٹ کر دیا گیا ہے۔",
+        "cart_and_currency_updated_based_on_country": "آپ کی کارٹ اور کرنسی کو آپ کے شپنگ ملک کی بنیاد پر اپ ڈیٹ کر دیا گیا ہے۔"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "آپ کا ملک\/علاقہ اپ ڈیٹ کر دیا گیا ہے۔ چیک آؤٹ جاری رکھنے کے لیے اپنا شپنگ ایڈریس درج کریں۔"
+      },
+      "tips": {
+        "title": "ٹپ شامل کریں۔",
+        "description": "%{shop_name} پر ٹیم کے لیے اپنی حمایت دکھائیں",
+        "presets_description": "ٹپ فیصد منتخب کریں۔",
+        "custom_label": "حسب ضرورت ٹپ",
+        "add_tip": "ٹپ شامل کریں۔",
+        "update_tip": "اپ ڈیٹ ٹپ",
+        "message": "آپ کا شکریہ، ہم اس کی تعریف کرتے ہیں۔",
+        "no_tip_label": "کوئی نہیں۔"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "خریدیں %{product_name}",
+          "one": "%{product_name} اور %{count} دیگر آئٹم خریدیں۔",
+          "other": "%{product_name} اور %{count} دیگر آئٹمز خریدیں۔"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "دن",
+            "other": "%{count} دن"
+          },
+          "week": {
+            "one": "ہفتہ",
+            "other": "%{count} ہفتے"
+          },
+          "month": {
+            "one": "مہینہ",
+            "other": "%{count} مہینے"
+          },
+          "year": {
+            "one": "سال",
+            "other": "%{count} سال"
+          }
+        },
+        "recurring_totals": "%{total_price} ہر %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "پہلی ادائیگی %{total_price_with_discount}، پھر %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "پہلی ادائیگی %{total_price}",
+            "other": "پہلی %{count} ادائیگیاں %{total_price} ہر ایک"
+          },
+          "following_cycles": "، پھر %{total_price} ہر %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": "، پھر %{count} ادائیگی %{total_price} پر",
+            "other": "، پھر %{count} ادائیگیاں %{total_price} ہر ایک پر"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "ادائیگی کے طریقے",
+        "title": "ادائیگی کے طریقے",
+        "update_card_button_label": "کارڈ اپ ڈیٹ کریں۔",
+        "delete_customer_mandate": {
+          "generic_error": "آپ کی درخواست پر کارروائی کرنے میں ایک مسئلہ تھا۔",
+          "success_message": "آپ کی ادائیگی کا طریقہ کامیابی کے ساتھ حذف کر دیا گیا ہے۔"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "بہت زیادہ کوششیں",
+          "description": "براہ کرم چند منٹوں میں دوبارہ کوشش کریں۔"
+        },
+        "line_to_check_out": "آپ چیک آؤٹ کرنے کے لیے لائن میں ہیں۔",
+        "cart_summary_heading": "آپ کی ٹوکری",
+        "merchandise": {
+          "available": "دستیاب",
+          "sold_out": "بک گیا"
+        },
+        "inventory": {
+          "partial_inventory_banner": "آپ کی کارٹ کا کچھ حصہ فروخت ہو چکا ہے اور چیک آؤٹ پر خریدنے کے لیے دستیاب نہیں ہوگا۔",
+          "sold_out": {
+            "heading": "آپ کی ٹوکری بک گئی ہے۔",
+            "storefront_body": "خریداری جاری رکھنے کے لیے واپس اسٹور پر جائیں۔",
+            "no_storefront_body": "بدقسمتی سے آپ جس چیز کو خریدنا چاہتے ہیں وہ اب دستیاب نہیں ہے۔",
+            "link": "واپس اسٹور پر"
+          }
+        },
+        "title": "قطار",
+        "time_to_checkout_title": "چیک آؤٹ کرنے کا وقت - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "متوقع انتظار کے وقت کا حساب لگانا",
+          "less_than_one": "متوقع انتظار کا وقت: ایک منٹ سے بھی کم",
+          "one": "متوقع انتظار کا وقت: {{count}} منٹ",
+          "other": "انتظار کا تخمینہ وقت: {{count}} منٹ"
+        },
+        "last_checked": "(آخری بار چیک کیا گیا: {{time}} )",
+        "footer": {
+          "heading": "اس صفحہ کو ریفریش نہ کریں، یہ خود بخود اپ ڈیٹ ہو جائے گا۔",
+          "body": "آپ کے کارٹ میں آئٹمز اس وقت تک محفوظ نہیں ہیں جب تک آپ چیک آؤٹ مکمل نہیں کر لیتے ہیں۔"
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "آپ کی درخواست پر کارروائی کرنے میں ایک مسئلہ تھا، براہ کرم اسٹور کے مالک سے رابطہ کریں۔"
+      },
+      "no_address_location": {
+        "title": "بغیر پتہ کے مقام",
+        "header": "آپ کے پاس اس مقام کے لیے ترسیل کا پتہ نہیں ہے۔",
+        "alt_header": "ترسیل کا پتہ غائب ہے۔",
+        "message": "چیک آؤٹ مکمل کرنے کے لیے اس مقام کا پتہ شامل کرنے کے لیے ہم سے رابطہ کریں۔",
+        "email_us_button_label": "ہمیں ایک ای میل بھیجیں۔"
+      },
+      "order_errors": {
+        "creation_failure": "آپ کا آرڈر بنانے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں، یا مزید تفصیلات کے لیے ہم سے رابطہ کریں۔",
+        "network_failure": "نیٹ ورک کی خرابی کی وجہ سے آپ کا آرڈر جمع نہیں کیا جا سکا۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔"
       }
     },
     "errors": {
