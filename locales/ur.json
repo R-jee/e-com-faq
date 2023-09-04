@@ -226,7 +226,115 @@
         "unfulfilled_items_title": "شپنگ کے لیے تیاری کر رہا ہے۔",
         "unfulfilled_items_description": "ہم فی الحال ان اشیاء کو شپنگ کے لیے تیار کر رہے ہیں۔",
         "marker": {
-          "current": "موجودہ کھیپ کا مقام"
+          "current": "موجودہ کھیپ کا مقام",
+          "shipping": "شپنگ ایڈریس"
+        },
+        "pick_up_in_store_marker": {
+          "current": "موجودہ کھیپ کا مقام",
+          "shipping": "پک اپ کا مقام"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "اس کھیپ میں اشیاء",
+          "unfulfilled_table_title": "سامان بھیجنے کی تیاری کر رہے ہیں۔",
+          "product_image_label": "مصنوعات کی تصویر",
+          "description_label": "تفصیل",
+          "quantity_label": "مقدار"
+        },
+        "order_updates_description_missing": "آپ کو شپنگ کی اپ ڈیٹس موصول نہیں ہو رہی ہیں۔",
+        "order_updates_subscribe_to_email_notifications": "ای میل کے ذریعے شپنگ اپ ڈیٹس حاصل کریں۔",
+        "order_updates_subscribe_to_email_or_phone_notifications": "ای میل یا ٹیکسٹ کے ذریعے شپنگ اپ ڈیٹس حاصل کریں۔",
+        "order_updates_subscribe_to_phone_notifications": "متن کے ذریعہ شپنگ اپ ڈیٹس حاصل کریں۔",
+        "order_updates_submit_subscription": "جمع کرائیں",
+        "buy_with_prime_tracking_button_label": "پرائم آرڈر کے ساتھ خرید کو ٹریک کریں اور ان کا نظم کریں۔",
+        "track_shipment": "کھیپ کو ٹریک کریں۔",
+        "other_options": "دوسرے اختیارات",
+        "delivery_information_label": "حوالگی کی معلومات:",
+        "gift_card_sent_confirmation": "گفٹ کارڈز بھیجے گئے۔",
+        "qr_code": {
+          "send_link_to_phone": "یا اپنے فون پر ایک لنک بھیجیں۔",
+          "title": "اپنے فون پر ٹریک کریں۔"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "اپنے فون سے اسکین کریں۔"
+          },
+          "sms": {
+            "title": "یا اپنے فون پر ایک لنک بھیجیں۔"
+          }
+        },
+        "view_business_customer_account": "اکاونٹ دیکھں",
+        "breadcrumbs_submitted": "جمع کرایا",
+        "breadcrumbs_in_review": "نظرثانی میں",
+        "breadcrumbs_confirmed": "تصدیق شدہ",
+        "missing_shipping_address_banner": {
+          "title": "آرڈر میں شپنگ ایڈریس نہیں ہے۔",
+          "text_html": "اپنا پتہ شامل کرنے کے لیے %{contact_us}",
+          "contact_us": "ہم سے رابطہ کریں۔"
+        },
+        "first_payment_complete": "پہلی ادائیگی مکمل",
+        "in_store_purchase": "دکان میں خریداری",
+        "branded_promise": {
+          "shop_promise": {
+            "confirmed": {
+              "guaranteed_on_time": "ڈیلیوری کی گارنٹی %{date} کے ساتھ",
+              "on_time": "ڈیلیوری %{date} کے ساتھ"
+            },
+            "in_transit": {
+              "guaranteed_on_time": "ڈیلیوری کی گارنٹی %{date} کے ساتھ",
+              "on_time": "ڈیلیوری %{date} کے ساتھ",
+              "guaranteed_delayed": "آپ کی کھیپ %{date} تک توقع کے مطابق نہیں پہنچی۔ ایک بار جب یہ پہنچ جائے تو آپ اس کے ساتھ دعویٰ جمع کر سکتے ہیں۔",
+              "delayed": "آپ کی کھیپ %{date} تک متوقع ہے۔"
+            },
+            "out_for_delivery": {
+              "guaranteed_on_time": "ڈیلیوری کی گارنٹی %{date} کے ساتھ",
+              "on_time": "ڈیلیوری %{date} کے ساتھ",
+              "guaranteed_delayed": "آپ کی کھیپ %{date} تک توقع کے مطابق نہیں پہنچی۔ ایک بار جب یہ پہنچ جائے تو آپ اس کے ساتھ دعویٰ جمع کر سکتے ہیں۔",
+              "delayed": "آپ کی کھیپ %{date} تک متوقع ہے۔"
+            },
+            "delivered": {
+              "guaranteed_on_time": "کے ساتھ وقت پر پہنچایا",
+              "on_time": "ڈیلیور کیا گیا %{date} کے ساتھ",
+              "guaranteed_delayed": "چونکہ آپ کی کھیپ %{date} کی متوقع تاریخ کے بعد پہنچی ہے، اس لیے آپ %{shop_cash} کے ساتھ اہل ہو سکتے ہیں",
+              "delayed": "ڈیلیور کیا گیا %{date}، اصل میں %{original_delivery_date} تک متوقع"
+            }
+          }
+        },
+        "location_title": "مقام",
+        "thank_you_ready_for_picked_up": "آپ کا آرڈر %{address} پر اٹھایا گیا تھا۔",
+        "ready_for_delivery": "ترسیل کے لیے تیار ہے۔",
+        "order_updates_subscribe_to_email_notifications_failed": "ہم اس ای میل کو اپ ڈیٹس کے لیے اسٹور نہیں کر سکتے۔ براہ کرم دوبارہ کوشش کریں یا کوئی اور ای میل استعمال کریں۔",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "آپ نے جو ای میل درج کی ہے وہ پہلے سے موجود ہے۔",
+        "subscriptions_management": {
+          "title": "رکنیت",
+          "description": "اپنے سبسکرپشنز کو دیکھنے اور ان کا نظم کرنے کے لیے اپنے اکاؤنٹ پر جاری رکھیں۔",
+          "button_label": "اپنی رکنیت کا نظم کریں۔"
+        },
+        "manage_order_label": "اپنے آرڈر کا نظم کریں۔",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "آپ کو چند منٹوں میں اپنے گفٹ کارڈ کے ساتھ ایک متن موصول ہوگا۔",
+          "other": "آپ کو چند منٹوں میں اپنے گفٹ کارڈز کے ساتھ ایک متن موصول ہوگا۔"
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "آپ کو چند منٹوں میں اپنے گفٹ کارڈ کے ساتھ ایک ای میل موصول ہوگی۔",
+          "other": "آپ کو چند منٹوں میں اپنے گفٹ کارڈز کے ساتھ ایک ای میل موصول ہوگی۔"
+        },
+        "gift_card_email_title": {
+          "one": "گفٹ کارڈ ای میل کے ذریعے بھیجا گیا تھا۔",
+          "other": "گفٹ کارڈز بذریعہ ای میل بھیجے گئے تھے۔"
+        },
+        "gift_card_text_title": {
+          "one": "گفٹ کارڈ ٹیکسٹ میسج کے ذریعے بھیجا گیا تھا۔",
+          "other": "گفٹ کارڈز ٹیکسٹ میسج کے ذریعے بھیجے گئے تھے۔"
+        },
+        "resend_gift_cards_by_email": "ای میل دوبارہ بھیجیں",
+        "resend_gift_cards_by_text": "ٹیکسٹ میسج دوبارہ بھیجیں۔",
+        "gift_card_resent_confirmation": {
+          "one": "گفٹ کارڈ دوبارہ بھیجا گیا۔",
+          "other": "گفٹ کارڈز دوبارہ بھیجے گئے۔"
+        },
+        "gift_card_resend_failure": {
+          "one": "آپ کا گفٹ کارڈ دوبارہ بھیجنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ہم سے رابطہ کریں۔",
+          "other": "آپ کے گفٹ کارڈز کو دوبارہ بھیجنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ہم سے رابطہ کریں۔"
         }
       },
       "session_errors": {
@@ -641,6 +749,154 @@
       "localized_fields": {
         "additional_information": {
           "title": "اضافی معلومات"
+        }
+      },
+      "field_errors": {
+        "address_address1_contains_emojis": "ایڈریس 1 ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_address1_contains_html_tags": "ایڈریس 1 میں ایچ ٹی ایم ایل ٹیگز نہیں ہو سکتے۔",
+        "address_address2_blank": "اپارٹمنٹ، سویٹ وغیرہ میں داخل ہوں۔",
+        "address_address2_too_long": "دوسری ایڈریس لائن بہت لمبی ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_address2_contains_emojis": "ایڈریس 2 ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_address2_contains_html_tags": "ایڈریس 2 میں ایچ ٹی ایم ایل ٹیگز نہیں ہو سکتے۔",
+        "address_city_blank": "شہر میں داخل ہوں۔",
+        "address_city_too_long": "شہر بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_city_contains_emojis": "سٹی ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_city_contains_html_tags": "شہر HTML ٹیگز پر مشتمل نہیں ہو سکتا۔",
+        "address_country_blank": "ایک ملک\/علاقہ منتخب کریں۔",
+        "address_country_not_supported": "ہم اس ملک یا خطے میں جہاز نہیں بھیجتے ہیں۔ ایک نیا شپنگ پتہ درج کریں اور دوبارہ کوشش کریں۔",
+        "address_province_blank": "ایک ریاست\/صوبہ منتخب کریں۔",
+        "address_company_blank": "کمپنی کا نام درج کریں۔",
+        "address_company_too_long": "کمپنی کا نام بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_company_contains_emojis": "کمپنی ایموجیز پر مشتمل نہیں ہو سکتی",
+        "address_company_contains_html_tags": "کمپنی HTML ٹیگز پر مشتمل نہیں ہو سکتی۔",
+        "address_phone_blank": "ایک درست فون نمبر درج کریں۔",
+        "address_phone_contains_emojis": "فون نمبر ایموجیز پر مشتمل نہیں ہو سکتا",
+        "address_zip_blank": "زپ\/پوسٹل کوڈ درج کریں۔",
+        "address_zip_too_long": "زپ \/ پوسٹل کوڈ بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
+        "address_zip_not_supported": "یہ مقام تعاون یافتہ نہیں ہے۔",
+        "address_zip_invalid_for_country": "%{country} کے لیے ایک درست زپ\/پوسٹل کوڈ درج کریں",
+        "address_zip_invalid_for_province": "%{صوبہ} کے لیے ایک درست زپ\/پوسٹل کوڈ درج کریں",
+        "address_zip_invalid_for_country_and_province": "%{صوبہ}، %{ملک} کے لیے ایک درست زپ\/پوسٹل کوڈ درج کریں",
+        "address_zip_contains_emojis": "زپ \/ پوسٹل کوڈ میں ایموجیز شامل نہیں ہو سکتے",
+        "credit_card_name_blank": "اپنا نام بالکل اسی طرح درج کریں جیسا کہ آپ کے کارڈ پر لکھا ہے۔",
+        "credit_card_name_invalid": "اپنا نام بالکل اسی طرح درج کریں جیسا کہ آپ کے کارڈ پر لکھا ہے۔",
+        "credit_card_number_invalid": "ایک درست کارڈ نمبر درج کریں۔",
+        "credit_card_expiry_invalid": "ایک درست میعاد ختم ہونے کی تاریخ درج کریں۔",
+        "credit_card_month_invalid": "ایک درست میعاد ختم ہونے کا مہینہ درج کریں۔",
+        "credit_card_year_invalid": "ایک درست میعاد ختم ہونے کا سال درج کریں۔",
+        "credit_card_start_invalid": "ایک درست کارڈ شروع ہونے کی تاریخ درج کریں۔",
+        "credit_card_start_month_invalid": "ایک درست کارڈ شروع مہینہ درج کریں۔",
+        "credit_card_start_year_invalid": "ایک درست کارڈ کا آغاز سال درج کریں۔",
+        "credit_card_verification_value_blank": "اپنے کارڈ پر CVV یا سیکیورٹی کوڈ درج کریں۔",
+        "delivery_line_detail_changed": "ڈیلیوری کی کچھ تفصیلات تبدیل ہو سکتی ہیں۔ اپنے ترسیل کے طریقہ کی تصدیق کریں اور دوبارہ کوشش کریں۔",
+        "delivery_zone_not_found": "مخصوص ملک میں مخصوص زون نہیں ملا۔",
+        "reduction_code_code_not_found": "ایک درست ڈسکاؤنٹ کوڈ یا گفٹ کارڈ درج کریں۔",
+        "reduction_code_discount_not_found": "ایک درست ڈسکاؤنٹ کوڈ درج کریں۔",
+        "reduction_code_gift_card_code_invalid": "ایک درست گفٹ کارڈ درج کریں۔",
+        "reduction_code_gift_card_unusable": "آپ دوسرا گفٹ کارڈ خریدنے کے لیے گفٹ کارڈ استعمال نہیں کر سکتے",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "گفٹ کارڈز موخر خریداری کے اختیارات کے ساتھ تعاون یافتہ نہیں ہیں۔",
+        "shipping_line_phone_blank": "ڈیلیوری کا یہ طریقہ استعمال کرنے کے لیے ایک فون نمبر درج کریں۔",
+        "shipping_line_phone_invalid": "ایک درست فون نمبر درج کریں۔",
+        "tips_invalid_tip_amount": "%{amount} سے کم ٹپ درج کریں",
+        "gift_card_already_applied": "یہ گفٹ کارڈ پہلے ہی آپ کے آرڈر پر لاگو ہو چکا ہے۔",
+        "gift_card_disabled": "یہ گفٹ کارڈ اب دستیاب نہیں ہے۔",
+        "gift_card_expired": "اس گفٹ کارڈ کی میعاد ختم ہو گئی ہے۔",
+        "gift_card_depleted": "اس گفٹ کارڈ میں کوئی فنڈز باقی نہیں ہیں۔",
+        "gift_card_currency_mismatch": "اس آرڈر کے ساتھ صرف %{checkout_currency} میں گفٹ کارڈز استعمال کیے جا سکتے ہیں۔",
+        "gift_cards_not_supported_with_deferred_purchase_options": "گفٹ کارڈز موخر خریداری کے اختیارات کے ساتھ تعاون یافتہ نہیں ہیں۔",
+        "gift_card_buying_gift_card": "آپ دوسرا گفٹ کارڈ خریدنے کے لیے گفٹ کارڈ استعمال نہیں کر سکتے",
+        "payment_gateway_needs_paid_plan_error": "ادائیگی کا یہ طریقہ ابھی اسٹور پر دستیاب نہیں ہے۔",
+        "payment_gateway_not_in_test_mode": "آرڈرز کی جانچ کے لیے سیٹ اپ نہیں ہے۔ یہ اسٹور حقیقی آرڈرز یا حقیقی ادائیگیاں قبول نہیں کر سکتا۔",
+        "payment_gateway_incompatible_with_multi_currency": "اس چیک آؤٹ کو اپنی مقامی کرنسی میں مکمل کرنے کے لیے، آپ کو کریڈٹ کارڈ کے ذریعے ادائیگی کرنی ہوگی۔",
+        "payment_gateway_unsupported_for_subscriptions": "ادائیگی کا یہ طریقہ سبسکرپشن آرڈرز کے لیے دستیاب نہیں ہے۔",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "ادائیگی کا یہ طریقہ موخر خریداری کے اختیارات کے لیے دستیاب نہیں ہے۔",
+        "payment_gateway_unsupported_for_country": "ادائیگی کا یہ طریقہ آپ کے شپنگ ملک کے لیے دستیاب نہیں ہے۔",
+        "payment_gateway_unsupported_for_development_store_html": "ٹیسٹ آرڈر دینے کے لیے، آپ کو ٹیسٹ پیمنٹ گیٹ وے استعمال کرنے کی ضرورت ہوگی۔ <a href=\"%{docs_link}\">ڈیولپمنٹ اسٹورز میں ٹیسٹنگ آرڈرز<\/a> کے بارے میں مزید جانیں۔",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "آپ اس ادائیگی کے پروسیسر کے ساتھ ڈیولپمنٹ اسٹور آرڈرز کی حد تک پہنچ گئے ہیں۔ دوسرا آرڈر کرنے کے لیے، آپ کو ٹیسٹ ادائیگی کا گیٹ وے استعمال کرنا ہوگا۔ <a href=\"%{docs_link}\">ڈیولپمنٹ اسٹورز میں ٹیسٹنگ آرڈرز<\/a> کے بارے میں مزید جانیں۔",
+        "purchase_options_agreement_blank": "اپنی خریداری کو جاری رکھنے کے لیے، موخر شدہ یا اعادی خریداری کی شرائط سے اتفاق کریں۔",
+        "physical_gift_card_invalid_quantity": "فزیکل گفٹ کارڈ لائن آئٹمز میں ایسی مقدار ہونی چاہیے جو گفٹ کارڈ کے کوڈز کی تعداد سے مماثل ہو۔",
+        "physical_gift_card_duplicate_code": "فزیکل گفٹ کارڈ لائن آئٹم ڈپلیکیٹ کوڈ پر مشتمل ہے۔",
+        "physical_gift_card_invalid_code": "فزیکل گفٹ کارڈ کا کوڈ غلط ہے۔",
+        "email_blank": "ایک ای میل درج کریں۔",
+        "phone_blank": "ایک فون نمبر درج کریں۔",
+        "address_country_invalid": "فہرست سے ایک ملک\/علاقہ منتخب کریں۔",
+        "address_zip_invalid": "ایک درست زپ\/پوسٹل کوڈ درج کریں۔",
+        "gift_card_invalid": "گفٹ کارڈ \"••••%{last_four_characters}\" اب درست نہیں ہے۔",
+        "vaulting_agreement_blank": "جاری رکھنے کے لیے، آپ کو اپنا نیا کریڈٹ کارڈ محفوظ کرنا ہوگا کیونکہ اس آرڈر کی ادائیگی بعد کی تاریخ میں ہوگی۔",
+        "sms_marketing_phone_invalid": "ایک درست فون نمبر درج کریں۔",
+        "address_suggestion_did_you_mean_html": "کیا آپ کا مطلب تھا %{html}؟"
+      },
+      "store_credit_errors": {
+        "generic_error": "آپ کے اسٹور کریڈٹ میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا صفحہ دوبارہ لوڈ کریں۔"
+      },
+      "payment_errors": {
+        "method_not_available": "درخواست کردہ ادائیگی کا طریقہ دستیاب نہیں ہے۔",
+        "terms_changed": "آپ کی ادائیگی کا طریقہ مزید دستیاب نہیں ہے۔ براہ کرم ادائیگی کا نیا طریقہ منتخب کریں۔",
+        "generic_error": "آپ کی ادائیگی پر کارروائی کرنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "rejected_transaction": "آپ کی ادائیگی مسترد کر دی گئی۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "credit_card_processing": "تکنیکی وجوہات کی بنا پر آپ کی ادائیگی پر کارروائی نہیں کی جا سکتی ہے۔ چند منٹوں میں دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "checkout_amount_changed": "آپ کی ادائیگی پر کارروائی نہیں ہو سکی کیونکہ چیک آؤٹ پر واجب الادا رقم تبدیل ہو گئی ہے۔ براہ کرم اپنا آرڈر چیک کریں اور دوبارہ کوشش کریں۔",
+        "deferred_payment_not_allowed": "موخر ادائیگیوں کی اجازت نہیں ہے۔ براہ کرم اپنا آرڈر چیک کریں اور دوبارہ کوشش کریں۔",
+        "deferred_payment_required": "اس آرڈر کے لیے موخر ادائیگی کی ضرورت ہے۔ براہ کرم اپنا آرڈر چیک کریں اور دوبارہ کوشش کریں۔",
+        "deferred_amount_changed": "آپ کی ادائیگی پر کارروائی نہیں ہو سکی کیونکہ موخر ادائیگی کی رقم تبدیل ہو گئی ہے۔ براہ کرم اپنا آرڈر چیک کریں اور دوبارہ کوشش کریں۔",
+        "deferred_date_changed": "آپ کی ادائیگی پر کارروائی نہیں ہو سکی کیونکہ موخر ادائیگی کی تاریخ بدل گئی ہے۔ براہ کرم اپنا آرڈر چیک کریں اور دوبارہ کوشش کریں۔",
+        "order_total_changed": "آپ کی ادائیگی پر کارروائی نہیں ہو سکی کیونکہ آپ کے آرڈر کی کل رقم تبدیل ہو گئی ہے۔ اپنے آرڈر کی کل چیک کریں اور دوبارہ کوشش کریں۔",
+        "payment_processing": "تکنیکی وجوہات کی بنا پر آپ کی ادائیگی پر کارروائی نہیں کی جا سکتی ہے۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "payment_processing_no_retry": "تکنیکی وجوہات کی بنا پر آپ کی ادائیگی پر کارروائی نہیں کی جا سکتی ہے۔ براہ کرم ادائیگی کا ایک مختلف طریقہ آزمائیں۔",
+        "paypal_zero_amount": "آپ %{amount} آرڈرز کے لیے PayPal استعمال نہیں کر سکتے۔ تصدیق کریں کہ آپ کا آرڈر درست ہے اور پے پال کے بغیر چیک آؤٹ کریں۔",
+        "paypal_invalid_token": "پے پال دستیاب نہیں تھا۔ دوبارہ کوشش کریں یا ایک مختلف چیک آؤٹ آپشن استعمال کریں۔",
+        "pay_later_failed": "بعد میں پے کے ساتھ آپ کی ادائیگی پر کارروائی کرنے میں ایک خرابی تھی۔ ادائیگی کا دوسرا طریقہ منتخب کریں اور دوبارہ کوشش کریں۔",
+        "three_d_secure_failed": "آپ کی ادائیگی کی تصدیق نہیں ہو سکی۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "three_d_secure_failed_duplicate": "کریڈٹ کارڈ کی 3D سیکیور توثیق ناکام ہوگئی کیونکہ دوسرا پہلے سے جاری ہے۔",
+        "three_d_secure_throttled": "بہت زیادہ کوششیں؛ براہ کرم دوبارہ کوشش کرنے سے پہلے انتظار کریں۔",
+        "subscription_agreement_blank": "سبسکرپشن خریدنے کے لیے آپ کی ادائیگی کی تفصیلات کو محفوظ کرنے کی ضرورت ہے۔ جاری رکھنے کے لیے، تصدیق کریں کہ آپ متفق ہیں یا اپنے آرڈر سے سبسکرپشن آئٹمز کو ہٹا دیں۔",
+        "insufficient_funds": "ناکافی فنڈز کی وجہ سے آپ کی ادائیگی مسترد کر دی گئی۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "multiple_deferred_payment_not_allowed": "فی درخواست صرف ایک موخر ادائیگی کی اجازت ہے۔ براہ کرم اپنی درخواست چیک کریں اور دوبارہ کوشش کریں۔",
+        "shipping_must_match_billing": "بلنگ ایڈریس شپنگ ایڈریس سے مماثل ہونا چاہیے۔ براہ کرم ادائیگی کا ایک مختلف طریقہ استعمال کریں۔",
+        "decision_rule_block": "آپ کی ادائیگی پر کارروائی کرنے میں ایک مسئلہ تھا۔ براہ کرم اسٹور کے مالک سے رابطہ کریں۔",
+        "pick_up_card": "آپ کا کارڈ مسترد کر دیا گیا تھا۔ دوبارہ کوشش کریں یا ادائیگی کا کوئی دوسرا طریقہ استعمال کریں۔",
+        "cannot_verify": "آپ کی ادائیگی کی تفصیلات کی تصدیق نہیں ہو سکی۔ اپنے کارڈ کی تفصیلات چیک کریں اور دوبارہ کوشش کریں۔"
+      },
+      "review": {
+        "title": "جائزہ لیں",
+        "review_title": "آرڈر کا جائزہ لیں۔",
+        "checkout_as_guest": "مہمان کے طور پر چیک آؤٹ کریں۔",
+        "blocks": {
+          "contact_method_title": "رابطہ کریں۔",
+          "billing_address_title": "بلنگ",
+          "shipping_address_title": "کو بھیجیں۔",
+          "shipping_method_title": "طریقہ",
+          "payment_method_title": "ادائیگی",
+          "change_link_label": "تبدیلی",
+          "change_contact_method_link_label": "رابطے کی معلومات کو تبدیل کریں۔",
+          "change_billing_address_link_label": "بلنگ ایڈریس تبدیل کریں۔",
+          "change_shipping_address_link_label": "شپنگ ایڈریس تبدیل کریں۔",
+          "change_shipping_method_link_label": "شپنگ کا طریقہ تبدیل کریں۔",
+          "change_payment_method_link_label": "ادائیگی کا طریقہ تبدیل کریں۔",
+          "pick_up_in_store_shipping_method_html": "اسٹور میں پک اپ · %{location_name}",
+          "purchase_order_number_title": "پی او نمبر",
+          "change_purchase_order_number_label": "PO نمبر تبدیل کریں۔",
+          "change_delivery_method_link_label": "ترسیل کا طریقہ تبدیل کریں۔",
+          "no_address": "(کوئی پتہ نہیں)",
+          "no_purchase_order_number": "(کوئی PO نمبر نہیں)",
+          "due_after_order_reviewed_html": "آرڈر کا جائزہ لینے کے بعد واجب الادا ہے۔",
+          "review_title_free_order": "اپنے آرڈر کا جائزہ لیں اور مکمل کریں۔"
+        },
+        "block_title": "اپنی معلومات کا جائزہ لیں۔"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "خبروں اور پیشکشوں کے ساتھ مجھے ای میل کریں۔",
+        "post_accept_marketing_checkbox_label": "آپ نے ای میل کی خبریں اور پیشکشیں حاصل کرنے کے لیے سبسکرائب کیا ہے۔",
+        "pending_accept_marketing_checkbox_label": "خبروں اور پیشکشوں کی اپنی رکنیت کی تصدیق کرنے کے لیے اپنا ای میل چیک کریں۔",
+        "accept_sms_checkbox_label": "خبروں اور پیشکشوں کے ساتھ مجھے ٹیکسٹ کریں۔",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "رازداری کی پالیسی",
+            "terms_of_service": "سروس کی شرائط",
+            "description_html": "ٹیکسٹ کے ذریعے سائن اپ کرکے، آپ فراہم کردہ فون نمبر پر بار بار آنے والے خودکار مارکیٹنگ پیغامات بشمول کارٹ ریمائنڈرز وصول کرنے سے اتفاق کرتے ہیں۔ رضامندی خریداری کی شرط نہیں ہے۔ ان سبسکرائب کرنے کے لیے STOP کا جواب دیں۔ مدد کے لیے HELP کا جواب دیں۔ پیغام کی تعدد مختلف ہوتی ہے۔ میسج اور ڈیٹا ریٹس لاگو ہو سکتے ہیں۔ ہمارا %{privacy_policy_link} اور %{terms_of_service_link} دیکھیں۔",
+            "description_transactional_html": "آپ کو آرڈر کی تصدیق اور شپنگ اپ ڈیٹس سے متعلق ٹیکسٹ پیغامات موصول ہو سکتے ہیں۔ ان سبسکرائب کرنے کے لیے STOP کا جواب دیں۔ مدد کے لیے HELP کا جواب دیں۔ پیغام کی تعدد مختلف ہوتی ہے۔ میسج اور ڈیٹا ریٹس لاگو ہو سکتے ہیں۔ ہمارا %{privacy_policy_modal_link} اور %{terms_of_service_modal_link} دیکھیں۔"
+          },
+          "mobile_phone_number": "موبائل فون نمبر"
         }
       }
     },
