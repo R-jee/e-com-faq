@@ -7,8 +7,9 @@ function isScrolledIntoView(elem){
     var elemBottom = elemTop + $elem.height();
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   }
-
+isScrolledIntoView("shopify-section-language-floating-icon");
   $(document).scroll(function() {
+    
     var y = $(this).scrollTop();
     var point = "0px", side = "50px";
     if (y > 200) {     
