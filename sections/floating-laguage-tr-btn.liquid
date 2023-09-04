@@ -1,0 +1,35 @@
+{% if section.settings.show_shopify_floating_laguage_tr_btn %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{{ 'shopify-section-language-floating-icon.css' | asset_url | stylesheet_tag }}
+
+<div id="shopify-section-language-floating-icon" class="shopify-section">
+  <div class="floating-lang" style="opacity: 0; visibility: hidden;">
+    <div style="display:inline-flex;">
+      <div class="lang-switcher-c">
+        <a class="lang-switch-a" data-value="1" href=""
+          ><i class="translate-ui fa fa-language" aria-hidden="true"></i
+          ><strong style="font-size:20px ">اردو</strong>&nbsp;<span>ميں پڑھيں</span></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="{{ 'shopify-section-language-floating-icon.js' | asset_url }}" type="text/javascript" async defer></script>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "floating-laguage-tr-btn",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_shopify_floating_laguage_tr_btn",
+        "default": true,
+        "label": "Show Floating laguage translation btn"
+      }
+    ]
+  }
+{% endschema %}
