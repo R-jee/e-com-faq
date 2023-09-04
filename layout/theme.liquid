@@ -283,7 +283,6 @@
       {{ content_for_layout }}
     </main>
 
-
     {% sections 'footer-group' %}
 
     <ul hidden>
@@ -292,6 +291,7 @@
     </ul>
 
     <script>
+      
       
       
       
@@ -340,6 +340,7 @@
 
 
 
+
     </script>
 
     {%- if settings.predictive_search_enabled -%}
@@ -350,6 +351,7 @@
       kakaoPixel('227733132068960035').pageView();
     </script>
 
-    {% render 'floating-laguage-tr-btn' %}{{ 'shopify-section-language-floating-icon.js' | asset_url }}
+    {% render 'floating-laguage-tr-btn' -%}
+    {{- 'shopify-section-language-floating-icon.js' | asset_url -}}
   </body>
 </html>
