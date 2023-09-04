@@ -565,7 +565,17 @@
             "description_partially_paid": "یہ آرڈر جزوی طور پر ادا کیا گیا تھا۔ آپ کا بیلنس باقی ہے۔",
             "description_authorized": "آپ کے ادائیگی کے طریقہ سے مقررہ تاریخ پر چارج کیا جائے گا، یا آپ ابھی ادائیگی کر سکتے ہیں۔",
             "description_due_on_receipt": "ادائیگی واجب الادا ہونے پر آپ کو ایک رسید موصول ہوگی۔",
-            "description_due_on_fulfillment": "اس آرڈر میں تمام اشیاء کی تکمیل کے بعد ادائیگی واجب ہے۔"
+            "description_due_on_fulfillment": "اس آرڈر میں تمام اشیاء کی تکمیل کے بعد ادائیگی واجب ہے۔",
+            "banner_overdue": {
+              "one": "آپ کی ادائیگی {{count}} دن کی باقی ہے۔",
+              "other": "آپ کی ادائیگی {{count}} دن کی باقی ہے۔"
+            },
+            "banner_due": {
+              "one": "آپ کی ادائیگی {{count}} دن میں واجب الادا ہے۔",
+              "other": "آپ کی ادائیگی {{count}} دنوں میں واجب الادا ہے۔"
+            },
+            "banner_due_today": "آج آپ کی ادائیگی واجب الادا ہے۔",
+            "title": "ادائیگی واجب الادا"
           },
           "draft": {
             "description": "آرڈر کی تصدیق ہونے پر ادائیگی کی تفصیلات کا فیصلہ کیا جاتا ہے۔",
@@ -606,7 +616,10 @@
           "hide_events_accessibility_label": "ڈرافٹ آرڈر کی تفصیلات چھپائیں۔"
         },
         "subtitle": "جمع کرایا {{date}}",
-        "title": "آرڈر {{name}}"
+        "title": "آرڈر {{name}}",
+        "draft_order_subtitle": "آرڈر {{draftOrderName {{date}} {{draftOrderName}}",
+        "loading": "آرڈر کی تفصیلات لوڈ ہو رہی ہیں۔",
+        "loading_finished_accessibility_message": "آرڈر کی تفصیلات لوڈ کر دی گئی ہیں۔"
       },
       "payment_methods": {
         "payment_delete": {
@@ -632,6 +645,99 @@
         "modal_po_number_input_max_length_error": "PO نمبرز میں زیادہ سے زیادہ {{maxLength}} حروف ہوتے ہیں۔",
         "save": "محفوظ کریں۔",
         "title": "PO # {{poNumber}}"
+      },
+      "account_information": {
+        "company_card_name_label": "کمپنی کا نام",
+        "company_card_section_accessibility_label": "کمپنی"
+      },
+      "locations": {
+        "contact_email": "ای میل",
+        "contact_list_title": "لوگ",
+        "contact_name": "نام",
+        "contact_permissions": "اجازتیں",
+        "contact_phone_number": "فون نمبر",
+        "location_picker_label": "مقام کا نام",
+        "location_picker_accessibility_label": "مقام کا نام: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : ادائیگیاں {{numberOfDays}} دنوں میں واجب الادا ہیں۔",
+        "own_role_contact_name": "تم",
+        "pagination": {
+          "load_more": "مزید لوڈ کریں",
+          "load_more_accessibility_label": "مزید مقامات لوڈ کریں۔"
+        },
+        "payment_details_title": "ادائیگی کی تفصیلات",
+        "payment_terms": "ادائیگی کی شرائط",
+        "permissions_label": "آپ کی اجازت",
+        "permissions_title": "اجازتیں",
+        "section_title": "مقام",
+        "shipping_address_required": "آرڈر دینا شروع کرنے کے لیے اس مقام پر ایک شپنگ ایڈریس شامل کریں۔",
+        "staff_and_permissions_title": "عملہ اور اجازت",
+        "tax_details_title": "ٹیکس کی تفصیلات",
+        "tax_id": "ٹیکس شناخت",
+        "tax_exemptions": "ٹیکس چھوٹ",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} مزید",
+        "multiple_tax_exemptions_and": "اور",
+        "tax_exemptions_modal_close": "بند کریں",
+        "taxes_none": "کوئی نہیں۔",
+        "tax_exemption_not_applicable": "N \/ A",
+        "tax_exemptions_modal_button_accessibility_label": "تمام ٹیکس چھوٹ دیکھیں"
+      },
+      "location_selection": {
+        "continue_to_store": "ذخیرہ کرنا جاری رکھیں",
+        "description": "اگر آپ کے پاس پہلے سے ہی آپ کے کارٹ میں آئٹمز ہیں، تو مقامات کو تبدیل کرنے سے کارٹ کی قیمتوں اور مقدار پر اثر پڑ سکتا ہے۔",
+        "list_accessibility_label": "مقامات کی فہرست",
+        "list_item_without_address_accessibility_label": "{{name}} : کوئی پتہ نہیں۔",
+        "list_loading_accessibility_message": "مقامات کی فہرست لوڈ ہو رہی ہے۔",
+        "list_loading_address_accessibility_message": "{{locationName}} کا پتہ لوڈ ہو رہا ہے",
+        "list_loading_finished_accessibility_message": "مقامات کی فہرست لوڈ ہو گئی ہے۔",
+        "loading_store_accessibility_message": "سٹور پر جا رہے ہیں۔",
+        "no_location_title": "صرف ذاتی احکامات",
+        "no_location_description": "اب آپ کو {{company}} کے لیے آرڈر دینے کی اجازت نہیں ہے۔ آپ اب بھی ذاتی آرڈر دے سکتے ہیں۔",
+        "no_locations_found": "کوئی مقامات نہیں ملے",
+        "search": "ایک مقام تلاش کریں۔",
+        "search_location_title": "ایک مقام منتخب کریں۔",
+        "selection_cancel_button": "منسوخ کریں۔",
+        "selection_confirmation_button": "مقام کا انتخاب کریں۔",
+        "title": "آپ کس مقام کے لیے خرید رہے ہیں؟",
+        "clear_search": "تلاش صاف کریں۔",
+        "try_new_search": "ایک نئی تلاش کی کوشش کریں۔"
+      },
+      "addresses": {
+        "add_billing_address_button": "بلنگ ایڈریس شامل کریں۔",
+        "add_billing_address_section_accessibility_label": "بلنگ ایڈریس شامل کریں۔",
+        "add_shipping_address_button": "شپنگ ایڈریس شامل کریں۔",
+        "add_shipping_address_section_accessibility_label": "شپنگ ایڈریس شامل کریں۔",
+        "billing_address_card_title": "بل کا پتہ",
+        "cancel_adding_billing_address_accessibility_label": "بلنگ ایڈریس شامل کرنا منسوخ کریں۔",
+        "cancel_adding_shipping_address_accessibility_label": "شپنگ ایڈریس شامل کرنا منسوخ کریں۔",
+        "save_new_billing_address_accessibility_label": "بلنگ ایڈریس محفوظ کریں۔",
+        "save_new_shipping_address_accessibility_label": "شپنگ ایڈریس محفوظ کریں۔",
+        "shipping_address_card_title": "شپنگ ایڈریس"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "سب چھپائیں۔",
+          "show_all": "سارے دکھاو",
+          "hide_all_accessibility_label": "جائزہ میں تمام آرڈرز چھپائیں۔",
+          "show_all_accessibility_label": "جائزہ میں تمام آرڈرز دکھائیں۔",
+          "show_all_orders_in_review": "جائزہ میں تمام آرڈرز دکھائیں۔",
+          "show_less_orders_in_review": "جائزہ میں کم آرڈرز دکھائیں۔",
+          "title": "زیر التواء",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "آپ کے پاس کوئی زیر التواء آرڈر نہیں ہیں۔",
+            "pending_orders": {
+              "one": "آپ کے پاس {{count}} آرڈر زیر التواء ہے۔",
+              "other": "آپ کے پاس {{count}} آرڈرز زیر التواء ہیں۔"
+            },
+            "more_than_pagination_length": "آپ کے پاس {{count}} سے زیادہ زیر التواء آرڈرز ہیں۔"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "جائزہ نیویگیشن بٹنوں میں آرڈرز"
+          }
+        },
+        "order_list_column_headers_location": "مقام",
+        "order_list_column_headers_contact": "رابطہ کریں۔",
+        "removed_company_contact_tooltip": "کمپنی سے نکال دیا گیا۔"
       }
     },
     "errors": {
@@ -852,7 +958,25 @@
       "billing_address_dropdown_placeholder": "بل کا پتہ"
     },
     "address_form": {
-      "attention": "توجہ"
+      "attention": "توجہ",
+      "attention_help_text": "کسی شخص یا محکمہ کا نام",
+      "auto_complete_close_accessibility_label": "تجاویز بند کریں۔",
+      "auto_complete_title": "تجاویز",
+      "billing_address": "بلنگ ایڈریس کے بطور استعمال کریں۔",
+      "cancel": "منسوخ کریں۔",
+      "cancel_accessibility_label": "ایڈریس کو منسوخ کریں {{address}}",
+      "creation_success_notification": "پتہ شامل کیا گیا۔",
+      "default_address": "یہ میرا ڈیفالٹ ایڈریس ہے۔",
+      "default_address_creation_success_notification": "پہلے سے طے شدہ پتہ شامل کر دیا گیا۔",
+      "default_address_update_success_notification": "ڈیفالٹ ایڈریس اپ ڈیٹ ہو گیا۔",
+      "loading_add_form_accessibility_message": "نیا ایڈریس فارم لوڈ ہو رہا ہے۔",
+      "loading_edit_form_accessibility_message": "ایڈریس کا فارم لوڈ ہو رہا ہے۔",
+      "loading_form_accessibility_message": "ایڈریس فارم لوڈ ہو رہا ہے۔",
+      "loading_finished_accessibility_message": "ایڈریس فارم لوڈ ہو گیا ہے۔",
+      "save": "محفوظ کریں۔",
+      "save_accessibility_label": "پتہ محفوظ کریں {{address}}",
+      "section_title_accessibility_label": "ایڈریس شامل کریں۔",
+      "update_success_notification": "پتہ اپ ڈیٹ ہو گیا۔"
     }
   },
   "sections": {
@@ -999,6 +1123,129 @@
         "label": "مقدار",
         "input_label": "{{ product }} کے لیے مقدار"
       }
+    }
+  },
+  "customer": {
+    "addresses": {
+      "default": "طے شدہ",
+      "add_new": "ایک نیا پتہ شامل کریں۔",
+      "edit_address": "ایڈریس میں ترمیم کریں۔",
+      "first_name": "پہلا نام",
+      "last_name": "آخری نام",
+      "company": "کمپنی",
+      "address1": "پتہ 1",
+      "address2": "پتہ 2",
+      "city": "شہر",
+      "country": "ملک\/علاقہ",
+      "province": "صوبہ",
+      "zip": "ڈاک \/ زپ کوڈ",
+      "phone": "فون",
+      "set_default": "ڈیفالٹ ایڈریس کے طور پر سیٹ کریں۔",
+      "add": "ایڈریس شامل کریں۔",
+      "update": "پتہ اپ ڈیٹ کریں۔",
+      "cancel": "منسوخ کریں۔",
+      "edit": "ترمیم",
+      "delete": "حذف کریں۔",
+      "delete_confirm": "کیا آپ واقعی یہ پتہ حذف کرنا چاہتے ہیں؟"
+    },
+    "log_in": "لاگ ان کریں",
+    "log_out": "لاگ آوٹ",
+    "login_page": {
+      "cancel": "منسوخ کریں۔",
+      "create_account": "اکاؤنٹ بنائیں",
+      "email": "ای میل",
+      "forgot_password": "اپنا پاس ورڈ بھول گئے؟",
+      "guest_continue": "جاری رہے",
+      "guest_title": "مہمان کے طور پر جاری رکھیں",
+      "password": "پاس ورڈ",
+      "title": "لاگ ان کریں",
+      "sign_in": "سائن ان",
+      "submit": "جمع کرائیں"
+    },
+    "order": {
+      "title": "آرڈر {{ name }}",
+      "date_html": "{{ date }} کو رکھا گیا",
+      "cancelled_html": "آرڈر {{ date }} کو منسوخ کر دیا گیا",
+      "cancelled_reason": "وجہ: {{ reason }}",
+      "billing_address": "بل کا پتہ",
+      "payment_status": "ادائیگی کی حیثیت",
+      "shipping_address": "شپنگ ایڈریس",
+      "fulfillment_status": "تکمیل کی حیثیت",
+      "discount": "رعایت",
+      "shipping": "شپنگ",
+      "tax": "ٹیکس",
+      "product": "پروڈکٹ",
+      "price": "قیمت",
+      "quantity": "مقدار",
+      "total": "کل",
+      "total_refunded": "رقم کی واپسی",
+      "fulfilled_at_html": "پورا ہوا {{ date }}",
+      "track_shipment": "کھیپ کو ٹریک کریں۔",
+      "tracking_url": "ٹریکنگ لنک",
+      "tracking_company": "کیریئر",
+      "tracking_number": "ٹریکنگ نمبر",
+      "subtotal": "ذیلی کل",
+      "total_duties": "فرائض"
+    },
+    "orders": {
+      "title": "آرڈر کی تاریخ",
+      "order_number": "ترتیب",
+      "order_number_link": "آرڈر نمبر {{ number }}",
+      "date": "تاریخ",
+      "payment_status": "ادائیگی کی حیثیت",
+      "fulfillment_status": "تکمیل کی حیثیت",
+      "total": "کل",
+      "none": "آپ نے ابھی تک کوئی آرڈر نہیں دیا ہے۔"
+    },
+    "recover_password": {
+      "title": "آپ کا پاس ورڈ دوبارہ ترتیب دیں",
+      "subtext": "ہم آپ کو اپنا پاس ورڈ دوبارہ ترتیب دینے کے لیے ایک ای میل بھیجیں گے۔",
+      "success": "ہم نے آپ کو آپ کا پاس ورڈ اپ ڈیٹ کرنے کے لیے ایک لنک کے ساتھ ایک ای میل بھیجا ہے۔"
+    },
+    "register": {
+      "title": "اکاؤنٹ بنائیں",
+      "first_name": "پہلا نام",
+      "last_name": "آخری نام",
+      "email": "ای میل",
+      "password": "پاس ورڈ",
+      "submit": "بنانا"
+    },
+    "reset_password": {
+      "title": "اکاؤنٹ کا پاس ورڈ دوبارہ ترتیب دیں۔",
+      "subtext": "نیا پاسورڈ درج کریں",
+      "password": "پاس ورڈ",
+      "password_confirm": "پاس ورڈ کی تصدیق کریں۔",
+      "submit": "پاس ورڈ ری سیٹ"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "گفٹ کارڈ کوڈ آن لائن یا QR کوڈ ان اسٹور استعمال کریں۔",
+      "title": "یہ رہا آپ کا {{ value }} گفٹ کارڈ بیلنس برائے {{ shop }} !",
+      "subtext": "آپ کا گفٹ کارڈ",
+      "gift_card_code": "گفٹ کارڈ کوڈ",
+      "shop_link": "آن لائن اسٹور پر جائیں۔",
+      "add_to_apple_wallet": "Apple Wallet میں شامل کریں۔",
+      "qr_image_alt": "QR کوڈ - گفٹ کارڈ کو چھڑانے کے لیے اسکین کریں۔",
+      "copy_code": "گفٹ کارڈ کوڈ کاپی کریں۔",
+      "expiration_date": "میعاد ختم ہو رہی ہے {{ expires_on }}",
+      "copy_code_success": "کوڈ کامیابی سے کاپی ہو گیا۔",
+      "expired": "میعاد ختم"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "میں اسے بطور تحفہ بھیجنا چاہتا ہوں۔",
+      "expanded": "گفٹ کارڈ وصول کنندہ کے فارم کو بڑھا دیا گیا۔",
+      "collapsed": "گفٹ کارڈ وصول کنندہ کا فارم سکڑ گیا۔",
+      "email_label": "وصول کنندہ کا ای میل",
+      "email_label_optional_for_no_js_behavior": "وصول کنندہ کا ای میل (اختیاری)",
+      "email": "ای میل",
+      "name_label": "وصول کنندہ کا نام (اختیاری)",
+      "name": "نام",
+      "message_label": "پیغام (اختیاری)",
+      "message": "پیغام",
+      "max_characters": "{{ max_chars }} حروف زیادہ سے زیادہ"
     }
   }
 }
