@@ -121,58 +121,7 @@
         "contact_method_title": "رابطہ کریں۔",
         "email_label": "ای میل",
         "email_placeholder": "ای میل",
-        "email_or_phone_label": "ای میل یا موبائل فون نمبر",
-        "email_or_phone_placeholder": "ای میل یا موبائل فون نمبر",
-        "stored_addresses_label": "محفوظ کردہ پتے",
-        "new_address_label": "نیا پتہ استعمال کریں۔",
-        "first_name_label": "پہلا نام",
-        "optional_first_name_label": "پہلا نام (اختیاری)",
-        "last_name_label": "آخری نام",
-        "company_label": "کمپنی",
-        "optional_company_label": "کمپنی (اختیاری)",
-        "address1_label": "پتہ",
-        "address2_label": "اپارٹمنٹ، سویٹ، وغیرہ",
-        "optional_address2_label": "اپارٹمنٹ، سویٹ، وغیرہ (اختیاری)",
-        "city_label": "شہر",
-        "country_label": "ملک\/علاقہ",
-        "country_code": "ملک\/علاقے کا کوڈ",
-        "province_label": "صوبہ",
-        "province_placeholder": "صوبہ",
-        "county_label": "کاؤنٹی",
-        "county_placeholder": "کاؤنٹی",
-        "state_label": "حالت",
-        "state_placeholder": "حالت",
-        "region_label": "علاقہ",
-        "region_placeholder": "علاقہ",
-        "region_none": "کوئی بھی منتخب نہیں کیا گیا۔",
-        "prefecture_label": "پریفیکچر",
-        "prefecture_placeholder": "پریفیکچر",
-        "governorate_label": "گورنریٹ",
-        "governorate_placeholder": "گورنریٹ",
-        "emirate_label": "امارات",
-        "emirate_placeholder": "امارات",
-        "state_and_territory_label": "ریاست\/علاقہ",
-        "state_and_territory_placeholder": "ریاست\/علاقہ",
-        "phone_label": "فون",
-        "optional_phone_label": "فون (اختیاری)",
-        "phone_placeholder": "فون",
-        "phone_tooltip": "اگر ہمیں آپ کے آرڈر کے بارے میں آپ سے رابطہ کرنے کی ضرورت ہے۔",
-        "zip_code_label": "زپ کوڈ",
-        "zip_code_placeholder": "زپ کوڈ",
-        "postal_code_label": "ڈاک کامخصوص نمبر",
-        "postal_code_placeholder": "ڈاک کامخصوص نمبر",
-        "postcode_label": "پوسٹ کوڈ",
-        "postcode_placeholder": "پوسٹ کوڈ",
-        "pincode_label": "خفیہ نمبر",
-        "pincode_placeholder": "خفیہ نمبر",
-        "civic_number_warning": "اگر آپ کے پاس گھر کا نمبر ہے تو شامل کریں۔",
-        "optional_last_name_label": "آخری نام (اختیاری)",
-        "optional_recipient_label": "توجہ (اختیاری)",
-        "different_shipping_address_label": "ایک مختلف پتے پر بھیجیں۔",
-        "different_shipping_address_text": "اس آرڈر کے لیے ایک وقتی پتہ استعمال کریں۔",
-        "change_company_location_link_label": "کمپنی کا مقام تبدیل کریں۔",
-        "change_location_link_label": "مقام تبدیل کریں۔",
-        "ship_to_company": "{{companyName}} کو بھیجیں"
+        "email_or_phone_label": "ای میل یا موبائل فون نمبر"
       },
       "thank_you": {
         "re-order": "وہی اشیاء دوبارہ آرڈر کریں۔",
@@ -444,65 +393,6 @@
             "address1": "ایک پتہ درج کریں۔",
             "address2": "اپارٹمنٹ، سویٹ وغیرہ میں داخل ہوں۔"
           }
-        }
-      },
-      "delivery_options": {
-        "free_total_label": "مفت",
-        "ship": "جہاز",
-        "shipping_address": "شپنگ ایڈریس",
-        "pick_up": "اٹھاؤ",
-        "pick_up_locations": "پک اپ کے مقامات",
-        "pick_up_in_one_hour": "عام طور پر 1 گھنٹے میں تیار ہوجاتا ہے۔",
-        "pick_up_in_two_hours": "عام طور پر 2 گھنٹے میں تیار ہوجاتا ہے۔",
-        "pick_up_in_four_hours": "عام طور پر 4 گھنٹے میں تیار ہوجاتا ہے۔",
-        "pick_up_in_twenty_four_hours": "عام طور پر 24 گھنٹوں میں تیار ہوجاتا ہے۔",
-        "pick_up_in_two_to_four_days": "عام طور پر 2-4 دنوں میں تیار ہوجاتا ہے۔",
-        "pick_up_in_five_or_more_days": "عام طور پر 5+ دنوں میں تیار ہوجاتا ہے۔",
-        "pick_up_in_zero_to_two_hours": "2 گھنٹے میں پک اپ کے لیے تیار",
-        "pick_up_in_two_to_four_hours": "4 گھنٹے میں پک اپ کے لیے تیار",
-        "pick_up_immediately": "اب پک اپ کے لیے تیار ہیں۔",
-        "pick_up_next_day": "اگلے دن پک اپ کے لیے تیار",
-        "pickup_point_method_definition": "پک اپ پوائنٹ پر بھیجیں۔",
-        "retail_method_definition": "ریٹیل شپنگ",
-        "none_method_definition": "کوئی شپنگ نہیں۔",
-        "subscription_pickup_information": "ڈیلیوری کا یہ طریقہ اس آرڈر میں موجود تمام آئٹمز اور اس سبسکرپشن کے مستقبل کے تمام آرڈرز پر لاگو ہوگا۔"
-      },
-      "customer_account": {
-        "not_user_label": "نہیں %{first_name}؟",
-        "have_an_account_label": "کیا آپ کا اکاؤنٹ ہے؟",
-        "sign_in_link_label": "لاگ ان کریں",
-        "sign_out_link_label": "لاگ آوٹ",
-        "save_my_information_label": "اس معلومات کو اگلی بار کے لیے محفوظ کریں۔",
-        "invalid_address": "منتخب کردہ پتہ غلط ہے۔ %{update_address_link} یا ایک مختلف پتہ منتخب کریں۔",
-        "incomplete_address": "منتخب کردہ پتہ نامکمل ہے۔ %{update_address_link} یا ایک مختلف پتہ منتخب کریں۔",
-        "rollup_label": "کھاتہ",
-        "invalid_shipping_method_summary": "شپنگ کے دستیاب طریقے دیکھنے کے لیے ایک درست شپنگ ایڈریس منتخب کریں۔"
-      },
-      "stock": {
-        "page_title": "انوینٹری کے مسائل",
-        "title": "زخیرے سے باہر",
-        "items_unavailable_notice": "کچھ آئٹمز اب دستیاب نہیں ہیں۔ آپ کی کارٹ کو اپ ڈیٹ کر دیا گیا ہے۔",
-        "product_column_header": "مصنوعات",
-        "quantity_column_header": "مقدار",
-        "price_column_header": "قیمت",
-        "status_column_header": "حالت",
-        "removed_from_cart_notice": "کارٹ سے ہٹا دیا گیا۔",
-        "sold_out_label": "بک گیا",
-        "reduced_label": "کم کر دیا",
-        "reduced_with_quantity_label": "صرف %{quantity_available} باقی ہے۔",
-        "remove_from_cart_button_label": "کارٹ سے ہٹا دیں۔",
-        "continue_shopping_button_label": "جاری رہے",
-        "go_back_to_cart_button_label": "میری ٹوکری پر واپس جائیں۔",
-        "remove": "دور",
-        "empty_cart_label": "آپ کی ٹوکری خالی ہے",
-        "quantity_update": {
-          "page_title": "مقدار کی تازہ کاری",
-          "title": "مقدار کی تازہ کاری",
-          "description": "ان آئٹمز کے لیے دستیاب مقداریں بدل گئی ہیں اور آپ کی کارٹ میں اپ ڈیٹ ہو گئی ہیں۔"
-        },
-        "unpurchasable_product": {
-          "title": "ناقابل خرید پروڈکٹ",
-          "header": "آپ کے کارٹ سے کچھ آئٹمز ہٹا دیے گئے تھے۔"
         }
       }
     },
@@ -832,6 +722,282 @@
         "title": "ادائیگی کے طریقہ کار کی تفصیلات",
         "credit_card_details_accessibility_label": "{{lastDigits}} پر ختم ہونے والا",
         "billing_title": "بل کا پتہ"
+      }
+    },
+    "order_details": {
+      "paid_with_shop_pay_installments_card": {
+        "desktop_qr_code_content": {
+          "description": "دکان کے ساتھ اپنی قسطوں کی یاد دہانی حاصل کریں۔"
+        }
+      },
+      "refunded_amount": "رقم کی واپسی",
+      "request_return_failed": "آپ کی درخواست پر کارروائی کرنے میں ایک مسئلہ تھا۔ دوبارہ کوشش کریں.",
+      "remaining_amount": "باقی",
+      "marketing_section_title": "خبریں اور پیشکشیں۔",
+      "marketing_description": "آپ کو مارکیٹنگ کی ای میلز موصول ہوں گی۔ آپ کسی بھی وقت ان سبسکرائب کر سکتے ہیں۔",
+      "marketing_checkbox_label": "خبروں اور پیشکشوں کے ساتھ مجھے ای میل کریں۔",
+      "marketing_checkmark_label": "آپ نے ای میل کی خبریں اور پیشکشیں حاصل کرنے کے لیے سبسکرائب کیا ہے۔",
+      "returns": {
+        "expand_events_label": "تفصیلات دکھائیں",
+        "hide_events_label": "تفصیلات چھپائیں۔",
+        "ineligible_return_message": "اس آرڈر میں کوئی بھی آئٹمز واپسی کے اہل نہیں ہیں۔",
+        "ineligible_return_message_when_returned": "اس آرڈر میں کوئی اضافی آئٹمز واپسی کے اہل نہیں ہیں۔",
+        "print_shipping_label": "شپنگ لیبل پرنٹ کریں۔",
+        "return_and_refund_modal_header": "رقم کی واپسی کی پالیسی",
+        "tracking_number": "ٹریکنگ نمبر:"
+      },
+      "shipping": {
+        "address": "شپنگ ایڈریس",
+        "address_map_marker": "شپنگ ایڈریس",
+        "method": "بھیجنے کا طریقہ",
+        "summary": "شپنگ",
+        "free": "مفت",
+        "free_shipping_discount": "مفت ترسیل",
+        "one_time": "ایک بار شپنگ",
+        "subscription": "سبسکرپشن شپنگ"
+      },
+      "pickup": {
+        "pickup": "اٹھاؤ",
+        "pickup_location": "پک اپ کا مقام"
+      },
+      "show_items": "آئٹمز دکھائیں۔",
+      "show_order_summary": "آرڈر کا خلاصہ دکھائیں۔",
+      "hide_order_summary": "آرڈر کا خلاصہ چھپائیں۔",
+      "subtitle": "تصدیق شدہ {{date}}",
+      "subtotal": "ذیلی کل",
+      "summary_list_title_accessibility_label": "اشیاء کا آرڈر دیں۔",
+      "summary_title": "حکم کا خلاصہ",
+      "summary_totals_title_accessibility_label": "آرڈر کا ٹوٹل",
+      "shop_order_tracking": {
+        "download_shop_to_track": "پیکج کو ٹریک کرنے کے لیے شاپ ڈاؤن لوڈ کریں۔",
+        "track_order_with_shop": "دکان کے ساتھ آرڈر کو ٹریک کریں۔",
+        "title_header": "اپنے فون سے اسکین کریں۔",
+        "real_time_delivery_updates": "آپ کا آرڈر بھیجے جانے کے بعد شاپ آپ کو ریئل ٹائم ڈیلیوری اپ ڈیٹس بھیجے گی۔"
+      },
+      "edit_summary": {
+        "added": "شامل کیا گیا۔",
+        "added_with_quantity": "{{quantity}} شامل کیا گیا۔",
+        "removed": "ہٹا دیا گیا۔",
+        "removed_with_quantity": "{{quantity}} کو ہٹا دیا گیا۔",
+        "updated_at": "آپ کا آرڈر {{date}} کو اپ ڈیٹ کیا گیا تھا",
+        "returned": "واپس آ گیا۔",
+        "returned_with_quantities": "{ {{total}} {{delta}} واپس آ گئے۔",
+        "removed_with_quantities": "{ {{total}} {{delta}} کو ہٹا دیا گیا۔"
+      },
+      "shop_pay": {
+        "order_completed_with": "کے ساتھ آرڈر مکمل ہوا۔",
+        "learn_more": "اورجانیے"
+      },
+      "taxes": "ٹیکس",
+      "duties": "فرائض",
+      "ok_duties_tooltip": "یہ آرڈر کسی دوسرے ملک سے بھیجا جا رہا ہے، لہذا آپ کے آرڈر کے کل میں ڈیوٹی شامل کر دی گئی ہے۔",
+      "error_duties_tooltip": "یہ آرڈر کسی دوسرے ملک سے بھیجا جا رہا ہے، اس لیے ڈیلیوری پر ڈیوٹی اور ٹیکس وصول کیے جا سکتے ہیں۔",
+      "zero_duties_tooltip": "یہ آرڈر دوسرے ملک سے بھیجا جا رہا ہے۔ اس قیمت کے آرڈر پر ڈیوٹی نہیں لی جاتی ہے۔",
+      "tip": "ٹپ",
+      "title": "آرڈر {{name}}",
+      "total": "کل",
+      "unit_price": "{{price}} \/ea",
+      "pagination": {
+        "load_more": "مزید لوڈ کریں",
+        "load_more_accessibility_label": "مزید اشیاء لوڈ کریں۔",
+        "loading_accessibility_label": "اشیاء لوڈ ہو رہی ہیں۔"
+      },
+      "login_to_view_all_order_details": "تمام آرڈر کی تفصیلات دیکھنے کے لیے لاگ ان کریں۔",
+      "log_in": "لاگ ان کریں",
+      "logged_in_account_no_permission_to_order": "آپ بطور {{email}} لاگ ان ہیں۔ اس اکاؤنٹ کو اس آرڈر کا نظم کرنے کی اجازت نہیں ہے۔",
+      "log_in_to_a_different_account": "ایک مختلف اکاؤنٹ میں لاگ ان کریں۔"
+    },
+    "addresses": {
+      "add_button": "ایڈریس شامل کریں۔",
+      "add_button_text": "شامل کریں۔",
+      "add_button_accessibility_label": "ایڈریس شامل کریں۔",
+      "back_button": "پیچھے",
+      "back_button_accessibility_label": "ایڈریس {{address}} پر واپس جائیں",
+      "add_address_banner": "چیک آؤٹ پر استعمال کرنے کے لیے پتے شامل کریں۔",
+      "no_addresses_banner": "کوئی پتے شامل نہیں کیے گئے۔",
+      "address_deleted_notification": "پتہ حذف کر دیا گیا۔",
+      "cancel_adding_address_accessibility_label": "پتہ شامل کرنا منسوخ کریں۔",
+      "cancel_deletion_button": "منسوخ کریں۔",
+      "cancel_deletion_button_accessibility_label": "{{address}} کو حذف کرنا منسوخ کریں",
+      "default_address": {
+        "title": "پہلے سے طے شدہ پتہ",
+        "title_accessibility_label": "طے شدہ پتہ: {{address}}"
+      },
+      "delete_button": "حذف کریں۔",
+      "delete_button_accessibility_label": "حذف کریں {{address}}",
+      "delete_confirmation_button": "پتہ حذف کریں۔",
+      "delete_confirmation_button_accessibility_label": "حذف کریں {{address}}",
+      "delete_confirmation_message": "پتہ حذف کریں؟ موجودہ آرڈرز متاثر نہیں ہوتے ہیں۔",
+      "delete_confirmation_title": "پتہ حذف کریں؟",
+      "delete_confirmation_description": "موجودہ آرڈرز متاثر نہیں ہوتے ہیں۔",
+      "edit_button": "ترمیم",
+      "edit_button_accessibility_label": "ترمیم کریں {{address}}",
+      "edit_section_accessibility_label": "ترمیم کریں {{address}}",
+      "edit_modal_title": {
+        "default": "ایڈریس میں ترمیم کریں۔",
+        "billing": "بلنگ ایڈریس میں ترمیم کریں۔",
+        "shipping": "شپنگ ایڈریس میں ترمیم کریں۔"
+      },
+      "loading_accessibility_message": "ایڈریس لوڈ ہو رہا ہے۔",
+      "loading_addresses_accessibility_message": "پتے لوڈ ہو رہے ہیں۔",
+      "loading_billing_accessibility_message": "بلنگ ایڈریس لوڈ ہو رہا ہے۔",
+      "loading_finished_accessibility_message": "پتے کا نیا صفحہ لوڈ ہو گیا ہے۔",
+      "loading_shipping_accessibility_message": "شپنگ ایڈریس لوڈ ہو رہا ہے۔",
+      "pagination": {
+        "load_more": "مزید لوڈ کریں",
+        "load_more_accessibility_label": "مزید پتے لوڈ کریں۔"
+      },
+      "save_new_address_accessibility_label": "ایڈریس محفوظ کریں۔",
+      "title": "پتے",
+      "billing_address_dropdown_placeholder": "بل کا پتہ"
+    },
+    "address_form": {
+      "attention": "توجہ"
+    }
+  },
+  "sections": {
+    "quick_order_list": {
+      "items_removed": {
+        "other": "{{ quantity }} آئٹمز ہٹا دیے گئے۔"
+      },
+      "product_variants": "مصنوعات کی مختلف حالتیں",
+      "total_items": "کل اشیاء",
+      "remove_all_items_confirmation": "اپنی کارٹ سے تمام {{ quantity }} آئٹمز کو ہٹا دیں؟",
+      "remove_all": "سب کو ہٹا دیں",
+      "cancel": "منسوخ کریں۔"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "پاس ورڈ کا استعمال کرتے ہوئے اسٹور درج کریں:",
+      "login_password_button": "پاس ورڈ کا استعمال کرتے ہوئے درج کریں۔",
+      "login_form_password_label": "پاس ورڈ",
+      "login_form_password_placeholder": "آپ کا پاس ورڈ",
+      "login_form_error": "غلط پاس ورڈ!",
+      "login_form_submit": "داخل کریں۔",
+      "admin_link_html": "کیا آپ اسٹور کے مالک ہیں؟ <a href=\"\/admin\" class=\"link underlined-link\">یہاں لاگ ان کریں۔<\/a>",
+      "powered_by_shopify_html": "یہ دکان {{ shopify }} کے ذریعے چلائی جائے گی"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "فیس بک پر شیئر کریں",
+        "share_on_twitter": "ٹویٹر پر ٹویٹ",
+        "share_on_pinterest": "Pinterest پر پن کریں۔"
+      },
+      "links": {
+        "twitter": "ٹویٹر",
+        "facebook": "فیس بک",
+        "pinterest": "پنٹیرسٹ",
+        "instagram": "انسٹاگرام",
+        "tumblr": "ٹمبلر",
+        "snapchat": "سنیپ چیٹ",
+        "youtube": "یوٹیوب",
+        "vimeo": "ویمیو"
+      }
+    },
+    "continue_shopping": "خریداری جاری",
+    "pagination": {
+      "label": "صفحہ بندی",
+      "page": "صفحہ {{ number }}",
+      "next": "اگلا صفحہ",
+      "previous": "سابقہ ​​صفحہ"
+    },
+    "search": {
+      "search": "تلاش کریں۔",
+      "reset": "تلاش کی اصطلاح صاف کریں۔"
+    },
+    "cart": {
+      "view": "کارٹ دیکھیں ( {{ count }} )",
+      "view_empty_cart": "ٹوکری دیکھیں",
+      "item_added": "آئٹم کو آپ کی کارٹ میں شامل کیا گیا۔"
+    },
+    "share": {
+      "close": "شیئر بند کریں۔",
+      "copy_to_clipboard": "لنک کاپی کریں۔",
+      "share_url": "لنک",
+      "success_message": "لنک کلپ بورڈ پر کاپی ہو گیا۔"
+    },
+    "slider": {
+      "of": "کی",
+      "next_slide": "دائیں سلائیڈ کریں۔",
+      "previous_slide": "بائیں سلائیڈ کریں۔",
+      "name": "سلائیڈر"
+    }
+  },
+  "newsletter": {
+    "label": "ای میل",
+    "success": "سبسکرائب کرنے کا شکریہ",
+    "button_label": "سبسکرائب"
+  },
+  "accessibility": {
+    "skip_to_text": "مواد پر جائیں۔",
+    "skip_to_product_info": "مصنوعات کی معلومات پر جائیں",
+    "close": "بند کریں",
+    "unit_price_separator": "فی",
+    "vendor": "وینڈر:",
+    "error": "خرابی",
+    "refresh_page": "انتخاب کا انتخاب کرنے سے پورے صفحہ کی تازہ کاری ہوتی ہے۔",
+    "link_messages": {
+      "new_window": "ایک نئی ونڈو میں کھلتا ہے۔",
+      "external": "بیرونی ویب سائٹ کھولتا ہے۔"
+    },
+    "loading": "لوڈ ہو رہا ہے...",
+    "total_reviews": "کل جائزے",
+    "star_reviews_info": "{{ rating_value }} {{ rating_max }}",
+    "collapsible_content_title": "ٹوٹنے والا مواد",
+    "complementary_products": "تکمیلی مصنوعات"
+  },
+  "blogs": {
+    "article": {
+      "blog": "بلاگ",
+      "read_more_title": "مزید پڑھیں: {{ title }}",
+      "comments": {
+        "one": "{{ count }} تبصرہ",
+        "other": "{{ count }} تبصرے۔"
+      },
+      "moderated": "براہ کرم نوٹ کریں، تبصرے شائع ہونے سے پہلے ان کی منظوری ضروری ہے۔",
+      "comment_form_title": "ایک تبصرہ چھوڑیں",
+      "name": "نام",
+      "email": "ای میل",
+      "message": "تبصرہ",
+      "post": "تبصرہ کریں",
+      "back_to_blog": "واپس بلاگ پر",
+      "share": "اس مضمون کو شیئر کریں۔",
+      "success": "آپ کا تبصرہ کامیابی کے ساتھ پوسٹ کیا گیا! شکریہ!",
+      "success_moderated": "آپ کا تبصرہ کامیابی کے ساتھ پوسٹ کیا گیا۔ ہم اسے تھوڑی دیر میں شائع کریں گے، کیونکہ ہمارا بلاگ معتدل ہے۔"
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال پروڈکٹ کا عنوان",
+    "collection_title": "آپ کے مجموعہ کا نام"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "ٹوکری میں شامل کریں",
+      "choose_options": "اختیارات کا انتخاب کریں۔",
+      "choose_product_options": "{{ product_name }} کے لیے اختیارات کا انتخاب کریں",
+      "description": "تفصیل",
+      "inventory_in_stock": "اسٹاک میں",
+      "inventory_in_stock_show_count": "{{ quantity }} اسٹاک میں ہے۔",
+      "inventory_low_stock": "کم اسٹاک",
+      "inventory_low_stock_show_count": "کم اسٹاک: {{ quantity }} باقی ہے۔",
+      "inventory_out_of_stock": "زخیرے سے باہر",
+      "inventory_out_of_stock_continue_selling": "اسٹاک میں",
+      "on_sale": "فروخت",
+      "product_variants": "مصنوعات کی مختلف حالتیں",
+      "media": {
+        "gallery_viewer": "گیلری دیکھنے والا",
+        "load_image": "تصویر {{ index }} کو گیلری کے منظر میں لوڈ کریں۔",
+        "load_model": "گیلری کے منظر میں 3D ماڈل {{ index }} لوڈ کریں۔",
+        "load_video": "گیلری ویو میں ویڈیو {{ index }} چلائیں۔",
+        "image_available": "تصویر {{ index }} اب گیلری کے منظر میں دستیاب ہے۔",
+        "open_media": "موڈل میں میڈیا {{ index }} کھولیں۔",
+        "play_model": "3D Viewer چلائیں۔",
+        "play_video": "ویڈیو چلائیں۔"
+      },
+      "quantity": {
+        "label": "مقدار",
+        "input_label": "{{ product }} کے لیے مقدار"
       }
     }
   }
