@@ -1,4 +1,4 @@
-function isScrolledIntoView(elem){
+{% comment %} function isScrolledIntoView(elem){
     var $elem = $(elem);
     var $window = $(window);
     var docViewTop = $window.scrollTop();
@@ -6,7 +6,7 @@ function isScrolledIntoView(elem){
     var elemTop = $elem.offset().top;
     var elemBottom = elemTop + $elem.height();
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
+  } {% endcomment %}
   // isScrolledIntoView("shopify-section-language-floating-icon");
   
   $(document).scroll(function() {
