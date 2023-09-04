@@ -123,149 +123,267 @@
         "email_placeholder": "ای میل",
         "email_or_phone_label": "ای میل یا موبائل فون نمبر"
       },
-      "payment": {
-        "card_fields": {
-          "errors": {
-            "required": {
-              "issue_number": "ایک درست شمارہ نمبر درج کریں۔"
-            },
-            "invalid": {
-              "verification_value": "ایک درست CVV یا سیکیورٹی کوڈ درج کریں۔"
-            }
+      "thank_you": {
+        "re-order": "وہی اشیاء دوبارہ آرڈر کریں۔",
+        "confirmed": "تصدیق شدہ",
+        "gift_card_confirmation_by_text": "اگر آپ کو یہ موصول نہیں ہوا، تو متن دوبارہ بھیجیں یا ہم سے رابطہ کریں۔",
+        "gift_card_confirmation_by_email": "اگر آپ کو یہ موصول نہیں ہوا تو ای میل دوبارہ بھیجیں یا ہم سے رابطہ کریں۔",
+        "gift_card_title": "گفٹ کارڈز",
+        "resend_gift_cards": "گفٹ کارڈز دوبارہ بھیجیں۔",
+        "thank_you_title": "آپ کے آرڈر کی تصدیق ہو گئی ہے۔",
+        "thank_you_title_payment": "آپ کی ادائیگی کی تصدیق ہو گئی ہے۔",
+        "thank_you_title_review": "آپ کا آرڈر جائزہ کے لیے جمع کر دیا گیا ہے۔",
+        "thank_you_confirmed_order_with_email": "آپ کو جلد ہی آپ کے آرڈر نمبر کے ساتھ ایک تصدیقی ای میل موصول ہوگی۔",
+        "thank_you_confirmed_order_with_phone": "آپ کو جلد ہی آپ کے آرڈر نمبر کے ساتھ ایک تصدیقی متن موصول ہوگا۔",
+        "thank_you_confirmed_order_with_email_and_phone": "آپ کو جلد ہی آپ کے آرڈر نمبر کے ساتھ ایک تصدیقی ای میل موصول ہوگی۔",
+        "thank_you_confirmed_order_with_email_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "thank_you_confirmed_order_with_phone_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "thank_you_confirmed_order_with_email_pick_up": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "thank_you_confirmed_order_with_phone_pick_up": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک متن موصول ہوگا۔",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "thank_you_confirmed_order_with_missing": "آرڈر کی تصدیق حاصل کرنے کے لیے ای میل یا فون کے ذریعے ہم سے رابطہ کریں۔",
+        "thank_you_confirmed_order_with_draft": "اگر ہمیں مزید معلومات کی ضرورت ہو یا آپ کے آرڈر کی تصدیق ہو جائے تو ہم آپ کو بتائیں گے۔",
+        "order_status_confirmed_order_with_email": "آپ کا آرڈر تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "order_status_confirmed_order_with_phone": "آپ کا آرڈر تیار ہونے پر آپ کو ایک متن موصول ہو سکتا ہے۔",
+        "order_status_confirmed_order_with_email_and_phone": "آپ کا آرڈر تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "order_status_confirmed_order_with_email_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "order_status_confirmed_order_with_phone_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "order_status_confirmed_order_with_email_and_phone_payment": "آپ نے اپنے آرڈر %{date} پر ادائیگی کی۔",
+        "order_status_confirmed_order_with_email_pick_up": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک ای میل موصول ہوگی۔",
+        "order_status_confirmed_order_with_phone_pick_up": "آپ کا آرڈر پک اپ کے لیے تیار ہونے پر آپ کو ایک متن موصول ہوگا۔",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "جب آپ کا آرڈر پک اپ کے لیے تیار ہو جائے گا تو آپ کو ایک ای میل اور ٹیکسٹ موصول ہوگا۔",
+        "order_status_confirmed_order_local": "ہم آپ کا آرڈر ڈیلیوری کے لیے تیار کر رہے ہیں۔",
+        "order_status_updates_with_email": "آپ کو ای میل کے ذریعے شپنگ اور ڈیلیوری کی اپ ڈیٹس ملیں گی۔",
+        "order_status_updates_with_phone": "آپ کو متن کے ذریعہ شپنگ اور ڈیلیوری کی اپ ڈیٹس مل سکتی ہیں۔",
+        "order_status_updates_with_email_and_phone": "آپ کو ای میل کے ذریعے شپنگ اور ڈیلیوری کی اپ ڈیٹس ملیں گی۔",
+        "order_status_updates_with_missing": "منتخب کریں کہ آپ شپنگ اپ ڈیٹس کیسے حاصل کرنا چاہتے ہیں۔",
+        "order_status_confirmed_with_installments_payment_return": "براہ کرم اپنی توجہ سیلز ایسوسی ایٹ کی طرف لوٹائیں۔",
+        "order_status_confirmed_with_installments_payment_confirm": "آپ کو جلد ہی آپ کے آرڈر نمبر اور آپ کی قسط کے شیڈول کی تفصیلات کے ساتھ ایک تصدیقی ای میل موصول ہوگی۔",
+        "confirmed_title": "آپ کے آرڈر کی تصدیق ہو گئی ہے۔",
+        "confirmed_description": "ہم نے آپ کا آرڈر قبول کر لیا ہے، اور ہم اسے تیار کر رہے ہیں۔ اپنی شپمنٹ کی صورتحال کے بارے میں اپ ڈیٹس کے لیے اس صفحہ پر واپس آئیں۔",
+        "ready_for_pickup_title": "آپ کا آرڈر پک اپ کے لیے تیار ہے۔",
+        "ready_for_pickup_description": "آپ کا آرڈر پک اپ کے لیے تیار ہے۔ جب آپ اپنا آرڈر اٹھائیں تو براہ کرم اپنے آرڈر کی تصدیق لائیں۔",
+        "ready_for_delivery_title": "آپ کا آرڈر ڈیلیوری کے لیے تیار ہے۔",
+        "ready_for_delivery_description": "ہم نے آپ کا آرڈر تیار کر لیا ہے۔",
+        "order_updates_title": "آرڈر اپڈیٹس",
+        "shop_phone_description": "آپ کو اپنے آرڈر کو ٹریک کرنے میں مدد کے لیے شاپ ایپ کے لنک کے ساتھ ایک متن موصول ہوگا۔",
+        "order_updates_description_html": "اپ ڈیٹس %{customer_contact} کو بھیجے جائیں گے",
+        "order_updates_current_step_prefix": "موجودہ مرحلہ: ",
+        "order_updates_past_step_prefix": "گزشتہ مرحلہ: ",
+        "order_updates_upcoming_step_prefix": "آنے والا مرحلہ: ",
+        "in_transit": "راستے میں",
+        "in_transit_title": "آپ کا آرڈر جاری ہے۔",
+        "in_transit_description": "آپ کو اس کی پیشرفت پر اپ ڈیٹس موصول ہوں گے۔",
+        "in_transit_description_days": "آپ کو اپنا آرڈر اگلے %{number} دنوں میں مل جائے گا۔",
+        "in_transit_description_today": "آپ کو آج ہی اپنا آرڈر ملنا چاہیے۔",
+        "in_transit_description_tomorrow": "آپ کو اگلے دن اپنا آرڈر مل جانا چاہیے۔",
+        "no_tracking_number": "اس آرڈر کے لیے کوئی ٹریکنگ نمبر نہیں ہے۔",
+        "out_for_delivery": "کی ترسیل کے لئے باہر",
+        "out_for_delivery_title": "آپ کا آرڈر ڈیلیوری کے لیے باہر ہے۔",
+        "out_for_delivery_description_html": "آپ کا آرڈر جاری ہے اور آج ہی پہنچ جانا چاہیے۔ اگر یہ اگلے 2 دنوں میں ڈیلیور نہیں ہوتا ہے تو %{contact_us}۔",
+        "out_for_delivery_local_title": "آپ کا آرڈر ڈیلیوری کے لیے باہر ہے۔",
+        "out_for_delivery_local_description_html": "آپ کا آرڈر جلد ہی پہنچ جائے گا۔",
+        "attempted_delivery": "ترسیل کی کوشش کی۔",
+        "attempted_delivery_title": "آپ کا آرڈر پہنچانے کی کوشش کی گئی۔",
+        "attempted_delivery_description_html": "آپ کا آرڈر ڈیلیور کرنے کی کوشش کی گئی لیکن یہ ناکام رہا۔ %{contact_us} ایک اور ترسیل کی کوشش کا بندوبست کرنے کے لیے۔",
+        "attempted_delivery_local_title": "ڈیلیوری چھوٹ گئی۔",
+        "attempted_delivery_local_description_html": "ہم آپ کا آرڈر ڈیلیور نہیں کر سکے۔ دوسری ڈیلیوری شیڈول کرنے کے لیے، %{contact_us}۔",
+        "delivered": "پہنچایا",
+        "delivered_title": "آپ کا آرڈر پہنچا دیا گیا ہے۔",
+        "delivered_description_html": "آپ کا آرڈر آپ کے فراہم کردہ پتے پر پہنچا دیا گیا ہے۔ اگر آپ کو یہ موصول نہیں ہوا ہے، یا اگر آپ کو کوئی اور مسئلہ ہے تو، %{contact_us}۔",
+        "delivered_local_title": "آپ کا آرڈر پہنچا دیا گیا ہے۔",
+        "delivered_local_description_html": "آپ کا آرڈر موصول نہیں ہوا؟ ٪{ہمیں بتائیں}.",
+        "payment_method_draft_order": "آرڈر کا جائزہ لینے کے بعد واجب الادا ہے۔",
+        "choose_payment_method_later": "بعد میں ادائیگی کا طریقہ منتخب کریں۔",
+        "picked_up_title": "آپ کا آرڈر لے لیا گیا ہے۔",
+        "picked_up_description_html": "آپ کا آرڈر %{location_name} پر %{date} کو اٹھایا گیا تھا۔",
+        "contact_us": "ہم سے رابطہ کریں۔",
+        "contact_us_lowercase": "ہم سے رابطہ کریں۔",
+        "contact_us_html": "مدد چاہیے؟ %{contact_us}",
+        "updated_time": "%{time_ago} پہلے اپ ڈیٹ کیا گیا۔",
+        "failure": "حوالے نہیں ہوسکی",
+        "failed_title": "آپ کا آرڈر ڈیلیور نہیں کیا جا سکا",
+        "failed_contact_merchant": "ترسیل کا بندوبست کرنے کے لیے %{company} سے رابطہ کریں۔",
+        "failed_contact_merchant_no_company": "ڈیلیوری کا بندوبست کرنے کے لیے ہم سے رابطہ کریں۔",
+        "non_shippable_title": "آپ کا آرڈر مکمل ہو گیا ہے۔",
+        "let_us_know": "ہمیں بتائیں",
+        "login_title": "تمام آرڈر کی تفصیلات دیکھنے کے لیے لاگ ان کریں۔",
+        "login_description": "آپ اپنا آرڈر نمبر ای میل کے ذریعے موصول ہونے والی رسید میں تلاش کر سکتے ہیں۔",
+        "login_description_phone": "ٹیکسٹ میسج کے ذریعے موصول ہونے والی رسید میں آپ اپنا آرڈر نمبر تلاش کر سکتے ہیں۔",
+        "login_not_customer_html": "نہیں %{name}؟ آپ %{link} کر سکتے ہیں",
+        "login_reorder_link_text": {
+          "one": "اس پروڈکٹ کو بھی خریدیں۔",
+          "other": "یہ مصنوعات بھی خریدیں۔"
+        },
+        "customer_information_hidden_fields_message": "تمام کسٹمر کی معلومات دیکھنے کے لیے لاگ ان کریں۔",
+        "cancelled_title": "آپ کا آرڈر منسوخ کر دیا گیا ہے۔",
+        "cancelled_description": "آپ کا آرڈر %{date} کو منسوخ کر دیا گیا تھا۔ اگر آپ کے کوئی سوالات ہیں تو ہم سے رابطہ کریں۔",
+        "order_number_label": "آرڈر نمبر",
+        "customer_validation_error": "ایک درست ای میل یا آرڈر نمبر درج کریں۔",
+        "customer_validation_error_phone": "ایک درست فون یا آرڈر نمبر درج کریں۔",
+        "login": "لاگ ان کریں",
+        "unfulfilled_items_title": "شپنگ کے لیے تیاری کر رہا ہے۔",
+        "unfulfilled_items_description": "ہم فی الحال ان اشیاء کو شپنگ کے لیے تیار کر رہے ہیں۔",
+        "marker": {
+          "current": "موجودہ کھیپ کا مقام"
+        }
+      }
+    },
+    "errors": {
+      "shop_404": {
+        "ctas": {
+          "open_a_store": {
+            "header": "ایک نیا Shopify اسٹور کھولیں۔",
+            "caption": "3 دن کا مفت ٹرائل شروع کریں، پھر اگلے 3 مہینوں کے لیے $1\/ماہ جاری رکھیں۔",
+            "link_text": "ابھی سائن اپ کریں"
+          },
+          "editions": {
+            "header": "Shopify ایڈیشن چیک کریں۔",
+            "caption": "100+ پروڈکٹ اپ ڈیٹس کے ساتھ، آپ زیادہ پیداواری اور تخلیقی، اور تجارت میں طاقتور ہو سکتے ہیں جتنا آپ نے کبھی سوچا تھا۔",
+            "link_text": "تازہ ترین ایڈیشن دریافت کریں۔"
+          },
+          "store_owner": {
+            "header": "کیا آپ اسٹور کے مالک ہیں؟",
+            "caption": "کیا آپ کو اپنے اسٹور میں جانے میں دشواری ہو رہی ہے؟ %{forgot_your_store_link} خصوصیت کو آزمائیں۔ اگر آپ اپنے اسٹور کو دوبارہ چالو کرنا چاہتے ہیں تو %{shopify_support_link} سے رابطہ کریں۔",
+            "shopify_support_link_text": "Shopify سپورٹ"
           }
-        },
-        "simulated_checkout": "پیش نظارہ جلد آرہا ہے۔",
-        "vaulting_agreement_label": "تیز چیک آؤٹ کے لیے میری ادائیگی کی معلومات کو %{company} کے ساتھ محفوظ کریں۔",
-        "business_customer_vaulting_payment_label": "چیک آؤٹ پر اس کارڈ کو محفوظ کریں اور %{company} کو اس مقام کے لیے مستقبل کی خریداریوں کے لیے اس کارڈ سے چارج کرنے کی اجازت دیں۔ اس مقام پر تفویض کردہ کوئی بھی رابطہ اس کارڈ کو استعمال کرنے کا مجاز ہے۔",
-        "purchase_options_and_vaulting_agreement_label": "آپ کی کارٹ میں ایک یا زیادہ آئٹمز ایک موخر یا بار بار خریداری ہے۔ اپنی ادائیگی جاری رکھ کر، آپ اس بات سے اتفاق کرتے ہیں کہ آپ کا ادائیگی کا طریقہ خود بخود اس صفحہ پر درج قیمت اور فریکوئنسی کے حساب سے وصول کیا جائے گا جب تک کہ یہ ختم نہ ہو جائے یا آپ منسوخ کر دیں۔ تمام منسوخیاں %{cancellation_policy_label} کے تابع ہیں۔",
-        "purchase_options_cancellation_policy_label": "منسوخ کرنے کی حکمت عملی",
-        "use_different_credit_card_label": "ایک مختلف کارڈ استعمال کریں۔",
-        "saved_credit_card": "آپ کا محفوظ کردہ کریڈٹ کارڈ",
-        "saved_credit_card_info": "آخری چار ہندسے",
-        "saved_credit_card_actions": {
-          "edit": "ترمیم",
-          "delete": "حذف کریں۔"
-        },
-        "saved_credit_cards_modal": {
-          "view_all_label": "تمام محفوظ کردہ کارڈز دیکھیں",
-          "done": "ہو گیا",
-          "cancel": "منسوخ کریں۔"
-        },
-        "add_credit_card_modal": {
-          "title": "کارڈ شامل کریں۔",
-          "done": "ہو گیا",
-          "cancel": "منسوخ کریں۔"
-        },
-        "delete_credit_card_modal": {
-          "title": "کارڈ حذف کریں۔",
-          "confirmation": "کیا آپ واقعی {{brandName}} حذف کرنا چاہتے ہیں جس کا اختتام {{lastDigits}} ہے؟",
-          "cancel": "منسوخ کریں۔",
-          "delete": "حذف کریں۔"
-        },
-        "edit_credit_card_modal": {
-          "title": "کارڈ میں ترمیم کریں۔",
-          "done": "ہو گیا",
-          "cancel": "منسوخ کریں۔",
-          "description": "آپ صرف اپنے کارڈ کے بلنگ ایڈریس میں ترمیم کر سکتے ہیں۔",
-          "fields": {
-            "default": "ڈیفالٹ کے طور پر مقرر",
-            "card_number": "کارڈ نمبر",
-            "expiry": "میعاد ختم ہونے کی تاریخ",
-            "security_code": "سیکیورٹی کوڈ",
-            "name": "کارڈ پہ درج نام",
-            "billing": "کا بل"
-          }
-        },
-        "expired_cards_info": {
-          "one": "%{count} ایکسپائرڈ کارڈ ہے، جسے آپ اپنے اکاؤنٹ میں دیکھ اور ترمیم کر سکتے ہیں۔",
-          "other": "%{count} میعاد ختم ہونے والے کارڈز ہیں، جنہیں آپ اپنے اکاؤنٹ میں دیکھ اور ترمیم کر سکتے ہیں۔"
-        },
-        "local_payment_method_receiver_notice": "اپنا آرڈر دینے کے بعد، آپ کو ادائیگی کی تفصیلات موصول ہوں گی۔ {{dueDays}} دنوں کے اندر ATM یا آن لائن ادائیگی کریں۔",
-        "order_edit_banner_title": "{{amount_owed}} کی ادائیگی درکار ہے۔",
-        "order_edit_banner_subtitle": "آپ کا آرڈر {{order_number}} اپ ڈیٹ کر دیا گیا تھا۔ ان تبدیلیوں کا جائزہ لیں، پھر اپنے آرڈر کی تصدیق کے لیے ادائیگی کریں۔",
-        "order_edit_banner_items_added": {
-          "one": "شامل کیا گیا۔",
-          "other": "%{count} شامل کیا گیا۔"
-        },
-        "order_edit_banner_items_removed": {
-          "in_full": "ہٹا دیا گیا۔",
-          "with_quantities": "{ {{quantity}} {{delta}} } ہٹا دیا گیا۔"
-        },
-        "order_edit_banner_items_returned": {
-          "in_full": "واپس آ گیا۔",
-          "with_quantities": "{ {{quantity}} میں سے { {{delta}} } واپس آئے"
-        },
-        "order_edit_banner_single_item_added": "شامل کیا گیا۔",
-        "order_edit_banner_multiple_items_added": "{{amount}} شامل کیا گیا۔",
-        "order_edit_banner_single_item_removed": "ہٹا دیا گیا۔",
-        "order_edit_banner_multiple_items_removed": "{{amount}} ہٹا دیا گیا۔",
-        "order_edit_banner_single_item_returned": "واپس آ گیا۔",
-        "order_edit_banner_multiple_items_returned": "{{amount}} واپس کر دیا گیا۔",
-        "gift_card_wrapper": {
-          "heading": "تحفہ والا کارڈ",
-          "apply_gift_card_label": "گفٹ کارڈ لگائیں۔",
-          "payment_tag": "تحفہ والا کارڈ"
-        },
-        "custom_onsite_payment_method_modal": {
-          "title": "اپنی مرضی کے مطابق آن سائٹ ادائیگی کی تصدیق"
-        },
-        "markets_pro_disclaimer_label": "نیچے کلک کر کے اور اپنا آرڈر مکمل کر کے، آپ گلوبل-e کے %{markets_pro_terms} اور %{privacy_policy} پر، اس ٹرانزیکشن کے لیے مرچنٹ آف ریکارڈ کے طور پر Global-e سے اپنے آئٹمز خریدنے سے اتفاق کرتے ہیں۔ Global-e %{shop_name} کے لیے ایک بین الاقوامی تکمیل سروس فراہم کنندہ ہے۔",
-        "markets_pro_disclaimer_terms_and_conditions": "شرائط و ضوابط",
-        "markets_pro_disclaimer_privacy_policy": "رازداری کی پالیسی",
-        "markets_pro_disclaimer_terms_and_conditions_title": "مرچنٹ آف ریکارڈ کی شرائط و ضوابط",
-        "markets_pro_disclaimer_privacy_policy_title": "مرچنٹ آف ریکارڈ پرائیویسی پالیسی",
-        "purchase_order_number": {
-          "title": "پی او نمبر",
-          "label": "PO نمبر (اختیاری)"
-        },
-        "alternative_payment_currency_total_notice": "نوٹ: آپ سے %{amount_due} وصول کیا جائے گا۔",
-        "waiting_on_taxes_message": "اگر اگلے چند سیکنڈ میں آپ کے ٹیکس کا حساب نہیں ہوتا ہے تو صفحہ کو ریفریش کریں۔",
-        "waiting_on_taxes_notice": "ٹیکسوں کا حساب لگانا",
-        "payment_method": "ادائیگی کا طریقہ",
-        "expired_payment_method": "ادائیگی کا منتخب طریقہ ختم ہو گیا ہے۔"
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "پاس ورڈ دوبارہ ترتیب دینے میں خرابی۔",
+        "no_account_found": "اس ای میل کے ساتھ کوئی اکاؤنٹ نہیں ملا۔",
+        "invalid_credentials": "غلط ای میل یا پاس ورڈ.",
+        "denylisted_reset_password": "آپ کے اکاؤنٹ تک رسائی نہیں ہو سکی کیونکہ موجودہ پاس ورڈ محفوظ نہیں ہے۔ آپ کو اپنا پاس ورڈ اپ ڈیٹ کرنے کے لیے ایک ای میل موصول ہوگی۔"
       },
-      "billing": {
-        "billing_address_title": "کا بل",
-        "same_as_shipping": "شپنگ ایڈریس جیسا ہی",
-        "add_address": "ایک مختلف پتہ استعمال کریں۔",
-        "edit": "ترمیم",
-        "delete": "حذف کریں۔",
-        "address_more": "اس ایڈریس کے لیے مزید کارروائیاں",
-        "address_edit": "ایڈریس میں ترمیم کریں۔",
-        "address_delete": "پتہ حذف کریں۔",
-        "address_confirm": "کیا آپ واقعی یہ پتہ اپنے اکاؤنٹ سے حذف کرنا چاہتے ہیں؟",
-        "address_form": {
-          "add_address": "ایڈریس شامل کریں۔",
-          "save": "محفوظ کریں۔",
-          "cancel": "منسوخ کریں۔"
+      "address": {
+        "updated": "پتہ کامیابی سے اپ ڈیٹ ہو گیا۔",
+        "error_updating": "پتہ اپ ڈیٹ کرنے میں خرابی",
+        "created": "پتہ کامیابی کے ساتھ بنایا گیا۔",
+        "error_creating": "پتہ بنانے میں خرابی",
+        "deleted": "ایڈریس کو کامیابی سے حذف کر دیا گیا۔",
+        "error_deleting": "پتہ حذف کرنے میں خرابی۔"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "شامل کیا گیا %{delta}",
+          "increment_item": "شامل کیا گیا %{delta}",
+          "decrement_item": "%{total} میں سے %{delta} کو ہٹا دیا گیا",
+          "decrement_fulfilled_line_item": "%{total} کا %{delta} لوٹا گیا"
         }
       },
-      "payment_summary": {
-        "gift_card_current_balance_notice": "موجودہ بیلنس %{amount}",
-        "credit_card_expires_on_notice": "%{ماہ}\/%{سال} کو ختم ہو جائے گا",
-        "express_payment_gateway_label": "ایکسپریس",
-        "manual_payment_gateway_label": "دستی",
-        "billing_address_title": "بل کا پتہ",
-        "free_label": "مفت"
+      "order": {
+        "not_available": "یہ آرڈر دستیاب نہیں ہے۔",
+        "financial_status": {
+          "authorized": "مجاز",
+          "pending": "زیر التواء",
+          "paid": "ادا کیا",
+          "unpaid": "بلا معاوضہ",
+          "voided": "کالعدم",
+          "partially_paid": "جزوی طور پر ادا کیا گیا۔",
+          "partially_refunded": "جزوی طور پر واپس کیا گیا۔",
+          "refunded": "رقم کی واپسی",
+          "expired": "میعاد ختم"
+        },
+        "fulfillment_status": {
+          "fulfilled": "پوری",
+          "complete": "مکمل",
+          "partial": "جزوی",
+          "unfulfilled": "ادھوری",
+          "restocked": "دوبارہ ذخیرہ"
+        },
+        "transaction_status": {
+          "success": "کامیابی",
+          "pending": "زیر التواء",
+          "failure": "ناکامی",
+          "error": "خرابی"
+        },
+        "cancel_reason": {
+          "declined": "ادائیگی رد کر دی گئی",
+          "inventory": "اشیاء دستیاب نہیں ہیں۔",
+          "fraud": "فراڈ آرڈر",
+          "customer": "گاہک تبدیل\/منسوخ آرڈر",
+          "staff": "عملے کی غلطی",
+          "other": "دیگر"
+        },
+        "cash_on_delivery": "کیش آن ڈیلیوری (COD)"
       },
-      "field_errors": {
-        "handle_phone_invalid": "ایک درست فون نمبر درج کریں۔",
-        "handle_email_invalid": "ایک درست ای میل درج کریں۔",
-        "email_invalid": "ایک درست ای میل درج کریں۔",
-        "email_or_phone_blank": "ای میل یا فون نمبر درج کریں۔",
-        "email_or_phone_invalid": "ایک درست ای میل یا موبائل فون نمبر درج کریں۔",
-        "address_first_name_blank": "پہلا نام درج کریں۔",
-        "address_first_name_too_long": "پہلا نام بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
-        "address_first_name_contains_emojis": "پہلا نام ایموجیز پر مشتمل نہیں ہو سکتا",
-        "address_first_name_contains_html_tags": "پہلا نام HTML ٹیگز پر مشتمل نہیں ہو سکتا۔",
-        "address_first_name_contains_url": "پہلا نام URL پر مشتمل نہیں ہو سکتا",
-        "address_last_name_blank": "آخری نام درج کریں۔",
-        "address_last_name_too_long": "آخری نام بہت لمبا ہے (زیادہ سے زیادہ 255 حروف ہیں)",
-        "address_last_name_contains_emojis": "آخری نام ایموجیز پر مشتمل نہیں ہو سکتا",
-        "address_last_name_contains_html_tags": "آخری نام HTML ٹیگز پر مشتمل نہیں ہو سکتا۔",
-        "address_last_name_contains_url": "آخری نام میں یو آر ایل نہیں ہو سکتا",
-        "address_address1_blank": "ایک پتہ درج کریں۔",
-        "address_address1_too_long": "پہلی ایڈریس لائن بہت لمبی ہے (زیادہ سے زیادہ 255 حروف ہیں)"
+      "cart": {
+        "only_n_items_available": "آپ کارٹ میں صرف %{count} %{name} شامل کر سکتے ہیں۔",
+        "too_many_items_in_cart": "آپ مزید %{name} کو کارٹ میں شامل نہیں کر سکتے۔",
+        "less_than_minimum": "اس آئٹم میں کم از کم %{min} ہے۔",
+        "more_than_maximum": "اس آئٹم میں زیادہ سے زیادہ %{max} ہے۔",
+        "not_respect_step": "آپ اس آئٹم کو صرف %{step} کے ضرب میں شامل کر سکتے ہیں۔",
+        "all_items_in_cart": "تمام %{count} %{name} آپ کی کارٹ میں ہیں۔",
+        "empty_update": "خالی ٹوکری کو اپ ڈیٹ نہیں کر سکتے",
+        "missing_parameters": "کوئی درست آئی ڈی یا لائن پیرامیٹر نہیں ہے۔",
+        "generic_error": "کارٹ کی خرابی۔",
+        "product_not_available": "پروڈکٹ دستیاب نہیں ہے۔",
+        "too_many_line_items_error": "آپ کی کارٹ میں %{max} سے زیادہ آئٹمز نہیں ہو سکتے۔",
+        "link_expired": "لنک کی میعاد ختم ہوگئی",
+        "link_no_longer_exists": "لنک اب موجود نہیں ہے۔",
+        "stock_problems_html": "ایک یا زیادہ آئٹمز اب دستیاب نہیں ہیں۔ ہم نے ایک <a href=\"%{link}\">تازہ کاری شدہ کارٹ<\/a> فراہم کی ہے۔",
+        "changed": "ٹوکری بدل گئی۔",
+        "items_changed": "ایک یا زیادہ آئٹمز تبدیل ہو گئے ہیں۔",
+        "product_sold_out": "پروڈکٹ '%{name}' پہلے ہی فروخت ہو چکی ہے۔",
+        "variant_not_found": "متغیر نہیں مل سکتا",
+        "variant_requires_selling_plan": "ویرینٹ صرف سیلنگ پلان کے ساتھ خریدا جا سکتا ہے۔",
+        "selling_plan_not_available_for_company_locations": "B2B آرڈرز کے لیے صرف ایک بار کی خریداری دستیاب ہے۔",
+        "digital_product_not_available_for_company_locations": "اس آئٹم کو B2B آرڈر میں شامل نہیں کیا جا سکتا",
+        "selling_plan_not_applicable": "ویرینٹ پر سیلنگ پلان لاگو نہیں کیا جا سکتا",
+        "shipping_address_not_required": "اس کارٹ کو شپنگ کی ضرورت نہیں ہے۔",
+        "shipping_address_invalid": "آپ کی ترسیل کے نرخوں کا حساب لگانے میں ایک مسئلہ تھا۔ اپنا آرڈر مکمل کرنے سے پہلے شپنگ ریٹ منتخب کرنے کے لیے چیک آؤٹ کرنا جاری رکھیں۔",
+        "bundle_requires_components": "بنڈل پروڈکٹ '%{name}' کو کارٹ میں شامل نہیں کیا جا سکتا۔",
+        "gift_card_with_components_not_supported": "بنڈل پروڈکٹ '%{name}' کو کارٹ میں شامل نہیں کیا جا سکتا۔",
+        "bundle_products_not_supported_for_b2b_draft": "بنڈل شدہ آئٹمز کو اس مقام کے لیے B2B آرڈرز میں شامل نہیں کیا جا سکتا۔"
+      },
+      "storefront": {
+        "invalid_password": "پاس ورڈ غلط ہے، براہ کرم دوبارہ کوشش کریں۔"
+      },
+      "tags": {
+        "add_articles": "%{tag} ٹیگ والے مضامین تک تلاش کو تنگ کریں",
+        "add_products": "مماثل پروڈکٹس کے ٹیگ %{tag} تک محدود انتخاب",
+        "remove_articles": "ان مضامین کی تلاش وسیع کریں جن پر ٹیگ نہیں ہے %{tag}",
+        "remove_products": "ٹیگ %{tag} ہٹائیں"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "ہماری میلنگ لسٹ کو سبسکرائب کرنے کے لیے آپ کا شکریہ۔",
+        "disclaimer": "آپ کسی بھی وقت ان سبسکرائب کر سکتے ہیں۔",
+        "unsubscribe": "ان سبسکرائب کریں۔"
+      },
+      "unsubscribed": {
+        "confirmation": "آپ نے ہماری میلنگ لسٹ سے رکنیت ختم کر دی ہے۔",
+        "disclaimer": "آپ کو ہماری طرف سے مزید مارکیٹنگ کی اپ ڈیٹس موصول نہیں ہوں گی۔ آپ کسی بھی وقت دوبارہ سبسکرائب کر سکتے ہیں۔",
+        "preview": "آپ پیش نظارہ کر رہے ہیں کہ جب گاہک ان سبسکرائب کریں گے تو وہ کیا دیکھیں گے۔"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>آپ نے ای میل اوپن ٹریکنگ کا انتخاب کیا ہے۔<\/b>",
+          "visibility": "ای میل کھلے نرخوں کی اطلاع گمنام طور پر دی جائے گی۔ ہم صرف یہ دیکھیں گے کہ آیا آپ نے ای میل کھولنے کی مجموعی شرح کے حصے کے طور پر کوئی ای میل کھولی ہے۔",
+          "opt_out_html": "اگر آپ اس معلومات کو شیئر نہیں کرنا چاہتے تو آپ ای میل اوپن ٹریکنگ سے <a style=\"text-decoration:underline;\" href=\"%{link}\">آپٹ آؤٹ<\/a> کر سکتے ہیں۔",
+          "preview_bar": "آپ اس بات کا جائزہ لے رہے ہیں کہ جب صارفین ای میل اوپن ٹریکنگ کا انتخاب کرتے ہیں تو وہ کیا دیکھیں گے۔"
+        },
+        "opt_out": {
+          "opted_out_html": "<b>آپ نے ای میل اوپن ٹریکنگ سے آپٹ آؤٹ کیا ہے۔<\/b>",
+          "visibility": "ہم نہیں دیکھیں گے کہ آیا آپ نے ہماری ای میلز کھولی ہیں۔",
+          "opt_in_html": "ای میل اوپن ٹریکنگ میں <a style=\"text-decoration:underline;\" href=\"%{link}\">آپٹ ان کریں<\/a> ۔",
+          "preview_bar": "آپ پیش نظارہ کر رہے ہیں کہ جب صارفین ای میل اوپن ٹریکنگ سے آپٹ آؤٹ کریں گے تو وہ کیا دیکھیں گے۔"
+        },
+        "no_longer_track": {
+          "status_html": "<b>ہم اب کسی بھی ای میل کے کھلنے کو ٹریک نہیں کرتے ہیں۔<\/b>",
+          "privacy_policy": "اس ای میل کے بھیجے جانے کے بعد، ہم نے اپنی پرائیویسی پالیسی کو اپ ڈیٹ کر دیا اور اب ہم اوپنز کو ٹریک نہیں کرتے۔"
+        },
+        "track": {
+          "status_html": "<b>ای میل اوپن ٹریکنگ کی اطلاع ہے۔<\/b>",
+          "visibility": "ہم صرف یہ دیکھیں گے کہ آیا آپ نے ای میل کھولی ہے، ای میل کھلنے کی کل شرح کے حصے کے طور پر۔"
+        },
+        "updated_policy": {
+          "status_html": "<b>ای میل اوپن ٹریکنگ کی اطلاع ہے۔<\/b>"
+        }
       }
     }
   }
