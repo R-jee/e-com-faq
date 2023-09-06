@@ -497,194 +497,144 @@
   </script>
 {%- endif -%}
 
+style>
+  @media screen and (min-width: 750px) {
+    .site-nav__childlist-grid .site-nav__links {
+      width: {{section.settings.menu_width}}%;
+    }
+  }
+  .site-nav__childlist.container.narrow {
+    display: contents;
+  }
+  .site-nav__childlist-grid .site-nav__links {
+    width: 25%;
+  }
+  .site-nav__link_first_child {
+    width: 55%;
+    height: max-content;
+  }
+  .site-nav__childlist-navlist--column-2 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    margin: auto;
+  }
+</style>
+
 {% schema %}
 {
-  "name": "t:sections.header.name",
-  "class": "section-header",
-  "max_blocks": 3,
+  "name": "Header",
   "settings": [
     {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "top-left",
-          "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
-          "value": "top-center",
-          "label": "t:sections.header.settings.logo_position.options__3.label"
-        },
-        {
-          "value": "middle-left",
-          "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
-          "value": "middle-center",
-          "label": "t:sections.header.settings.logo_position.options__4.label"
-        }
-      ],
-      "default": "middle-left",
-      "label": "t:sections.header.settings.logo_position.label",
-      "info": "t:sections.header.settings.logo_help.content"
+      "type": "link_list",
+      "id": "primary_linklist",
+      "label": "Main Menu",
+      "default": "main-menu"
     },
     {
       "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
+      "id": "mob_primary_linklist",
+      "label": "Mobile Main Menu",
+      "default": "main-menu"
     },
     {
-      "type": "select",
-      "id": "menu_type_desktop",
-      "options": [
-        {
-          "value": "dropdown",
-          "label": "t:sections.header.settings.menu_type_desktop.options__1.label"
-        },
-        {
-          "value": "mega",
-          "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
-        },
-        {
-          "value": "drawer",
-          "label": "t:sections.header.settings.menu_type_desktop.options__3.label"
-        }
-      ],
-      "default": "dropdown",
-      "label": "t:sections.header.settings.menu_type_desktop.label",
-      "info": "t:sections.header.settings.menu_type_desktop.info"
+      "type": "link_list",
+      "id": "secondary_linklist",
+      "label": "Secondary menu"
     },
     {
-      "type": "select",
-      "id": "sticky_header_type",
-      "options": [
-        {
-          "value": "none",
-          "label": "t:sections.header.settings.sticky_header_type.options__1.label"
-        },
-        {
-          "value": "on-scroll-up",
-          "label": "t:sections.header.settings.sticky_header_type.options__2.label"
-        },
-        {
-          "value": "always",
-          "label": "t:sections.header.settings.sticky_header_type.options__3.label"
-        },
-        {
-          "value": "reduce-logo-size",
-          "label": "t:sections.header.settings.sticky_header_type.options__4.label"
-        }
-      ],
-      "default": "on-scroll-up",
-      "label": "t:sections.header.settings.sticky_header_type.label"
+      "type": "link_list",
+      "id": "account_linklist",
+      "label": "Account menu"
+    },
+    {
+      "type": "url",
+      "id": "contact_page",
+      "label": "Contact page"
+    },
+    {
+      "type": "text",
+      "id": "contact_link_title",
+      "label": "Contact link title",
+      "default": "Contact"
     },
     {
       "type": "checkbox",
-      "id": "show_line_separator",
-      "default": true,
-      "label": "t:sections.header.settings.show_line_separator.label"
+      "id": "contact_link_icon",
+      "label": "Show icon with contact link",
+      "default": true
     },
     {
-      "type": "header",
-      "content": "t:sections.header.settings.header__1.content"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
-    },
-      {
-      "type": "color_scheme",
-      "id": "menu_color_scheme",
-      "label": "t:sections.header.settings.menu_color_scheme.label",
-      "default": "background-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.header.settings.header__3.content",
-      "info": "t:sections.header.settings.header__4.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_country_selector",
-      "default": false,
-      "label": "t:sections.header.settings.enable_country_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.header.settings.header__5.content",
-      "info": "t:sections.header.settings.header__6.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_language_selector",
-      "default": false,
-      "label": "t:sections.header.settings.enable_language_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.header.settings.mobile_layout.content"
-    },
-    {
-      "type": "select",
-      "id": "mobile_logo_position",
-      "options": [
-        {
-          "value": "center",
-          "label": "t:sections.header.settings.mobile_logo_position.options__1.label"
-        },
-        {
-          "value": "left",
-          "label": "t:sections.header.settings.mobile_logo_position.options__2.label"
-        }
-      ],
-      "default": "center",
-      "label": "t:sections.header.settings.mobile_logo_position.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.spacing"
+      "type": "url",
+      "id": "wishlist_url",
+      "label": "Favourites URL"
     },
     {
       "type": "range",
-      "id": "margin_bottom",
-      "min": 0,
+      "label": "Text menu width",
+      "id": "menu_width",
+      "min": 50,
       "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.header.settings.margin_bottom.label",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 36,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 36,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 20
+      "default": 55
     }
   ],
   "blocks": [
     {
-      "type": "@app"
+      "type": "sub_menu",
+      "name": "Secondary menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Attach to",
+          "info": "Match this text exactly with the menu item you'd like the product shown beside."
+        },
+        {
+          "type": "link_list",
+          "id": "advisory_staff",
+          "label": "Right side menu"
+        },
+        {
+          "type": "image_picker",
+          "id": "first_image",
+          "label": "First image"
+        },
+        {
+          "type": "text",
+          "id": "first_image_title",
+          "label": "First image title"
+        },
+        {
+          "type": "text",
+          "id": "first_image_text",
+          "label": "First image text"
+        },
+        {
+          "type": "url",
+          "id": "first_image_link",
+          "label": "First image link"
+        },
+        {
+          "type": "image_picker",
+          "id": "second_image",
+          "label": "Second image"
+        },
+        {
+          "type": "text",
+          "id": "second_image_title",
+          "label": "Second image title"
+        },
+        {
+          "type": "text",
+          "id": "second_image_text",
+          "label": "Second image text"
+        },
+        {
+          "type": "url",
+          "id": "second_image_link",
+          "label": "Second image link"
+        }
+      ]
     }
   ]
 }
