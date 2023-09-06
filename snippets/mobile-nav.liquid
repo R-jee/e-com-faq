@@ -1,0 +1,163 @@
+<style>
+  .custom-sports{
+      font-size: 1.5rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--color-border) !important;
+      margin: 0 1rem;
+      margin-bottom: 0;
+      margin-top: 25px;
+  }
+    .simple-accordion__itemwithout .mobile-nav__main-nav-title {
+      margin: 0 1rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+    }
+    .simple-accordion__itemwithout .mobile-nav__main-nav-title.with-dropdown:after ,.simple-accordion__itemwithout .mobile-nav__main-nav-title__.with-dropdown:after {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-left: 3px solid black;
+      border-bottom: 3px solid black;
+  }
+    .mobile-nav__secondary-nav-title.with-dropdown:after ,.mobile-nav__secondary-nav-title__.with-dropdown:after {
+      width: 0.5rem;
+      height: 0.5rem;
+  }
+    .simple-accordion__itemwithout .mobile-nav__main-nav-title {
+      font-weight: 900;
+  }
+
+  .simple-accordion__item .mobile-nav__main-nav-title {
+      font-size: 16px;
+      padding: .8rem 0;
+      border-bottom: 0px solid var(--color-border);
+      margin: 0 2rem;
+      margin-bottom: 0;
+      margin-top: -1px;
+  }
+</style>
+{%- capture store_region -%}{%- include 'assign-locale' -%}{%- endcapture -%}
+{%- assign store_region = store_region | strip -%}
+{%- assign output_lists = mobile-nav | split: ',' | default: section.settings.mob_primary_linklist -%}
+{%- assign outerLoopIndex = 0 -%}
+<nav class="mobile-nav-wrapper visible-xs visible-sm visible-md" role="navigation" style="overflow: scroll">
+  <ul id="MobileNav" class="mobile-nav" data-simple-accordion="large">
+    <div class="simple-accordion__itemwithout">
+      <h4
+        class="mobile-nav__main-nav-title__ with-dropdown simple-accordion__title__ custom-sports"
+        id="simple-accordion__itemwithout__custom-sports"
+      >
+        Sports
+      </h4>
+    </div>
+
+    {%- for list in output_lists -%}
+      {%- for link in linklists[list].links -%}
+        {%- assign outerLoopIndex = outerLoopIndex | plus: 1 -%}
+
+        {%- if store_region == 'JPN' -%}
+          {%- assign child_list_handle = link.title | split: '##' | last | handle -%}
+        {%- else -%}
+          {%- assign child_list_handle = link.title | handle -%}
+        {%- endif -%}
+
+        {%- assign child_list_handle = child_list_handle | append: '' -%}
+        {% if linklists[child_list_handle].links != blank %}
+          {%- assign child_linklist = linklists[child_list_handle] -%}
+          {%- if store_region == 'JPN' -%}
+            {%- assign link_title = link.title | split: '##' | first -%}
+          {%- else -%}
+            {%- assign link_title = link.title -%}
+          {%- endif -%}
+          <div class="simple-accordion__item{% if link_title == 'women-collection' or link_title == 'men-collection' or link_title == 'custom'  %}without{% endif %}">
+            <h4 class="mobile-nav__main-nav-title with-dropdown simple-accordion__title">
+              {% if link_title == 'women-collection' %}
+                <a href="{{ link.url }}">{{- link_title | split: '-' | first | escape | upcase -}}</a>
+              {% elsif link_title == 'men-collection' %}
+                <a href="{{ link.url }}">{{- link_title | split: '-' | first | escape | upcase -}}</a>
+              {% elsif link_title != 'women-collection' or link_title != 'men-collection' %}
+                <a href="{{ link.url }}">{{- link_title | upcase -}}</a>
+              {% endif %}
+            </h4>
+            <div class="mobile-nav__secondary-nav " data-simple-accordion="large">
+              {%- for childlink in linklists[child_list_handle].links %}
+                {% if childlink.links != blank %}
+                  <h4 class="mobile-nav__secondary-nav-title with-dropdown simple-accordion__title">
+                    {%- if store_region == 'JPN' -%}
+                      {%- assign childlink_title = childlink.title | split: '-' | last | split: '##' | first -%}
+                    {%- else -%}
+                      {%- assign childlink_title = childlink.title | split: '-' | last -%}
+                    {%- endif -%}
+                    <a href="{{ childlink.url }}">{{ childlink_title }}</a>
+                  </h4>
+                  <div class="mobile-nav__tertiary-nav">
+                    {%- for grandchildlink in childlink.links %}
+                      {%- if store_region == 'JPN' -%}
+                        {%- assign grand_childlink_title = grandchildlink.title | split: '##' | first -%}
+                      {%- else -%}
+                        {%- assign grand_childlink_title = grandchildlink.title -%}
+                      {%- endif -%}
+
+                      <a href="{{grandchildlink.url}}">{{ grand_childlink_title }}</a>
+                    {%- endfor -%}
+                  </div>
+                {% else %}
+                  {%- if store_region == 'JPN' -%}
+                    {%- assign headinglink_title = childlink.title | split: '-' | last | split: '##' | first -%}
+                  {%- else -%}
+                    {%- assign headinglink_title = childlink.title | split: '-' | last -%}
+                  {%- endif -%}
+
+                  <h4 class="mobile-nav__secondary-nav-title with-anchor">
+                    <a href="{{childlink.url}}">{{ headinglink_title }}</a>
+                  </h4>
+                  <div></div>
+                {% endif %}
+              {%- endfor -%}
+              {%- for block in section.blocks -%}
+                {%- if block.settings.title == link.title -%}
+                  {%- assign advisory_staff = block.settings.advisory_staff -%}
+                  {% if advisory_staff != blank %}
+                    {%- assign bottomLinkList = linklists[advisory_staff] -%}
+                    <div class="site-nav__childlist-item__advisory-staff" style="display: block">
+                      {%- for childlink in bottomLinkList.links -%}
+                        {%- if store_region == 'JPN' -%}
+                          {%- assign stafflink_title = childlink.title | split: '##' | first -%}
+                        {%- else -%}
+                          {%- assign stafflink_title = childlink.title -%}
+                        {%- endif -%}
+
+                        <a class="site-nav__link" href="{{childlink.url}}">{{ stafflink_title }}</a>
+                        {% comment %} {%- include 'site-nav-base' with child_linklist, nested: true, final: true -%} {% endcomment %}
+                      {%- endfor -%}
+                    </div>
+                  {% endif %}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        {% else %}
+          {%- if store_region == 'JPN' -%}
+            {%- assign link_title = childlink.title | split: '-' | last | split: '##' | first -%}
+          {%- else -%}
+            {%- assign link_title = childlink.title | split: '-' | last -%}
+          {%- endif -%}
+          <h4 class="mobile-nav__main-nav-title with-anchor">
+            <a href="{{ link.url }}">{{ link_title }}</a>
+          </h4>
+          <div></div>
+        {% endif %}
+
+        {% comment %} {% include 'mobile-nav-link' %} {% endcomment %}
+      {%- endfor -%}
+    {%- endfor -%}
+
+    {% comment %}
+      {%- if settings.show_multiple_currencies -%}
+        <li class="mobile-nav__item">
+          {% include 'currency-picker' %}
+        </li>
+      {%- endif -%}
+    {% endcomment %}
+  </ul>
+</nav>
