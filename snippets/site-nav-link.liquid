@@ -1,0 +1,33 @@
+{%- assign nav_link = site-nav-link -%}
+
+{%- assign nav_link_url = nav_link.url -%}
+{%- assign nav_link_title = nav_link.title -%}
+
+{%- if customer and nav_link.url contains '/account/register' or nav_link.url contains '/account/login' -%}
+  {%- assign nav_link_url = settings.default_page_account | default: '/account' -%}
+  {%- assign nav_link_title = 'customer.account.account_link' | t -%}
+{%- endif -%}
+
+<a
+  href="{{ nav_link_url }}"
+  class="
+    site-nav__link {{ class }}
+    {% if accordion != blank and top_level_nav == true %}simple-accordion__title{% endif %}
+  "
+>
+  {%- if store_region == 'JPN' -%}
+    {%- assign nav_hanlde = nav_link_title | split: '-' | last | split: '##' | last | handle -%}
+    <span data-handle="{{ nav_hanlde }}">{{ nav_link_title | split: '-' | last | split: '##' | first | escape }}</span>
+  {%- else -%}
+    <span>{{ nav_link_title | split: '-' | last | escape }}</span>
+  {%- endif -%}
+
+  {%- if arrows -%}
+    {%- include 'icon' with 'caret-down' -%}
+    <span class="visually-hidden">{{ 'layout.navigation.expand' | t }}</span>
+  {%- endif -%}
+</a>
+
+{%- assign nav_link = null -%}
+{%- assign nav_link_url = null -%}
+{%- assign top_level_nav = null -%}
