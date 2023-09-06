@@ -1,0 +1,129 @@
+{%- assign nav = site-nav | default: section.settings.primary_linklist -%}
+{%- assign type = type | default: 'default' -%}
+{% comment %}default, swipe{% endcomment %}
+{%- assign dropdown = dropdown | default: 'simple' -%}
+{% comment %}simple, mega{% endcomment %}
+{%- assign show_arrows = show_arrows | default: true -%}
+{%- unless dropdown -%}
+  {%- assign show_arrows = false -%}
+{%- endunless -%}
+{%- assign menu_id = id | default: 'SiteNav' -%}
+
+{%- assign accordion = accordion | default: null -%}
+
+<ul
+  class="
+    site-nav site-nav--{{ type }}
+    {% if dropdown %}site-nav--{{ dropdown }}{% endif %}
+    {% unless inline == false %}list--inline{% endunless %}
+    {% if type == 'swipe' %}swipeable{% endif %}
+  "
+  {% if accordion != blank %}
+    data-simple-accordion="{{ accordion }}"
+  {% endif %}
+  id="{{ menu_id }}"
+>
+  {%- for link in linklists[nav].links -%}
+    {%- assign three_level_nav = false -%}
+    {%- assign child_list_handle = link.title | handleize -%}
+    {%- assign child_linklist = linklists[child_list_handle] -%}
+
+    {%- if child_linklist.links != blank -%}
+      {%- for childlink in child_linklist.links -%}
+        {%- assign grand_child_list_handle = childlink.title | handleize -%}
+        {%- if linklists[grand_child_list_handle].links != blank -%}
+          {%- assign three_level_nav = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      <li
+        class="{% if dropdown %}site-nav--has-dropdown{% endif %}{% if link.active %} site-nav--active{% endif %}"
+        {% if dropdown %}
+          aria-has-popup="true" aria-controls="SiteNavLabel-{{ child_list_handle }}"
+        {% endif %}
+      >
+        {%- include 'site-nav-link' with link,
+          top_level_nav: true,
+          class: 'site-nav__link--main',
+          arrows: show_arrows
+        -%}
+
+        {%- if dropdown -%}
+          <div class="site-nav__dropdown" id="SiteNavLabel-{{ child_list_handle }}" aria-expanded="false">
+        {%- endif -%}
+
+        {%- if three_level_nav -%}
+          <div class="site-nav__childlist">
+            <div class="site-nav__childlist-grid" data-list-length="{{ child_linklist.links.size }}">
+              {%- for childlink in child_linklist.links -%}
+                {%- assign grand_child_list_handle = childlink.title | handle -%}
+
+                <div
+                  class="site-nav__childlist-item site-nav__childlist-navlist"
+                  data-list-length="{% if child_linklist.links.size > 5 %}long{% else %}short{% endif %}"
+                >
+                  {%- include 'site-nav-link' with childlink,
+                    class: 'site-nav__child-link site-nav__child-link--parent'
+                  -%}
+
+                  {%- if linklists[grand_child_list_handle].links.size > 0 -%}
+                    <ul class="site-nav__grandchildlist">
+                      {%- for grandchildlink in linklists[grand_child_list_handle].links -%}
+                        <li>
+                          {%- include 'site-nav-link' with grandchildlink, class: 'site-nav__grandchild-link' -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- else -%}
+          <ul>
+            {%- for childlink in child_linklist.links %}
+              <li
+                {% if childlink.active %}
+                  class="site-nav--active"
+                {% endif %}
+              >
+                {%- assign link_class = 'site-nav__child-link' -%}
+                {%- if forloop.last -%}
+                  {%- assign link_class = link_class | append: ' site-nav__link--last' -%}
+                {%- endif -%}
+
+                {%- include 'site-nav-link' with childlink, class: link_class -%}
+              </li>
+            {% endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if dropdown -%}
+          </div>
+        {%- endif -%}
+      </li>
+    {%- else -%}
+      <li
+        {% if link.active %}
+          class="site-nav--active"
+        {% endif %}
+      >
+        {%- include 'site-nav-link' with link, top_level_nav: true, class: 'site-nav__link--main' -%}
+
+        {%- if child_list_handle contains 'social' -%}
+          {%- include 'globals' with 'social_icons' -%}
+        {%- elsif child_list_handle contains 'payment' -%}
+          {%- include 'globals' with 'payment_icons', style: 'visually-match' -%}
+        {%- endif -%}
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
+
+{%- assign nav = null -%}
+{%- assign type = null -%}
+{%- assign dropdown = null -%}
+{%- assign show_arrows = null -%}
+{%- assign menu_id = null -%}
+{%- assign accordion = null -%}
