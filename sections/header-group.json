@@ -9,7 +9,7 @@
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
-            "link": ""
+            "link": "https:\/\/e-com-faq.myshopify.com\/collections\/all"
           }
         }
       },
@@ -29,15 +29,6 @@
     "header": {
       "type": "header",
       "settings": {
-        "primary_linklist": "testing-menu",
-        "mob_primary_linklist": "main-menu",
-        "secondary_linklist": "",
-        "account_linklist": "",
-        "contact_page": "",
-        "contact_link_title": "Contact",
-        "contact_link_icon": true,
-        "wishlist_url": "",
-        "menu_width": 55
       }
     }
   },
