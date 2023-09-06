@@ -1,0 +1,210 @@
+{%- capture store_region -%}{%- include 'assign-locale' -%}{%- endcapture -%}
+{%- assign store_region = store_region | strip -%}
+{%- assign nav = site-nav-base -%}
+{%- assign processed_navs = processed_navs | join: ',' | append: ',' | append: nav | split: ',' -%}
+{%- assign parent_list = nav -%}
+{%- unless parent_list.links != blank -%}
+  {%- assign parent_list = linklists[nav] -%}
+{%- endunless -%}
+{%- assign type = type | default: 'default' -%}
+{% comment %}default, swipe{% endcomment %}
+{%- assign dropdown = dropdown | default: 'simple' -%}
+{% comment %}simple, mega{% endcomment %}
+{%- assign show_arrows = show_arrows | default: true -%}
+{%- unless dropdown -%}
+  {%- assign show_arrows = false -%}
+{%- endunless -%}
+<ul
+  {% unless nested %}
+    class="site-nav site-nav--{{ type }} {% if dropdown %}site-nav--{{ dropdown }} {% endif %}{% unless inline == false %}list--inline{% endunless %}{% if type == 'swipe' %} swipeable{% endif %}"
+    id=""
+  {% endunless %}
+>
+  {%- for link in parent_list.links -%}
+    {%- unless nested -%}
+      {%- assign dropdown_settings = false -%}
+
+      {%- for block in section.blocks -%}
+        {%- if block.settings.title == link.title -%}
+          {%- assign dropdown_settings = block.settings -%}
+          {%- assign first_image = block.settings.first_image -%}
+          {%- assign first_image_title = block.settings.first_image_title -%}
+          {%- assign first_image_text = block.settings.first_image_text -%}
+          {%- assign first_image_link = block.settings.first_image_link -%}
+
+          {%- assign second_image = block.settings.second_image -%}
+          {%- assign second_image_title = block.settings.second_image_title -%}
+          {%- assign second_image_text = block.settings.second_image_text -%}
+          {%- assign second_image_link = block.settings.second_image_link -%}
+          {%- assign advisory_staff = block.settings.advisory_staff -%}
+          {% comment %}
+            {%- if dropdown_settings.feature_product_1 != blank -%}
+              {%- assign feature_product = all_products[dropdown_settings.feature_product_1] -%}
+            {%- endif -%}
+          {% endcomment %}
+        {%- endif -%}
+        {% comment %} {%- assign feature_product_indexes = feature_product_indexes | append: forloop.index0 | append: ',' -%} {% endcomment %}
+      {%- endfor -%}
+
+      {% comment %} {%- assign feature_product_indexes = feature_product_indexes | split: ',' -%} {% endcomment %}
+    {%- endunless -%}
+
+    {%- if store_region == 'JPN' -%}
+      {%- assign child_list_handle = link.title | split: '##' | last | handle -%}
+    {%- else -%}
+      {%- assign child_list_handle = link.title | handle -%}
+    {%- endif -%}
+    {%- assign child_linklist = linklists[child_list_handle] -%}
+
+    {%- if child_linklist.handle == blank -%}
+      {%- assign child_list_handle = child_list_handle | append: '' -%}
+      {%- assign child_linklist = linklists[child_list_handle] -%}
+    {%- endif -%}
+
+    {% if link.title == 'Custom' %}
+      <span class="pipe"></span>
+    {% endif %}
+
+    {%- if child_linklist.links != blank -%}
+      <li
+        class="{% if dropdown and nested != true %}site-nav--has-dropdown{% endif %}{% if link.active %} site-nav--active{% endif %}"
+        {% if dropdown and nested != true %}
+          aria-has-popup="true" aria-controls="SiteNavLabel-{{ child_list_handle }}"
+        {% endif %}
+      >
+        {%- include 'site-nav-link' with link, store_region: store_region -%}
+
+        {%- if dropdown and nested != true -%}
+          <div
+            class="site-nav__dropdown site-nav__dropdown--{{ dropdown_settings.style | default: 'default' }}"
+            id="SiteNavLabel-{{ child_list_handle }}"
+            aria-expanded="false"
+          >
+        {%- endif -%}
+
+        {%- unless nested -%}
+          {%- unless final -%}
+            <div class="site-nav__childlist container narrow">
+            <div class="site-nav__childlist-grid" data-list-length="{{ child_linklist.links.size }}">
+          {%- endunless -%}
+
+          <div class="site-nav__links">
+            {%- for childlink in child_linklist.links -%}
+              {%- if store_region == 'JPN' -%}
+                {%- assign column = childlink.title | split: '##' | last -%}
+                {%- assign grand_child_list_handle = childlink.title | split: '##' | first | handle -%}
+              {%- else -%}
+                {%- assign column = childlink.title -%}
+                {%- assign grand_child_list_handle = childlink.title | handle -%}
+              {%- endif -%}
+
+              {%- assign column_index = childlink.title | split: '-' | first -%}
+
+              {%- assign grand_child_linklist = childlink -%}
+
+              {%- unless processed_navs contains grand_child_list_handle -%}
+                {%- assign grand_child_linklist = childlink -%}
+
+                {%- if grand_child_linklist.size == 0 -%}
+                  {%- assign grand_child_list_handle = grand_child_list_handle | append: '' -%}
+                  {%- assign grand_child_linklist = linklists[grand_child_list_handle] -%}
+                {%- endif -%}
+              {%- endunless -%}
+
+              <div
+                class="site-nav__childlist-item site-nav__childlist-navlist site-nav__childlist-navlist--column-{{column}} site-nav__childlist-navlist--column-{{column_index}}"
+                data-list-length="{% if child_linklist.links.size > 5 %}long{% else %}short{% endif %}"
+              >
+                {%- include 'site-nav-link' with childlink, store_region: store_region -%}
+
+                {%- if grand_child_linklist.links.size > 0 -%}
+                  {%- include 'site-nav-base' with grand_child_linklist, nested: true, final: true -%}
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+
+            <div class="column-break column-break--1"></div>
+            <div class="column-break column-break--2"></div>
+          </div>
+
+          {%- if first_image != blank or second_image != blank -%}
+            <div
+              class="site-nav__childlist-item site-nav__childlist-item--feature-image-container"
+              data-handle="{{ feature_product_list_handle | handle }}"
+            >
+              {% if first_image != blank %}
+                <a href="{{first_image_link}}" class="site-nav__childlist-item--feature-image">
+                  {%- include 'img' with first_image -%}
+                  <div class="site-nav__childlist-item--feature-image-text">
+                    <h3>{{ first_image_title }}</h3>
+                    <p>{{ first_image_text }}</p>
+                  </div>
+                </a>
+              {% endif %}
+              {% if second_image != blank %}
+                <a href="{{second_image_link}}" class="site-nav__childlist-item--feature-image">
+                  {%- include 'img' with second_image -%}
+                  <div class="site-nav__childlist-item--feature-image-text">
+                    <h3>{{ second_image_title }}</h3>
+                    <p>{{ second_image_text }}</p>
+                  </div>
+                </a>
+              {% endif %}
+            </div>
+          {%- endif -%}
+
+          {% if advisory_staff != blank %}
+            {%- assign child_linklist = linklists[advisory_staff] -%}
+            <div class="site-nav__childlist-item__advisory-staff">
+              {%- for childlink in child_linklist.links -%}
+                <a class="site-nav__link" href="{{childlink.url}}">{{ childlink.title }}</a>
+                {% comment %} {%- include 'site-nav-base' with child_linklist, nested: true, final: true -%} {% endcomment %}
+              {%- endfor -%}
+            </div>
+          {% endif %}
+
+          {%- unless final -%}
+            </div>
+            </div>
+          {%- endunless -%}
+
+        {%- else -%}
+          {%- unless processed_navs contains child_list_handle -%}
+            {%- if feature_product_indexes != blank -%}
+              {%- for feature_product_index in feature_product_indexes -%}
+                {%- assign block_index = feature_product_index | plus: 0 -%}
+                {%- assign block = section.blocks[block_index] -%}
+
+                {%- if block.settings.title == parent_list.title -%}
+                  {%- assign feature_product = all_products[block.settings.product] -%}
+                  {%- assign feature_product_list_handle = parent_list.title -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+            {%- include 'site-nav-base' with child_linklist, nested: true -%}
+          {%- endunless -%}
+        {%- endunless -%}
+
+        {%- if dropdown and nested != true -%}
+          </div>
+        {%- endif -%}
+      </li>
+    {%- else -%}
+      <li
+        {% if link.active %}
+          class="site-nav--active"
+        {% endif %}
+      >
+        {%- include 'site-nav-link' with link, store_region: store_region -%}
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
+
+{%- assign nav = null -%}
+{%- assign type = null -%}
+{%- assign dropdown = null -%}
+{%- assign show_arrows = null -%}
+{%- assign menu_id = null -%}
