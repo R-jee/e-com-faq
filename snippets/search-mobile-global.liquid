@@ -1,0 +1,38 @@
+{% include 'icon' with 'search' %}
+
+<div class="search-global__container">
+  <div class="search-global__header">
+    <h2>Search</h2>
+    <div class="search-global__close">
+      {% include 'icon' with 'close' %}
+    </div>
+  </div>
+  <div class="search-global__search-box">
+    {%- include 'search-bar' -%}
+  </div>
+</div>
+
+{%- comment -%}
+  <div class="mobile-nav__search-container">
+    <span class="mobile-nav__link _custom-form-mobile">
+      <form action="/search" method="get" class="search-header search" role="search">
+          <label for="Search" class="label-hidden">
+              {{ 'general.search.placeholder' | t }}
+          </label>
+          <div class="input-group input-group--underlined">
+              <input type="search"
+                      name="q"
+                      id="Search"
+                      class="input-group__field search-header__input search__input"
+                      value="{{ search.terms | escape }}"
+                      placeholder="Search"
+                      aria-label="Search">
+              <button class="input-group__btn search-header__submit search__submit btn" type="submit">
+                  {% include 'icon' with 'search' %}
+                  <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
+              </button>
+          </div>
+      </form>
+    </span>
+  </div>
+{%- endcomment -%}
