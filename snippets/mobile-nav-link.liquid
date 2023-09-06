@@ -1,0 +1,143 @@
+<li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+  {%- assign child_linklist = linklists[child_list_handle] -%}
+
+  {%- if child_linklist.handle == blank -%}
+    {%- assign child_list_handle = child_list_handle | append: '' -%}
+    {%- assign child_linklist = linklists[child_list_handle] -%}
+  {%- endif -%}
+
+  {%- if child_linklist.links != blank %}
+    <button
+      type="button"
+      class="btn btn--text js-toggle-submenu mobile-nav__link"
+      data-target="{{ child_list_handle }}-{{ outerLoopIndex }}"
+      data-level="1"
+    >
+      {{ link.title | replace: 'Main - Shop', 'Shop' }}
+      <div class="mobile-nav__icon">
+        {% comment %} {% include 'icon-chevron-right' %} {% endcomment %}
+        <span class="icon-fallback-text">{{ 'layout.navigation.expand' | t }}</span>
+      </div>
+    </button>
+    <ul class="mobile-nav__dropdown" data-parent="{{ child_list_handle }}-{{ outerLoopIndex }}" data-level="2">
+      <li class="mobile-nav__item">
+        <span class="mobile-nav__link _custom-form-mobile">
+          <form action="/search" method="get" class="search-header search" role="search">
+            <label for="Search" class="label-hidden">
+              {{ 'general.search.placeholder' | t }}
+            </label>
+            <div class="input-group input-group--underlined">
+              <input
+                type="search"
+                name="q"
+                id="Search"
+                class="input-group__field search-header__input search__input"
+                value="{{ search.terms | escape }}"
+                placeholder="Search"
+                aria-label="Search"
+              >
+              <button class="input-group__btn search-header__submit search__submit btn" type="submit">
+                {% include 'icon-search' %}
+                <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
+              </button>
+            </div>
+          </form>
+        </span>
+      </li>
+      <li class="mobile-nav__item border-bottom">
+        <div class="mobile-nav__table">
+          <div class="mobile-nav__table-cell mobile-nav__return">
+            <button class="btn btn--text js-toggle-submenu mobile-nav__return-btn" type="button">
+              {% comment %} {% include 'icon-chevron-left' %} {% endcomment %}
+              <span class="icon-fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
+            </button>
+          </div>
+          <a href="{{ link.url }}" class="mobile-nav__sublist-link mobile-nav__sublist-header">
+            {{ link.title | replace: 'Main - Shop', 'Shop' }}
+          </a>
+        </div>
+      </li>
+      {%- for childlink in linklists[child_list_handle].links %}
+        {%- assign grand_child_list_handle = childlink.title | handle -%}
+
+        <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+          {%- if linklists[grand_child_list_handle].links != blank %}
+            <button
+              type="button"
+              class="btn btn--text js-toggle-submenu mobile-nav__link mobile-nav__sublist-link"
+              data-target="{{ grand_child_list_handle }}-{{ outerLoopIndex }}-{{ forloop.index }}"
+            >
+              {{ childlink.title }}
+              <div class="mobile-nav__icon">
+                {% comment %} {% include 'icon-chevron-right' %} {% endcomment %}
+                <span class="icon-fallback-text">{{ 'layout.navigation.expand' | t }}</span>
+              </div>
+            </button>
+            <ul
+              class="mobile-nav__dropdown"
+              data-parent="{{ grand_child_list_handle }}-{{ outerLoopIndex }}-{{ forloop.index }}"
+              data-level="3"
+            >
+              <li class="mobile-nav__item">
+                <span class="mobile-nav__link _custom-form-mobile">
+                  <form action="/search" method="get" class="search-header search" role="search">
+                    <label for="Search" class="label-hidden">
+                      {{ 'general.search.placeholder' | t }}
+                    </label>
+                    <div class="input-group input-group--underlined">
+                      <input
+                        type="search"
+                        name="q"
+                        id="Search"
+                        class="input-group__field search-header__input search__input"
+                        value="{{ search.terms | escape }}"
+                        placeholder="Search"
+                        aria-label="Search"
+                      >
+                      <button class="input-group__btn search-header__submit search__submit btn" type="submit">
+                        {% include 'icon-search' %}
+                        <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
+                      </button>
+                    </div>
+                  </form>
+                </span>
+              </li>
+              <li class="mobile-nav__item border-bottom">
+                <div class="mobile-nav__table">
+                  <div class="mobile-nav__table-cell mobile-nav__return">
+                    <button
+                      type="button"
+                      class="btn btn--text js-toggle-submenu mobile-nav__return-btn"
+                      data-target="{{ child_list_handle }}-{{ outerLoopIndex }}"
+                    >
+                      {% comment %} {% include 'icon-chevron-left' %} {% endcomment %}
+                      <span class="icon-fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
+                    </button>
+                  </div>
+                  <a href="{{ childlink.url }}" class="mobile-nav__sublist-link mobile-nav__sublist-header">
+                    {{ childlink.title }}
+                  </a>
+                </div>
+              </li>
+              {% for grandchildlink in linklists[grand_child_list_handle].links %}
+                <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+                  <a href="{{ grandchildlink.url }}" class="mobile-nav__sublist-link">
+                    {{ grandchildlink.title | escape }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a href="{{ childlink.url }}" class="mobile-nav__sublist-link">
+              {{ childlink.title | escape }}
+            </a>
+          {% endif -%}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <a href="{{ link.url }}" class="mobile-nav__link">
+      {{ link.title }}
+    </a>
+  {% endif -%}
+</li>
