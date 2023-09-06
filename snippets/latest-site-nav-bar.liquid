@@ -1,0 +1,602 @@
+<style>
+          .site-nav__childlist-navlist--column-Women.Collectionsite-nav__childlist-navlist--column-Women .custom_hover_ul .site-nav__childlist-navlist--column,
+          .site-nav__childlist-navlist--column-Men.Collectionsite-nav__childlist-navlist--column-Men .custom_hover_ul .site-nav__childlist-navlist--column {
+              column-count: 2 !important;
+          }
+            .nav-side-right-column{
+              color: black;
+            }
+            .site-nav__childlist-navlist--column > a {
+                color: red;
+                font-size: 1.2rem !important;
+                line-height: 1.5rem !important;
+                font-weight: 600 !important;
+            }
+            .site-nav__childlist-navlist--column > a:hover {
+                color: red;
+                font-size: 1.2rem !important;
+                line-height: 1.5rem !important;
+                font-weight: 600 !important;
+            }
+            /*.site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+                max-width: 13vw;
+                max-height: max-content;
+            }
+            .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container .site-nav__childlist-item--feature-image img {
+                height: 100%;
+                width: 100%;
+                max-height: 240px;
+                object-fit: cover;
+                object-position: center;
+              }*/
+             .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container .site-nav__childlist-item--feature-image {
+                max-height: 180px;
+                margin-bottom: 10px;
+                position: relative;
+              }
+
+              .site-nav__childlist-navlist.site-nav-active > .site-nav__link ~ .custom_hover {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+              }
+              .site-nav__link:hover ~ .nav-side-right-column.custom_hover {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+              }
+              .site-nav__link:hover ~ .site-nav__childlist-item__advisory-staff {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+              }
+              .custom_hover {
+                display: none;
+                position: absolute;
+                top: 10%;
+                left: 22vw;
+                width:100%;
+              }
+              /* .nav-side-right-column.custom_hover {
+                display: none;
+                position: absolute;
+                top: 10%;
+                left: 25vw;
+                /*width:60%;*/
+                width:100%;
+              }
+              .site-nav__childlist-item__advisory-staff {
+                display: none;
+                position: absolute;
+                /* top: 10%; */
+                left: 25vw;
+                width:60%;
+              } */
+              .site-nav li a.site-nav__link{
+                display: block;
+              }
+              .site-nav li a {
+                display: block;
+              }
+              .site-header__main a:hover, .site-header-lower a:hover {
+                color: red;
+              }
+              .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container .site-nav__childlist-item--feature-image.responsive  .site-nav__childlist-item--feature-image-text {
+                padding-bottom: 15px;
+              }
+              .site-nav--mega .site-nav__childlist-item {
+                       /*padding: 0 1.5em 0 0em !important;*/
+                 padding: 0 0em 0 0em !important;
+              }
+              .site-nav__childlist-grid .site-nav__childlist-navlist > .site-nav__link{
+                    background-color: var(--color-footer-bg);
+                    line-height: 2.3;
+                    margin-bottom: 0;
+                    color: #000;
+                    padding-left: 30px !important;
+              }
+              .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+                margin-top: 0em;
+            }
+              .site-nav__childlist-grid .site-nav__childlist-item__advisory-staff {
+                margin-top: 3.25em;
+            }
+              .site-nav--mega .site-nav--has-dropdown .site-nav__dropdown{
+                    padding: 0;
+              }
+            .site-nav__childlist-grid .site-nav__childlist-navlist > .site-nav__link {
+              position: relative;
+            }
+             .site-nav__childlist-grid .site-nav__childlist-navlist.site-nav-active > .site-nav__link {
+              background-color:#fff;
+              line-height: 2.3;
+            }
+            .site-nav__childlist-grid .site-nav__childlist-navlist.site-nav-active > .site-nav__link:after {
+                content: '';
+                position: absolute;
+                top: 65%;
+                right: 20px;
+                width: 13px;
+                height: 13px;
+                -webkit-transform: translateY(-100%) rotate(45deg);
+                transform: translateY(-100%) rotate(-45deg);
+                border-bottom: 3px solid var(--color-body-text);
+                border-right: 3px solid var(--color-body-text);
+                -ms-transition: all 0.35s ease;
+                -webkit-transition: all 0.35s ease;
+                transition: all 0.35s ease;
+            }
+            .site-nav__childlist-grid .site-nav__childlist-navlist.site-nav-active > .site-nav__link ~ .custom_hover {
+              display: flex;
+            }
+
+    /* .site-nav--has-dropdown.site-nav--hover .site-nav__childlist-navlist:first-child > .site-nav__link:hover ~ .custom_hover {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+    .site-nav--has-dropdown.site-nav--hover .site-nav__childlist-grid .site-nav__childlist-navlist:first-child > .site-nav__link{
+      background-color:#fff;
+      line-height: 2.3;
+    }
+    .site-nav--has-dropdown.site-nav--hover .site-nav__childlist-grid .site-nav__childlist-navlist:first-child > .site-nav__link:after {
+        content: '';
+        position: absolute;
+        top: 65%;
+        right: 20px;
+        width: 13px;
+        height: 13px;
+        -webkit-transform: translateY(-100%) rotate(45deg);
+        transform: translateY(-100%) rotate(-45deg);
+        border-bottom: 3px solid var(--color-body-text);
+        border-right: 3px solid var(--color-body-text);
+        -ms-transition: all 0.35s ease;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .site-nav--has-dropdown.site-nav--hover .site-nav__childlist-grid .site-nav__childlist-navlist:first-child > .custom_hover {
+      display: flex;
+    } */
+
+
+
+            .site-nav__childlist .site-nav__link_first_child {
+                width: 20%;
+                /*margin-right: 35%;*/
+                margin-right: 0;
+                height: auto;
+                padding: 50px 0px 300px;
+                background-color: var(--color-footer-bg);
+            }
+            .site-nav--mega .site-nav__childlist-item {
+              width: 100%;
+            }
+            .site-nav .site-nav__childlist-grid .site-nav__childlist-navlist--column-1 {
+              padding: 0 !important;
+            }
+            .custom_hover .custom_hover_ul > li:first-child a {
+              font-size: 2rem;
+              font-weight: 700;
+          }
+          .custom_hover_ul .site-nav__childlist-navlist--column {
+              column-count: 3;
+          }
+        .site-nav__childlist-grid .site-nav__childlist-navlist ul {
+            margin-bottom: 0;
+            /*width: 60%;*/
+          width: 55%;
+          -webkit-column-break-inside: avoid;
+        }
+        a.grand_child_linklist {
+            font-weight: 900;
+            color: #cf102d;
+        }
+        /*.site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container .site-nav__childlist-item--feature-image .site-nav__childlist-item--feature-image-text{
+          padding:0;
+          margin-left: 10px;
+          margin-bottom: 20px;
+        }*/
+        .nav-side-right-column__custom_hover{
+         /* width: 40%;*/
+          height: auto;
+          width: 60%;
+          padding: 60px 0px 350px;
+          /* background-color: var(--color-footer-bg); */
+          padding-left: 15px;
+          margin-left: 15px;
+          margin-top: -4em;
+        }
+        .site-nav__childlist-item--feature-image-container{
+              background: none;
+        }
+        .nav-side-right-column__custom_hover:has(.site-nav__childlist-item__advisory-staff_new) {
+          background-color: var(--color-footer-bg);
+      }
+        /*.site-nav__childlist-item--feature-image-container :last-child {
+          max-height: 225px !important;
+      }*/
+        .site-nav__childlist .site-nav__link_first_child:not(site-nav__childlist-item){
+      background-color: unset;
+      }
+      .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-item){
+      background-color: var(--color-footer-bg);
+      }
+      @media screen and (min-width: 1200px) and (max-width: 1650px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 27%;
+    }
+      }
+        @media screen and (min-width: 1651px) and (max-width: 1750px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 25%;
+    }
+        }
+        @media screen and (min-width: 1751px) and (max-width: 1880px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 23%;
+    }
+        }
+       @media screen and (min-width: 1881px) and (max-width: 2000px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 21%;
+    }
+        }
+       @media screen and (min-width: 2000px) and (max-width: 2150px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 19.5%;
+    }
+        }
+        @media screen and (min-width: 2151px) and (max-width: 2250px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 18.5%;
+    }
+        }
+        @media screen and (min-width: 2251px) and (max-width: 2350px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 17.5%;
+    }
+        }
+         @media screen and (min-width: 2351px) and (max-width: 2450px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 16.5%;
+    }
+        }
+        @media screen and (min-width: 2451px) and (max-width: 2560px){
+        .site-nav__childlist-grid div.site-nav__childlist-item--feature-image-container {
+        width: 15.5%;
+    }
+        }
+      /* @media screen and (max-width: 1024px) {
+      .simple-accordion__item:first-child .simple-accordion{
+            height: auto;
+        opacity: 1;
+        -ms-transition: all 0.5s ease, opacity 0.5s ease 0.1s;
+        -webkit-transition: all 0.5s ease, opacity 0.5s ease 0.1s;
+        transition: all 0.5s ease, opacity 0.5s ease 0.1s;
+    }
+        .simple-accordion__item:first-child .simple-accordion__title::after{
+          content: none;
+        }
+        .mobile-nav__main-nav-title{
+              color: #101820;
+        font-family: "GT America",-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+        padding: 1rem 0.5rem 1rem 0;
+        margin: 0 1rem;
+        }
+      .mobile-nav__secondary-nav-title {
+        margin: 0 1rem;
+        margin-bottom: 0;
+        padding: 1rem 0.5rem 1rem 0 !important;
+        border-bottom: 1px solid var(--color-border);
+        font-weight: 400;
+        color: #101820;
+        font-family: "GT America",-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",sans-serif;
+        text-transform: capitalize;
+        font-size: 1em;
+      }
+      }*/
+
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Women) {
+      background-color: unset;
+      width: 100%;
+      padding: 50px 0px 0px;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Women) .site-nav__childlist-navlist > .site-nav__link {
+        display: none;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Women) .site-nav__childlist-navlist > .custom_hover {
+        position: unset;
+        display: flex;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Women) .site-nav__childlist-navlist > .custom_hover .custom_hover_ul {
+        padding-left: 45px;
+    }
+
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Men) {
+      background-color: unset;
+      width: 100%;
+      padding: 50px 0px 0px;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Men) .site-nav__childlist-navlist > .site-nav__link {
+        display: none;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Men) .site-nav__childlist-navlist > .custom_hover {
+        position: unset;
+        display: flex;
+    }
+    .site-nav__childlist .site-nav__link_first_child:has(.site-nav__childlist-navlist--column-Men) .site-nav__childlist-navlist > .custom_hover .custom_hover_ul {
+        padding-left: 45px;
+    }
+  .site-header__section--nav .site-nav>li:last-child .site-nav__link_first_child {
+
+  background: #fff;
+
+  }
+
+  .site-header__section--nav .site-nav>li:last-child .site-nav__childlist-navlist.site-nav-active > .site-nav__link:after{
+
+  display:none;
+
+  }
+    .site-header__section--nav .site-nav>li:last-child .site-nav__childlist-navlist.site-nav-active > .site-nav__link {
+      background-color: #fff;
+  }
+    .site-header__section--nav .site-nav>li:last-child .site-nav__link_first_child .site-nav__link {
+      background-color: unset;
+      color: var(--color-primary);
+    }
+</style>
+
+{%- capture store_region -%}{%- include 'assign-locale' -%}{%- endcapture -%}
+{%- assign store_region = store_region | strip -%}
+{%- assign nav = site-nav-base -%}
+{%- assign processed_navs = processed_navs | join: ',' | append: ',' | append: nav | split: ',' -%}
+{%- assign parent_list = nav -%}
+{%- unless parent_list.links != blank -%}
+  {%- assign parent_list = linklists[nav] -%}
+{%- endunless -%}
+{%- assign navID = id | default: 'SiteNav' -%}
+{%- assign type = type | default: 'default' -%}
+{% comment %}default, swipe{% endcomment %}
+{%- assign dropdown = dropdown | default: 'simple' -%}
+{% comment %}simple, mega{% endcomment %}
+{%- assign show_arrows = show_arrows | default: true -%}
+
+{%- unless dropdown -%}
+  {%- assign show_arrows = false -%}
+{%- endunless -%}
+
+<ul class="site-nav site-nav--default site-nav--mega">
+  {% for link in section.settings.primary_linklist.links %}
+    {%- unless nested -%}
+      {%- assign dropdown_settings = false -%}
+
+      {%- for block in section.blocks -%}
+        {%- if block.settings.title == link.title -%}
+          {%- assign dropdown_settings = block.settings -%}
+          {%- assign first_image = block.settings.first_image -%}
+          {%- assign first_image_title = block.settings.first_image_title -%}
+          {%- assign first_image_text = block.settings.first_image_text -%}
+          {%- assign first_image_link = block.settings.first_image_link -%}
+
+          {%- assign second_image = block.settings.second_image -%}
+          {%- assign second_image_title = block.settings.second_image_title -%}
+          {%- assign second_image_text = block.settings.second_image_text -%}
+          {%- assign second_image_link = block.settings.second_image_link -%}
+          {%- assign advisory_staff = block.settings.advisory_staff -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endunless -%}
+
+    {%- if store_region == 'JPN' -%}
+      {%- assign child_list_handle = link.handle | split: '##' | last | handle | downcase -%}
+    {%- else -%}
+      {%- assign child_list_handle = link.handle | handle | downcase -%}
+    {%- endif -%}
+    <li
+      class="site-nav--has-dropdown site-nav--active"
+      aria-has-popup="true"
+      aria-controls="SiteNavLabel-{{ child_list_handle }}"
+    >
+      <a class="site-nav__link" href="{{ link.url }}"
+        ><span>{{ link.title }}</span></a
+      >
+
+      <div
+        class="site-nav__dropdown site-nav__dropdown--{{ dropdown_settings.style | default: 'default' }}"
+        id="SiteNavLabel-{{ child_list_handle }}"
+        aria-expanded="false"
+      >
+        <div class="site-nav__childlist container narrow">
+          <div class="site-nav__childlist-grid" data-list-length="{{ link.links.size }}">
+            <div class="site-nav__link_first_child" style="">
+              {% for child_linklist in linklists[child_list_handle].links %}
+                {%- if store_region == 'JPN' -%}
+                  {%- assign column = child_linklist.title | split: '##' | last -%}
+                  {%- assign grand_child_linklist_handle = child_linklist.handle
+                    | split: '##'
+                    | first
+                    | handle
+                    | downcase
+                  -%}
+                {%- else -%}
+                  {%- assign column = child_linklist.title -%}
+                  {%- assign grand_child_linklist_handle = child_linklist.handle | handle | strip | downcase -%}
+                {%- endif -%}
+                {%- assign column_index = child_linklist.title | split: '-' | first -%}
+
+                <div class="site-nav__childlist-item site-nav__childlist-navlist site-nav__childlist-navlist--column-{{- column -}} site-nav__childlist-navlist--column-{{- column_index -}}">
+                  <a class="site-nav__link" href="{{ child_linklist.url }}">
+                    {% if child_linklist.handle == 'women-collection' %}
+                      <span data-handle="{{ child_linklist.handle }}">
+                        {{- child_linklist.handle | upcase | split: '-' | first | escape -}}
+                      </span>
+                    {% elsif child_linklist.handle == 'men-collection' %}
+                      <span data-handle="{{ child_linklist.handle }}">
+                        {{- child_linklist.handle | upcase | split: '-' | first | escape -}}
+                      </span>
+                    {% elsif child_linklist.handle != 'women-collection' or child_linklist.handle != 'men-collection' %}
+                      <span data-handle="{{ child_linklist.handle }}">
+                        {{- child_linklist.title | split: '-' | last | split: '##' | first | escape -}}
+                      </span>
+                    {% endif %}
+                  </a>
+                  {%- assign column_index = child_linklist.title | split: '-' | first -%}
+                  <div class="custom_hover">
+                    <ul class="custom_hover_ul" data-list-length="long">
+                      <!--
+                        <li>
+                          <a class="site-nav__link_Bold" href="{{ child_linklist.url }}">
+                            {{- child_linklist.title | split: '-' | last | split: '##' | first | escape -}}
+                          </a>
+                        </li>
+                      -->
+                      {% comment %}       updated code       {% endcomment %}
+                      <div
+                        class="site-nav__childlist-navlist--column site-nav__childlist-navlist--column-{{column}} site-nav__childlist-navlist--column-{{column_index}}"
+                        data-list-length="{% if child_linklist.links.size > 5 %}long{% else %}short{% endif %}"
+                      >
+                        {% for grand_child_linklist in linklists[grand_child_linklist_handle].links %}
+                          <ul class="child">
+                            <li class="">
+                              <a href="{{ grand_child_linklist.url }}" class="grand_child_linklist">
+                                {{- grand_child_linklist.title | split: '-' | last | split: '##' | first | escape -}}
+                              </a>
+                            </li>
+                            {% for g_grand_child_linklist in grand_child_linklist.links %}
+                              <li>
+                                <a href="{{ g_grand_child_linklist.url }}" class="g_grand_child_linklist">
+                                  {{-
+                                    g_grand_child_linklist.title
+                                    | split: '-'
+                                    | last
+                                    | split: '##'
+                                    | first
+                                    | escape
+                                  -}}
+                                </a>
+                                {% if g_grand_child_linklist.links != blank %}
+                                  <ul class="grandchild">
+                                    {% for g_g_grand_child_linklist in g_grand_child_linklist.links %}
+                                      <li>
+                                        <a href="{{ g_g_grand_child_linklist.url }}" class="g_g_grand_child_linklist">
+                                          {{-
+                                            g_g_grand_child_linklist.title
+                                            | split: '-'
+                                            | last
+                                            | split: '##'
+                                            | first
+                                            | escape
+                                          -}}
+                                        </a>
+                                      </li>
+                                    {% endfor %}
+                                  </ul>
+                                {% endif %}
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endfor %}
+                      </div>
+                      {% comment %}       END updated code     {% endcomment %}
+                    </ul>
+
+                    <div class="nav-side-right-column__custom_hover site-nav__childlist-item site-nav__childlist-item--feature-image-container">
+                      {%- for block in section.blocks -%}
+                        {% assign downcase_title = block.settings.title | downcase %}
+                        {% assign downcase_grand_child_linklist_handle = grand_child_linklist_handle | downcase %}
+
+                        {%- if downcase_title == downcase_grand_child_linklist_handle -%}
+                          {%- assign dropdown_settings = block.settings -%}
+                          {%- assign first_image = block.settings.first_image -%}
+                          {%- assign first_image_title = block.settings.first_image_title -%}
+                          {%- assign first_image_text = block.settings.first_image_text -%}
+                          {%- assign first_image_link = block.settings.first_image_link -%}
+
+                          {%- assign second_image = block.settings.second_image -%}
+                          {%- assign second_image_title = block.settings.second_image_title -%}
+                          {%- assign second_image_text = block.settings.second_image_text -%}
+                          {%- assign second_image_link = block.settings.second_image_link -%}
+                          {% comment %}       HANDLE RIGHT MENU FOR NAV       {% endcomment %}
+                          {%- if first_image != blank or second_image != blank -%}
+                            {% if first_image != blank %}
+                              <a href="{{first_image_link}}" class="site-nav__childlist-item--feature-image">
+                                {%- include 'img' with first_image -%}
+                                <div class="site-nav__childlist-item--feature-image-text">
+                                  <h3>{{ first_image_title }}</h3>
+                                  <p>{{ first_image_text }}</p>
+                                </div>
+                              </a>
+                            {% endif %}
+                            {% if second_image != blank %}
+                              <a href="{{second_image_link}}" class="site-nav__childlist-item--feature-image">
+                                {%- include 'img' with second_image -%}
+                                <div class="site-nav__childlist-item--feature-image-text">
+                                  <h3>{{ second_image_title }}</h3>
+                                  <p>{{ second_image_text }}</p>
+                                </div>
+                              </a>
+                            {% endif %}
+                          {%- endif -%}
+                          {% comment %}       END HANDLE RIGHT MENU FOR NAV       {% endcomment %}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                    <div class="nav-side-right-column__custom_hover">
+                      {%- for block in section.blocks -%}
+                        {% assign downcase_title = block.settings.title | downcase %}
+                        {% assign downcase_grand_child_linklist_handle = grand_child_linklist_handle | downcase %}
+
+                        {%- if downcase_title == downcase_grand_child_linklist_handle -%}
+                          {%- assign advisory_staff = block.settings.advisory_staff -%}
+                          {% comment %}       HANDLE ADVISORY FOR NAV       {% endcomment %}
+                          {% if advisory_staff != blank %}
+                            {%- assign advisory_staff_child_linklist = linklists[advisory_staff] -%}
+                            <div class="site-nav__childlist-item__advisory-staff_new">
+                              {%- for c_advisory_staff_child_linklist in advisory_staff_child_linklist.links -%}
+                                <a class="site-nav__link" href="{{c_advisory_staff_child_linklist.url}}">
+                                  {{- c_advisory_staff_child_linklist.title -}}
+                                </a>
+                              {%- endfor -%}
+                            </div>
+                          {% endif %}
+                          {% comment %}       END HANDLE ADVISORY FOR NAV       {% endcomment %}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+<script>
+  // $('.site-nav__childlist-item > .site-nav__link').mouseover(function(){
+    // $('.custom_hover').attr('style', 'display: none;');
+    // $(this).siblings('.custom_hover').attr('style', 'display: flex;');
+    // $('.nav-side-right-column.custom_hover').attr('style', 'display: none;');
+    // $(this).siblings('.nav-side-right-column.custom_hover').attr('style', 'display: block;');
+    // $('.site-nav__childlist-item__advisory-staff').attr('style', 'display: none;');
+    // $(this).siblings('.site-nav__childlist-item__advisory-staff').attr('style', 'display: block;');
+  // });
+
+  $( document ).ready(function() {
+    $('.site-nav__link_first_child .site-nav__childlist-item:first-child').addClass('site-nav-active');
+  });
+
+  $('.site-nav--has-dropdown').on( "mouseleave", function() {
+    $('.site-nav__link_first_child .site-nav__childlist-item').removeClass('site-nav-active');
+    $('.site-nav__link_first_child .site-nav__childlist-item:first-child').addClass('site-nav-active');
+  });
+
+  $('.site-nav__link_first_child .site-nav__childlist-item').hover(function () {
+    $('.site-nav__link_first_child .site-nav__childlist-item').removeClass('site-nav-active');
+    $(this).addClass('site-nav-active');
+  });
+</script>
