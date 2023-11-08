@@ -128,6 +128,12 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "floating-laguage-tr-btn": {
+        "type": "floating-laguage-tr-btn",
+        "settings": {
+          "show_shopify_floating_laguage_tr_btn": true
+        }
       }
     },
     "content_for_index": [
@@ -136,7 +142,7 @@
     "blocks": {
       "13375938897875554821": {
         "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
