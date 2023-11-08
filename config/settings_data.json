@@ -160,6 +160,12 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "12164900800894067088": {
+        "type": "shopify:\/\/apps\/sales-popup-autoketing-pop\/blocks\/app-embed\/3a6fc4fb-65c3-4842-8241-9c5e581ca83e",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
