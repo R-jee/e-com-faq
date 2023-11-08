@@ -157,7 +157,7 @@
       },
       "477467645007963971": {
         "type": "shopify:\/\/apps\/sales-pop-order-sales-popup\/blocks\/app-embed\/186a4bd9-a884-4fa6-909b-ea21f3455d23",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
