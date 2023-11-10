@@ -155,12 +155,6 @@
         "settings": {
         }
       },
-      "13375938897875554821": {
-        "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "4015264832934714879": {
         "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": true,
@@ -169,6 +163,12 @@
       },
       "8857984110089213392": {
         "type": "shopify:\/\/apps\/hextom-ultimate-sales-boost\/blocks\/usb-embeded-block\/00e81c42-8ae7-4b0b-b43d-99393b885fc4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13375938897875554821": {
+        "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
         "disabled": false,
         "settings": {
         }
